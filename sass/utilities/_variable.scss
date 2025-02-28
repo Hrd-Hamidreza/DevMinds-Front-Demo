@@ -1,0 +1,29 @@
+//! --------------------------------------- Colors
+//? ------------------- Custom Colors
+$purple: rgb(158, 18, 177);
+$gray: #f0f2f7;
+$subtitle: rgb(107, 107, 107);
+//? ------------------- Match
+$theme-colors: (
+  "primary": $purple,
+  "secondary": $gray,
+  "tertiary": $subtitle,
+);
+//! --------------------------------------- Fonts
+//? ------------------- Fonts Type
+$font-devMinds: "DevMinds";
+//? ------------------- custom Font Size
+$default-font: 62.5%;
+//? ------------------- Font Sizes
+$font-sizes: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1.2rem,
+  4: 1.4rem,
+  5: 1.6rem,
+  6: 2.5rem,
+  7: 3rem,
+  8: 3.5rem,
+  9: 4rem,
+  10: 5rem,
+);

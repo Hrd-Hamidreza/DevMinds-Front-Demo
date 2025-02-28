@@ -1,0 +1,4 @@
+//! --------------------------------------- Center
+@function center($first, $second) {
+  @return $first * 2 $second * 5;
+}

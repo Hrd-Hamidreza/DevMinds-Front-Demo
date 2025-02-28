@@ -5523,27 +5523,43 @@ progress {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: 0.25rem !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: 0.5rem !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 1.2rem !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.265rem + 0.18vw) !important;
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.285rem + 0.42vw) !important;
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.fs-7 {
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.fs-8 {
+  font-size: calc(1.475rem + 2.7vw) !important;
+}
+
+.fs-9 {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
+.fs-10 {
+  font-size: calc(1.625rem + 4.5vw) !important;
 }
 
 .fst-italic {
@@ -14510,17 +14526,26 @@ progress {
   }
 }
 @media (min-width: 1200px) {
-  .fs-1 {
+  .fs-4 {
+    font-size: 1.4rem !important;
+  }
+  .fs-5 {
+    font-size: 1.6rem !important;
+  }
+  .fs-6 {
     font-size: 2.5rem !important;
   }
-  .fs-2 {
-    font-size: 2rem !important;
+  .fs-7 {
+    font-size: 3rem !important;
   }
-  .fs-3 {
-    font-size: 1.75rem !important;
+  .fs-8 {
+    font-size: 3.5rem !important;
   }
-  .fs-4 {
-    font-size: 1.5rem !important;
+  .fs-9 {
+    font-size: 4rem !important;
+  }
+  .fs-10 {
+    font-size: 5rem !important;
   }
 }
 @media print {
@@ -14561,7 +14586,7 @@ progress {
 @font-face {
   font-family: "DevMinds";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   src: url(../../public/Fonts/PersianFonts/eot/IRANSansX-Regular.eot) format("eot"), url(../../public/Fonts/PersianFonts/ttf/IRANSansX-Regular.ttf) format("ttf"), url(../../public/Fonts/PersianFonts/woff/IRANSansX-Regular.woff) format("woff");
 }
 @font-face {
@@ -14581,6 +14606,7 @@ progress {
 }
 
 * {
+  direction: rtl;
   text-transform: capitalize;
   text-decoration: none !important;
 }
@@ -14635,15 +14661,17 @@ html {
 }
 
 body {
-  --bs-body-color: rgb(12, 12, 12);
   --bs-body-line-height: 1.5;
   --bs-body-font-weight: normal;
-  --bs-body-font-size: $default-font;
-  --bs-body-font-family: $font-devMinds, "sans-seif" !important;
+  --bs-body-font-family: "DevMinds", "sans-seif" !important;
+}
+
+a {
+  color: black;
 }
 
 svg {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 ul,
@@ -14744,6 +14772,51 @@ pre {
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-wrap: break-word;
+}
+
+.container-eighth {
+  width: 90%;
+  padding: 0 0;
+}
+
+.header__top-right-item > a {
+  transition: all 400ms ease;
+}
+.header__top-right-item > a:hover {
+  color: rgb(158, 18, 177);
+}
+.header__top-left-link {
+  transition: all 400ms ease;
+}
+.header__top-left-link:hover {
+  color: rgb(158, 18, 177);
+}
+.header__bottom-right-ul > li > a {
+  transition: all 400ms ease;
+}
+.header__bottom-right-ul > li > a:hover {
+  color: rgb(158, 18, 177);
+}
+.header__bottom-left-shop {
+  transition: all 400ms ease;
+}
+.header__bottom-left-shop > span {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 100%;
+  top: -25%;
+  right: -25%;
+}
+.header__bottom-left-shop:hover {
+  color: rgb(158, 18, 177);
+}
+.header__bottom-left-log {
+  transition: all 400ms ease;
+  color: rgb(158, 18, 177);
+}
+.header__bottom-left-log:hover {
+  background-color: rgb(158, 18, 177);
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
