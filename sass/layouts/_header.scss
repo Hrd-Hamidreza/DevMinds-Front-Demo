@@ -1,0 +1,57 @@
+.header {
+  &__top {
+    &-right {
+      &-item {
+        & > a {
+          transition: all 400ms ease;
+          &:hover {
+            color: $purple;
+          }
+        }
+      }
+    }
+    &-left {
+      &-link {
+        transition: all 400ms ease;
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+  }
+  &__bottom {
+    &-right {
+      &-ul {
+        & > li > a {
+          transition: all 400ms ease;
+          &:hover {
+            color: $purple;
+          }
+        }
+      }
+    }
+    &-left {
+      &-shop {
+        transition: all 400ms ease;
+        & > span {
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 100%;
+          top: -25%;
+          right: -25%;
+        }
+        &:hover {
+          color: $purple;
+        }
+      }
+      &-log {
+        transition: all 400ms ease;
+        color: $purple;
+        &:hover {
+          background-color: $purple;
+          color: white;
+        }
+      }
+    }
+  }
+}
