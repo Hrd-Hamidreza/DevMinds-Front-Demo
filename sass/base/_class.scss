@@ -3,6 +3,9 @@
 .flex-row-center {
   @include centerizetag();
 }
+.flex-row-start {
+  @include centerizetag($justify: start);
+}
 .flex-row-between {
   @include centerizetag($align: center, $justify: space-between);
 }
@@ -35,4 +38,7 @@
 .container-eighth {
   @include custom-width($wid: 90%);
 }
-//? ------------------- eighth
+//? ------------------- Height
+.h-10 {
+  height: 10%;
+}
