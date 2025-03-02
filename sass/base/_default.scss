@@ -4,7 +4,7 @@
 }
 //! --------------------------------------- All
 * {
-  direction: rtl;
+  direction: ltr;
   text-transform: capitalize;
   text-decoration: none !important;
 }
@@ -45,7 +45,7 @@ body {
   --bs-body-line-height: 1.5;
   --bs-body-font-weight: normal;
   // --bs-body-font-size: $default-font;
-  --bs-body-font-family: "DevMinds", "sans-seif" !important;
+  --bs-body-font-family: "Trebuchet MS" !important; //! Arial
 }
 //! --------------------------------------- Svg & Others
 a {
@@ -80,5 +80,5 @@ button {
   padding: 0 !important;
 }
 pre {
-  font-family: $font-devMinds, "sans-serif" !important;
+  font-family: "Trebuchet MS" !important; //! Arial
 }

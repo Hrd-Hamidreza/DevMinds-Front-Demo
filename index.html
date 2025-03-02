@@ -4,87 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آکادمی توسعه دهندگان ذهن | آموزش برنامه نویسی</title>
+    <title>DevMinds | Programming</title>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 
-<body class="body">
+<body class="body flex-column-center gap-5">
     <!--? ------------------------------------ Header -->
-    <header class="container-fluid p-0 header flex-column-center gap-3">
+    <header class="header w-100 flex-column-center gap-3">
         <!--! ------------------ Section Top -->
         <section class="header__top bg-secondary flex-row-between p-5 fs-4 w-100">
-            <!--Todo ------------------ Section Top Right -->
-            <ul class="header__top-right flex-row-between gap-5 ">
-                <li class="header__top-right-item">
-                    <a href="#">پنل اختصاصی دوره های حضوری / آنلاین</a>
+            <!--Todo ------------------ Section Top Left -->
+            <ul class="header__top-left flex-row-between gap-5 ">
+                <li class="header__top-left-item">
+                    <a href="#">Dedicated panel for in-person courses | Online</a>
                 </li>
-                <li class="header__top-right-item">
-                    <a href="#">قوانین سایت</a>
+                <li class="header__top-left-item">
+                    <a href="#">Site regulations</a>
                 </li>
-                <li class="header__top-right-item">
-                    <a href="#">درباره ما</a>
+                <li class="header__top-left-item">
+                    <a href="#">About us</a>
                 </li>
-                <li class="header__top-right-item">
-                    <a href="#">همکاری با ما</a>
+                <li class="header__top-left-item">
+                    <a href="#">Collaborating with us</a>
                 </li>
-                <li class="header__top-right-item">
-                    <a href="#">فروشگاه</a>
+                <li class="header__top-left-item">
+                    <a href="#">Store</a>
                 </li>
             </ul>
             <!--Todo ------------------ Section Top Right -->
-            <div class="header__top-left flex-row-center gap-5">
-                <a href="#" class="header__top-left-link flex-row-between gap-2 p-1">
-                    <span>DevMinds.co</span>
+            <div class="header__top-right flex-row-center gap-5">
+                <a href="#" class="header__top-right-link flex-row-between gap-2 p-1">
                     <i class="fa-brands fa-instagram text-primary"></i>
+                    <span>DevMinds.co</span>
                 </a>
-                <a href="#" class="header__top-left-link flex-row-between gap-2 p-1">
-                    <span class="flex-row-center">devmindco@gmail.com</span>
+                <a href="#" class="header__top-right-link flex-row-between gap-2 p-1">
                     <i class="fa-solid fa-envelope text-primary"></i>
+                    <span class="flex-row-center">devmindco@gmail.com</span>
                 </a>
             </div>
         </section>
         <!--! ------------------ Section Bottom -->
         <section class="header__bottom flex-row-between container-eighth">
-            <!--Todo ------------------ Section Bottom Right -->
-            <div class="header__bottom-right flex-row-between gap-5">
+            <!--Todo ------------------ Section Bottom Left -->
+            <div class="header__bottom-left flex-row-between gap-5">
                 <span style="cursor: pointer;" class="header__bottom-right-image">
                     <img src="public/Images/Header/Brand/devminds1.png" alt="Logo">
                 </span>
-                <ul class="header__bottom-right-ul fs-5 flex-row-between gap-5">
+                <ul class="header__bottom-left-ul fs-5 flex-row-between gap-5">
                     <li>
-                        <a href="#">صفحه اصلی</a>
+                        <a href="#">Main page</a>
                     </li>
                     <li>
-                        <a href="#">دوره ها</a>
+                        <a href="#">Courses</a>
                     </li>
                     <li>
-                        <a href="#">صفر تا فول استک</a>
+                        <a href="#">Full Stack From Scratch To peak</a>
                     </li>
                     <li>
-                        <a href="#">مقالات</a>
+                        <a href="#">Articles</a>
                     </li>
                     <li>
-                        <a href="#">مهارت های نرم</a>
+                        <a href="#">Soft skills</a>
                     </li>
                 </ul>
             </div>
-            <!--Todo ------------------ Section Bottom Left -->
-            <div class="header__bottom-left flex-row-between gap-5">
-                <a href="#" class="header__bottom-left-shop rounded-3 bg-secondary p-3 position-relative">
+            <!--Todo ------------------ Section Bottom Right -->
+            <div class="header__bottom-right flex-row-between gap-5">
+                <a href="#"
+                    class="header__bottom-right-log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">Login
+                    |
+                    Sing Up</a>
+                <a href="#" class="header__bottom-right-shop rounded-3 bg-secondary p-3 position-relative">
                     <i class="fas fa-cart-shopping"></i>
                     <span class="bg-primary flex-row-center position-absolute text-white">0</span>
                 </a>
-                <a href="#" class="header__bottom-left-log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">ورود
-                    |
-                    ثبت نام</a>
             </div>
         </section>
     </header>
     <!--? ------------------------------------ Main -->
-    <main></main>
+    <main class="main w-100">
+        <!--! ------------------ Section Landing -->
+        <section class="landing container-fluid p-0">
+            <div class="landing__body flex-row-center gap-1 w-100 h-100 pt-5">
+                <!--! ------------------ Landing Left -->
+                <div class="landing__body-left w-50 h-100">
+                    <div class="landing__body-left-background  rounded-circle">
+                        <div class="w-100 h-100 flex-row-center">
+                            <div>
+                                <span style="--i:1"><i class="fa-brands fa-java icon"></i></span>
+                                <span style="--i:2"><i class="fa-brands fa-js icon"></i></span>
+                                <span style="--i:3"><i class="fa-brands fa-node-js icon"></i></span>
+                                <span style="--i:4"><i class="fa-brands fa-python icon"></i></span>
+                                <span style="--i:5"><i class="fa-brands fa-css3 icon"></i></span>
+                                <span style="--i:6"><i class="fa-brands fa-html5 icon"></i></span>
+                                <span style="--i:7"><i class="fa-brands fa-git icon"></i></span>
+                                <span style="--i:8"><i class="fa-brands fa-github icon"></i></span>
+                                <span style="--i:9"><i class="fa-brands fa-flutter icon"></i></span>
+                                <span style="--i:10"><i class="fa-brands fa-css icon"></i></span>
+                                <span style="--i:11"><i class="fa-brands fa-react icon"></i></span>
+                                <span style="--i:12"><i class="fa-brands fa-angular icon"></i></span>
+                                <span style="--i:13"><i class="fa-brands fa-php icon"></i></span>
+                                <span style="--i:14"><i class="fa-brands fa-laravel icon"></i></span>
+                                <span style="--i:15"><i class="fa-brands fa-vuejs icon"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--! ------------------ Landing Right -->
+                <div class="landing__body-right w-50 flex-column-center gap-8">
+                    <h1 class="text-white fs-8 fw-bold">Best or Never</h1>
+                    <h2 class="text-white fs-6 fw-bold">Let us to ease Zero-one to you!</h2>
+                    <a href="#"
+                        class="landing__body-right-link bg-primary flex-row-center gap-3 rounded-3 fs-5 px-14 py-4">
+                        <span>Start learning programming</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <ul class="landing__body-right-options row row-cols-2">
+                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                            <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
+                                <i class="fas fa-headphones"></i>
+                            </span>
+                            <span>Support 24-Hour</span>
+                        </ol>
+                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                            <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
+                                <i class="fas fa-gift"></i>
+                            </span>
+                            <span>Supporting Free Courses</span>
+                        </ol>
+                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                            <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
+                                <i class="fas fa-bank"></i>
+                            </span>
+                            <span>Guaranteed Refund</span>
+                        </ol>
+                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                            <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
+                                <i class="fas fa-file fs-6"></i>
+                            </span>
+                            <span class="text-center">Learning With Practicing And Exam</span>
+                        </ol>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--! ------------------ Section  -->
+    </main>
     <!--? ------------------------------------ Footer -->
-    <footer></footer>
+    <footer class="footer w-100"></footer>
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </body>
 
