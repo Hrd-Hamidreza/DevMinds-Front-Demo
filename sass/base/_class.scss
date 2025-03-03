@@ -21,22 +21,30 @@
   @include centerizebox();
 }
 //! --------------------------------------- line limitness
-.ellipsis-1 {
-  @include linelimitness(1);
+.ellipsis {
+  &-1 {
+    @include linelimitness(1);
+  }
+  &-2 {
+    @include linelimitness(2);
+  }
+  &-3 {
+    @include linelimitness(3);
+  }
+  &-4 {
+    @include linelimitness(4);
+  }
 }
-.ellipsis-2 {
-  @include linelimitness(2);
-}
-.ellipsis-3 {
-  @include linelimitness(3);
-}
-.ellipsis-4 {
-  @include linelimitness(4);
-}
+
 //! --------------------------------------- Custom Container
 //? ------------------- eighth
-.container-eighth {
-  @include custom-width($wid: 90%);
+.container-width {
+  &-90 {
+    @include custom-width($wid: 90%);
+  }
+  &-80 {
+    @include custom-width($wid: 80%);
+  }
 }
 //? ------------------- Height
 .h-10 {
