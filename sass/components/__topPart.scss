@@ -1,0 +1,16 @@
+.courses__top {
+  &-left {
+    &-icon {
+    }
+    &-text {
+    }
+  }
+  &-right {
+    transition: all 400ms ease;
+    color: white;
+    &:hover {
+      transform: translateY(-0.3rem);
+      color: rgba(0, 0, 0, 0.63);
+    }
+  }
+}
