@@ -1,11 +1,11 @@
-.courses__top {
-  &-left {
+.headpart {
+  &__left {
     &-icon {
     }
     &-text {
     }
   }
-  &-right {
+  &__right {
     transition: all 400ms ease;
     color: white;
     &:hover {
