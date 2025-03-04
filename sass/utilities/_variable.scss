@@ -3,6 +3,9 @@
 $purple: rgb(158, 18, 177);
 $gray: #f0f2f7;
 $subtitle: rgb(107, 107, 107);
+$bg-course: rgba(11, 15, 18, 0.99); //! #0b0f12f5
+$red: red;
+$green: green;
 $score: #f9a134;
 //? ------------------- Match
 $theme-colors: (
@@ -10,6 +13,9 @@ $theme-colors: (
   "secondary": $gray,
   "tertiary": $subtitle,
   "golden": $score,
+  "fullstackbg": $bg-course,
+  "price": $green,
+  "danger": $red,
 );
 //! --------------------------------------- Fonts
 //? ------------------- Fonts Type

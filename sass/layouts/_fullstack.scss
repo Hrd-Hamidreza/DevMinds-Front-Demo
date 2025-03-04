@@ -1,0 +1,19 @@
+.fullstack {
+  &__bottom {
+    &-right {
+      &-link {
+        color: black;
+        transition: all 400ms ease;
+        &:hover {
+          color: $purple;
+        }
+      }
+      &-items {
+      }
+      &-languages {
+      }
+      &-worth {
+      }
+    }
+  }
+}
