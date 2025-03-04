@@ -15093,6 +15093,22 @@ pre {
 .fullstack__bottom-right-link:hover {
   color: rgb(158, 18, 177);
 }
+.popular__bottom {
+  width: 100%;
+  height: 100%;
+}
+.popular__bottom-main > div {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular__bottom-main > div > div {
+  width: max-content;
+}
+
 .headpart__right {
   transition: all 400ms ease;
   color: white;
