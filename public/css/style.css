@@ -15148,4 +15148,19 @@ pre {
   color: rgb(158, 18, 177);
 }
 
+.articlecard__main {
+  box-shadow: 0rem 0rem 1rem 1rem rgba(70, 71, 73, 0.1);
+}
+.articlecard__main-top {
+  max-height: 22rem;
+}
+.articlecard__main-bottom-link {
+  color: rgb(158, 18, 177);
+  transition: all 400ms ease;
+}
+.articlecard__main-bottom-link:hover {
+  color: white;
+  background-color: rgb(158, 18, 177);
+}
+
 /*# sourceMappingURL=style.css.map */
