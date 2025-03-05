@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 
-<body class="body flex-column-center gap-5">
+<body class="body flex-column-center gap-5 pt-17">
     <!--? ------------------------------------ Header -->
-    <header class="header w-100 flex-column-center gap-3">
+    <header class="header flex-column-center gap-3 w-100 position-fixed top-0 z-3 bg-white">
         <!--! ------------------ Section Top -->
         <section class="header__top bg-secondary flex-row-between p-5 fs-4 w-100">
             <!--Todo ------------------ Section Top Left -->
@@ -49,7 +49,7 @@
             <!--Todo ------------------ Section Bottom Left -->
             <div class="header__bottom-left flex-row-between gap-5">
                 <span style="cursor: pointer;" class="header__bottom-right-image">
-                    <img src="public/Images/Header/Brand/devminds1.png" alt="Logo">
+                    <img title="DevMinds" src="public/Images/Header/Brand/devminds1.png" alt="Logo">
                 </span>
                 <ul class="header__bottom-left-ul fs-5 flex-row-between gap-5">
                     <li>
@@ -220,7 +220,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/2-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Git & Github">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Git and GitHub training course" href="#"
@@ -259,7 +259,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/3-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Php">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="PHP MVC Advanced Course: From Zero to" href="#"
@@ -299,7 +299,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/4-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Sass">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="SASS training course" href="#" class="fs-5 ellipsis-1 container-width-80">SASS
@@ -338,7 +338,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/5-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Responsive Design">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Responsive Design Training Course
@@ -380,7 +380,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/6-course_360.webp"
-                                alt="FrontEnd">
+                                alt="JavaScript">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="JavaScript expert training course" href="#"
@@ -419,7 +419,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/7-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Flexbox">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="FlexBox training course" href="#"
@@ -458,7 +458,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/8-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Emmet">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Emmet training course" href="#" class="fs-5 ellipsis-1 container-width-80">Emmet
@@ -497,7 +497,7 @@
                     <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100" src="public/Images/Courses/9-course_360.webp"
-                                alt="FrontEnd">
+                                alt="Html & Css">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Html+Css training course" href="#"
@@ -1166,7 +1166,65 @@
         </section>
     </main>
     <!--? ------------------------------------ Footer -->
-    <footer class="footer w-100"></footer>
+    <footer class="footer flex-column-between gap-11 pt-7 w-100">
+        <!--! ------------------ Section Footer Content -->
+        <section class="footer__content container bg-secondary rounded-3 p-6 row row-cols-3 position-relative">
+            <div class="footer__content-item col">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                    <span class="top position-relative">
+                        <h1 class="fs-5 fw-bolder position-relative z-1">About Us</h1>
+                        <span class="bg-footertransformation position-absolute z-0"></span>
+                    </span>
+                    <p style="line-height: 170%;" class="fs-4 bottom">
+                        The Mind Developers Academy was established in the fall of 1400 with the aim of
+                        identifying and training talented individuals in the field of programming and website and
+                        software development. The first activity of our academy was to identify and train talented
+                        individuals in programming at universities and child and adolescent talent agencies. In the
+                        spring of 1401, the members of the academy formed a specialized team in the field of IT. This
+                        team began its activity with the aim of designing and developing diverse and attractive software
+                        for users and subsequently held various training courses to train students and individuals
+                        interested in programming to enter the job market.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__content-item col">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                    <span class="top position-relative">
+                        <h1 class="fs-5 fw-bolder position-relative z-1">Latest content</h1>
+                        <span class="bg-footertransformation position-absolute z-0"></span>
+                    </span>
+                    <div class="fs-4 bottom flex-column-between align-items-start gap-2">
+                        <a class="fw-bold" href="#">The best programming training sites</a>
+                        <a class="fw-bold" href="#">Where do I start programming?</a>
+                        <a class="fw-bold" href="#">How to plan to learn programming?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content-item col">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                    <span class="top position-relative">
+                        <h1 class="fs-5 fw-bolder position-relative z-1">Quick access to courses</h1>
+                        <span class="bg-footertransformation position-absolute z-0"></span>
+                    </span>
+                    <div class="fs-4 bottom flex-column-between align-items-start third gap-2">
+                        <a class="fw-bold" href="#">PHP MVC Advanced Course: From Zero to the Job Market</a>
+                        <a class="fw-bold" href="#">Git and GitHub training course</a>
+                        <a class="fw-bold" href="#">Front-end specialist training course</a>
+                        <a class="fw-bold" href="#">JavaScript expert training course</a>
+                        <a class="fw-bold" href="#">Responsive Design Training Course
+                            (flexBox+CssGrid+Sass+BootStrap)
+                        </a>
+                        <a class="fw-bold" href="#">SASS training course</a>
+                    </div>
+                </div>
+            </div>
+            <span class="footer__content-item ticket position-absolute rounded-3"></span>
+        </section>
+        <!--! ------------------ Section Footer End -->
+        <section class="footer__end container-fluid flex-row-center p-6 bg-body-secondary">
+            <h1 class="fs-5 fw-bolder">All rights reserved to Mind Developers Programming Training Academy.</h1>
+        </section>
+    </footer>
     <!--? ------------------------------------ JavaScript -->
     <!--! ------------------ Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

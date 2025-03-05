@@ -1,0 +1,48 @@
+.footer {
+  &__content {
+    &-item {
+      &.ticket {
+        width: 30%;
+        height: 5rem;
+        background-color: $purple;
+        bottom: -1rem;
+        right: 0;
+        left: 0;
+        margin: auto auto;
+        z-index: -1;
+      }
+      &-body {
+        & > span.top {
+          & > h1 {
+          }
+          & > span {
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 0.4rem;
+            right: 0;
+            bottom: 0;
+            margin: auto 0;
+            transform: rotate(45deg);
+          }
+        }
+        & > .bottom {
+          text-align: justify;
+          &.third {
+            text-align: unset;
+          }
+          & > a {
+            color: black;
+            transition: all 400ms ease;
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__end {
+    box-shadow: 0rem 0rem 1rem 0.001rem black;
+  }
+}
