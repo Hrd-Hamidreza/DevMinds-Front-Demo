@@ -7,6 +7,7 @@ $bg-course: rgba(11, 15, 18, 0.99); //! #0b0f12f5
 $red: red;
 $green: green;
 $score: #f9a134;
+$square: rgba(43, 114, 206, 0.2);
 //? ------------------- Match
 $theme-colors: (
   "primary": $purple,
@@ -16,6 +17,7 @@ $theme-colors: (
   "fullstackbg": $bg-course,
   "price": $green,
   "danger": $red,
+  "footertransformation": $square,
 );
 //! --------------------------------------- Fonts
 //? ------------------- Fonts Type
