@@ -1,0 +1,16 @@
+.paginationpart {
+  & > span {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: $gray;
+    transition: all 400ms ease;
+    &:hover {
+      color: white;
+      background-color: $purple;
+    }
+    &.active {
+      background-color: $purple;
+    }
+  }
+}
