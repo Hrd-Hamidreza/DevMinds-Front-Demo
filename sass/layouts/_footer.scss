@@ -28,15 +28,15 @@
         }
         & > .bottom {
           text-align: justify;
-          &.third {
-            text-align: unset;
-          }
           & > a {
             color: black;
             transition: all 400ms ease;
             &:hover {
               color: $purple;
             }
+          }
+          &.third {
+            text-align: unset;
           }
         }
       }

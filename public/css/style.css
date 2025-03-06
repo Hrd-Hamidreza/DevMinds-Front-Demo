@@ -15175,15 +15175,15 @@ pre {
 .footer__content-item-body > .bottom {
   text-align: justify;
 }
-.footer__content-item-body > .bottom.third {
-  text-align: unset;
-}
 .footer__content-item-body > .bottom > a {
   color: black;
   transition: all 400ms ease;
 }
 .footer__content-item-body > .bottom > a:hover {
   color: rgb(158, 18, 177);
+}
+.footer__content-item-body > .bottom.third {
+  text-align: unset;
 }
 .footer__end {
   box-shadow: 0rem 0rem 1rem 0.001rem black;
