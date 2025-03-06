@@ -11,15 +11,22 @@
 //! --------------------------------------- Vendors
 //! --------------------------------------- Themes
 //! --------------------------------------- Layouts
-@import "layouts/header";
-@import "layouts/landing";
-@import "layouts/courses";
-@import "layouts/_fullstack";
-@import "layouts/popular";
-@import "layouts/onlinecourse";
-@import "layouts/footer";
+//Todo ------------------- Main
+@import "layouts/main/header";
+@import "layouts/main/footer";
+//Todo ------------------- Home
+@import "layouts/home/landing";
+@import "layouts/home/courses";
+@import "layouts/home/_fullstack";
+@import "layouts/home/popular";
+@import "layouts/home/onlinecourse";
+//Todo ------------------- Courses
+@import "layouts/courses/coursesort";
 //! --------------------------------------- Componenets
 @import "components/_headpart";
 @import "components/_card";
 @import "components/articlecard";
+@import "components/paginationpart";
 //! --------------------------------------- Pages
+@import "pages/home";
+@import "pages/courses";
