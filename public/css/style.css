@@ -15195,40 +15195,6 @@ option {
   width: max-content;
 }
 
-.coursesort__top {
-  box-shadow: 0rem 0rem 1rem 0rem rgba(70, 71, 73, 0.3);
-}
-.coursesort__top-left-default {
-  cursor: pointer;
-  transition: 400ms ease;
-  transition-property: color, background-color;
-}
-.coursesort__top-left-default:hover {
-  background-color: rgb(158, 18, 177);
-  color: white;
-}
-.coursesort__top-left:hover .coursesort__top-left-select {
-  visibility: visible;
-}
-.coursesort__top-left-select {
-  visibility: hidden;
-  transition: visibility 300ms ease;
-  top: 4.3rem;
-  box-shadow: 0rem 0.1rem 1rem 0.001rem black;
-  z-index: 5;
-}
-.coursesort__top-left-select > ol {
-  cursor: pointer;
-  transition: 400ms ease;
-  transition-property: color, background-color;
-}
-.coursesort__top-left-select > ol.default {
-  background-color: rgb(206, 206, 206);
-}
-.coursesort__top-left-select > ol:hover {
-  color: white;
-  background-color: rgb(158, 18, 177);
-}
 .headpart__right {
   transition: all 400ms ease;
   color: white;
@@ -15295,6 +15261,41 @@ option {
   background-color: rgb(158, 18, 177);
 }
 .paginationpart > span.active {
+  background-color: rgb(158, 18, 177);
+}
+
+.sortpart {
+  box-shadow: 0rem 0rem 1rem 0rem rgba(70, 71, 73, 0.3);
+}
+.sortpart__left-default {
+  cursor: pointer;
+  transition: 400ms ease;
+  transition-property: color, background-color;
+}
+.sortpart__left-default:hover {
+  background-color: rgb(158, 18, 177);
+  color: white;
+}
+.sortpart__left:hover .sortpart__left-select {
+  visibility: visible;
+}
+.sortpart__left-select {
+  visibility: hidden;
+  transition: visibility 300ms ease;
+  top: 4.3rem;
+  box-shadow: 0rem 0.1rem 1rem 0.001rem black;
+  z-index: 5;
+}
+.sortpart__left-select > ol {
+  cursor: pointer;
+  transition: 400ms ease;
+  transition-property: color, background-color;
+}
+.sortpart__left-select > ol.default {
+  background-color: rgb(206, 206, 206);
+}
+.sortpart__left-select > ol:hover {
+  color: white;
   background-color: rgb(158, 18, 177);
 }
 
