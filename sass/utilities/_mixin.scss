@@ -1,8 +1,8 @@
 //! --------------------------------------- Custom Container
-@mixin custom-width($wid, $hei: null, $ver: 0, $hor: 0) {
-  width: $wid;
-  height: $hei;
-  padding: $hor $ver;
+@mixin custom-size($width: null, $height: null, $py: 0, $px: 0) {
+  width: $width;
+  height: $height;
+  padding: $px $py;
 }
 //! --------------------------------------- Centerize Tag
 @mixin centerizetag($justify: center, $align: center, $column: row) {
