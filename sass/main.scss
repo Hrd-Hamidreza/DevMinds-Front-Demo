@@ -23,7 +23,9 @@
 //Todo ------------------- Courses
 @import "layouts/courses/coursesort";
 //Todo ------------------- Soft Skills
-@import "layouts/softskills/softcourse";
+@import "layouts/softskills/softskills";
+//Todo ------------------- Article
+@import "layouts/articles/articles";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -32,6 +34,7 @@
 @import "components/sortpart";
 @import "components/coursebox";
 //! --------------------------------------- Pages
-@import "pages/home";
-@import "pages/courses";
-@import "pages/softskills";
+@import "pages/homepage";
+@import "pages/coursespage";
+@import "pages/softskillspage";
+@import "pages/articlespage";
