@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Soft Skills</title>
+    <title>Page Course Details</title>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="icon" href="public/Images/1-Page Home/0-Site Tab Icon/Dev2.webp">
@@ -85,92 +85,61 @@
     </header>
     <!--? ------------------------------------ Main -->
     <main class="main flex-column-center gap-11 pt-12 w-100">
-        <!--! ------------------ Section Soft Skills -->
-        <section class="softskills container flex-column-between gap-11">
+        <!--! ------------------ Section Head -->
+        <section class="head container flex-column-between gap-11">
             <!--Todo ------------------ Section Top -->
-            <!--! Component sortpart -->
-            <div class="sortpart rounded-3 flex-row-between p-6 w-100">
-                <div class="sortpart__left position-relative border border-1 border-tertiary rounded-3">
-                    <div class="sortpart__left-default fs-4 fw-bold flex-row-between px-6 py-3 gap-16">
-                        <span class="fs-4 fw-bolder">Sort By Default</span>
-                        <i class="fa fa-chevron-down fs-4 fw-bolder"></i>
-                    </div>
-                    <ul
-                        class="sortpart__left-select position-absolute border border-1 border-secondary rounded-bottom-3 w-100 fs-4 fw-bold bg-white flex-column-between align-items-start">
-                        <ol class="default px-6 py-3 w-100 h-100">Sort By Default</ol>
-                        <ol class=" px-6 py-3 w-100 h-100">Sort By Popularity</ol>
-                        <ol class=" px-6 py-3 w-100 h-100">Sort By Rating</ol>
-                        <ol class=" px-6 py-3 w-100 h-100">The Latest Courses</ol>
-                        <ol class=" px-6 py-3 w-100 h-100">Sort By Most Expensive</ol>
-                        <ol class=" px-6 py-3 w-100 h-100">Sort By Cheapest</ol>
-                    </ul>
+            <!--! Component breadcrumb -->
+            <div class="breadcrumb bg-secondary w-100 rounded-3 p-6 flex-row-between">
+                <!--Todo ------------------ Section Left -->
+                <div class="breadcrumb__left flex-row-between gap-4">
+                    <a href="#" class="rounded-3 p-3"><i class="fas fa-home fs-4"></i></a>
+                    <a href="#" class="fs-4 fw-bolder">Home</a>
+                    <i class="fas fa-chevron-right fs-3"></i>
+                    <a href="#" class="fs-4 fw-bolder">FrontEnd</a>
+                    <i class="fas fa-chevron-right fs-3"></i>
+                    <a href="#" class="fs-4 fw-bolder">Front-end specialist training course</a>
                 </div>
             </div>
-            <!--! End -->
+            <!--! Component End -->
             <!--Todo ------------------ Section Bottom -->
-            <!--!  Component coursebox -->
-            <div class="coursebox flex-column-between gap-11 w-100">
-                <!--Todo --------- Section Top -->
-                <div class="coursebox__bottom-top row row-cols-3 m-auto justify-content-center g-5 w-100">
-                    <div class="col coursebox__bottom-top-item ps-0">
-                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden w-100">
-                            <a href="#" class="top flex-row-center w-100 h-auto">
-                                <img class="object-fit-cover w-100 h-100"
-                                    src="public/Images/1-Page Home/3-Courses/8-course_360.webp" alt="FrontEnd">
-                            </a>
-                            <div class="middle container flex-column-between gap-3 align-items-start">
-                                <a title="Front-end specialist training
-                                course" href="#" class="fs-5 ellipsis-1 container-width-80">
-                                    Front-end specialist training course
-                                </a>
-                                <div class="flex-row-between w-100">
-                                    <a href="#" class="flex-row-between gap-3">
-                                        <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
-                                    </a>
-                                    <span class="flex-row-between">
-                                        <i class="fa fa-star text-golden fs-5"></i>
-                                        <i class="fa fa-star text-golden fs-5"></i>
-                                        <i class="fa fa-star text-golden fs-5"></i>
-                                        <i class="fa fa-star text-golden fs-5"></i>
-                                        <i class="fa fa-star text-golden fs-5"></i>
-                                    </span>
-                                </div>
-                                <div class="text-tertiary flex-row-between gap-3">
-                                    <i class="fas fa-user fs-4"></i>
-                                    <span class="fs-4">246</span>
-                                </div>
-                                <h1 class="fs-4 fw-bold">Discount: 100%
-                                    <strong class="text-primary">Off</strong>
-                                </h1>
-                                <h2 class="fs-4 fw-bold">course price:
-                                    <strong class="text-primary">Free</strong>
-                                </h2>
-                            </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
-                                <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
-                                    <i class="fa fa-chevron-right fs-5"></i>
-                                </a>
-                            </div>
-                        </div>
+            <div class="head__bottom rounded-3 p-6 w-100 flex-row-between gap-13">
+                <!--Todo ------------------ Section left -->
+                <div class="head__bottom-left flex-column-between align-items-start gap-6 w-50">
+                    <a href="#" class="fs-3 fw-bold rounded-3 p-3">Front-end training</a>
+                    <h1 class="fs-6 fw-bolder">Front-end specialist training course</h1>
+                    <p class="fs-4 text-passage">
+                        In this course, you will learn the fundamentals of programming such as HTML, CSS,
+                        and Sass, and you will learn how to build professional and responsive websites using responsive
+                        design techniques such as Bootstrap, CSS Grid, and Flexbox. You will also learn how to use Git
+                        to control code versions. In the JavaScript section, you will learn how to write single-page and
+                        advanced applications (spa, pwa). Finally, you will learn the powerful Vue.js framework for
+                        building interactive user interfaces. Overall, this course will give you the skills you need to
+                        enter the job market as a senior front-end specialist.
+                    </p>
+                    <div class="flex-row-between gap-3">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin fs-6"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-telegram fs-6"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter fs-6"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fs-6"></i>
+                        </a>
                     </div>
                 </div>
-                <!--Todo --------- Section Bottom -->
-                <!--! Component paginationpart -->
-                <div class="paginationpart flex-row-center gap-3 w-100">
-                    <span class="flex-row-center rounded-3">
-                        <i class="fa fa-chevron-left fs-5"></i>
-                    </span>
-                    <span class="active text-white flex-row-center rounded-3 fs-5">1</span>
-                    <span class="flex-row-center rounded-3">
-                        <i class="fa fa-chevron-right fs-5"></i>
-                    </span>
+                <!--Todo ------------------ Section Right -->
+                <div class="head__bottom-right flex-row-center w-50 rounded-3 overflow-hidden">
+                    <video controls poster="public/Images/2-Page Course Details/Head/cover.jpg"
+                        class="d-flex w-100 h-100 object-fit-cover"
+                        src="https://dl.devminds.ir/Videos/55/intro/intro frontEnd.mp4"></video>
                 </div>
-                <!--! End -->
             </div>
-            <!--! End -->
         </section>
+        <!--! ------------------ Section  -->
     </main>
     <!--? ------------------------------------ Footer -->
     <footer class="footer flex-column-between gap-11 pt-7 w-100">

@@ -21,11 +21,15 @@
 @import "layouts/home/popular";
 @import "layouts/home/onlinecourse";
 //Todo ------------------- Courses
-@import "layouts/courses/coursesort";
+@import "layouts/courses/courses";
 //Todo ------------------- Soft Skills
 @import "layouts/softskills/softskills";
 //Todo ------------------- Article
 @import "layouts/articles/articles";
+//Todo ------------------- Store
+@import "layouts/Store/store";
+//Todo ------------------- Course Details
+@import "layouts/coursedetails/head.scss";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -33,8 +37,11 @@
 @import "components/paginationpart";
 @import "components/sortpart";
 @import "components/coursebox";
+@import "components/breadcrumb";
 //! --------------------------------------- Pages
 @import "pages/homepage";
 @import "pages/coursespage";
 @import "pages/softskillspage";
 @import "pages/articlespage";
+@import "pages/storepage";
+@import "pages/coursedetailspage";

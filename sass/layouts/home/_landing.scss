@@ -4,7 +4,8 @@
       rgba(63, 179, 214, 0.37),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../../public/Images/Landing/FinalBackGround.webp") no-repeat;
+    url("../../../public/Images/1-Page Home/2-Landing/FinalBackGround.webp")
+      no-repeat;
   background-size: cover;
   background-attachment: fixed;
   &__body {
@@ -18,7 +19,7 @@
         width: 60rem;
         background-color: #28292d;
         & > div {
-          background: url("../../public/Images/Landing/Hoodie-guy.webp")
+          background: url("../../../public/Images/1-Page Home/2-Landing/Hoodie-guy.webp")
             no-repeat;
           background-size: contain;
           background-position: 50% 50%;
