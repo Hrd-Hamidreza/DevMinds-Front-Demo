@@ -1,0 +1,13 @@
+.breadcrumb {
+  &__left {
+    & > a {
+      &:first-child {
+        background-color: white;
+      }
+      transition: all 400ms ease;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}

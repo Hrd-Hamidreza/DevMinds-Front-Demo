@@ -1,6 +1,7 @@
 //! --------------------------------------- Colors
 //? ------------------- Custom Colors
 $purple: rgb(158, 18, 177);
+$light-purple: #f5e6f7;
 $gray: #f0f2f7;
 $subtitle: rgb(107, 107, 107);
 $bg-course: rgba(11, 15, 18, 0.99); //! #0b0f12f5
@@ -8,9 +9,11 @@ $red: red;
 $green: green;
 $score: #f9a134;
 $square: rgba(43, 114, 206, 0.2);
+$text: #7b868a;
 //? ------------------- Match
 $theme-colors: (
   "primary": $purple,
+  "primary-second": $light-purple,
   "secondary": $gray,
   "tertiary": $subtitle,
   "golden": $score,
@@ -18,6 +21,7 @@ $theme-colors: (
   "price": $green,
   "danger": $red,
   "footertransformation": $square,
+  "passage": $text,
 );
 //! --------------------------------------- Fonts
 //? ------------------- Fonts Type
