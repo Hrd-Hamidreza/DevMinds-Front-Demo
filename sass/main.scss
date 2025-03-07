@@ -17,16 +17,21 @@
 //Todo ------------------- Home
 @import "layouts/home/landing";
 @import "layouts/home/courses";
-@import "layouts/home/_fullstack";
+@import "layouts/home/fullstack";
 @import "layouts/home/popular";
 @import "layouts/home/onlinecourse";
 //Todo ------------------- Courses
 @import "layouts/courses/coursesort";
+//Todo ------------------- Soft Skills
+@import "layouts/softskills/softcourse";
 //! --------------------------------------- Componenets
-@import "components/_headpart";
-@import "components/_card";
+@import "components/headpart";
+@import "components/couersecard";
 @import "components/articlecard";
 @import "components/paginationpart";
+@import "components/sortpart";
+@import "components/coursebox";
 //! --------------------------------------- Pages
 @import "pages/home";
 @import "pages/courses";
+@import "pages/softskills";

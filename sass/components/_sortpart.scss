@@ -1,0 +1,36 @@
+.sortpart {
+  box-shadow: 0rem 0rem 1rem 0rem rgba(70, 71, 73, 0.3);
+  &__left {
+    &-default {
+      cursor: pointer;
+      transition: 400ms ease;
+      transition-property: color, background-color;
+      &:hover {
+        background-color: $purple;
+        color: white;
+      }
+    }
+    &:hover .sortpart__left-select {
+      visibility: visible;
+    }
+    &-select {
+      visibility: hidden;
+      transition: visibility 300ms ease;
+      top: 4.3rem;
+      box-shadow: 0rem 0.1rem 1rem 0.001rem black;
+      z-index: 5;
+      & > ol {
+        cursor: pointer;
+        &.default {
+          background-color: rgb(206, 206, 206);
+        }
+        transition: 400ms ease;
+        transition-property: color, background-color;
+        &:hover {
+          color: white;
+          background-color: $purple;
+        }
+      }
+    }
+  }
+}
