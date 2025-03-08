@@ -29,7 +29,7 @@
 //Todo ------------------- Store
 @import "layouts/Store/store";
 //Todo ------------------- Course Details
-@import "layouts/coursedetails/head.scss";
+@import "layouts/coursedetails/head";
 @import "layouts/coursedetails/vertical";
 //! --------------------------------------- Componenets
 @import "components/headpart";
@@ -39,6 +39,7 @@
 @import "components/sortpart";
 @import "components/coursebox";
 @import "components/breadcrumb";
+@import "components/accordionpart";
 //! --------------------------------------- Pages
 @import "pages/homepage";
 @import "pages/coursespage";
