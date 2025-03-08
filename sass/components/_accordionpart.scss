@@ -1,0 +1,38 @@
+.accordionpart {
+  & > li {
+    & > h2:first-child {
+      transition: all 400ms ease;
+      &:hover {
+        background-color: $light-purple;
+      }
+      & > button {
+        background-color: unset !important;
+        color: unset !important;
+        border: unset !important;
+        outline: unset !important;
+        box-shadow: 0rem 0.1rem 0rem 0rem black;
+      }
+    }
+    & > a:last-child {
+      color: $subtitle;
+      transition: all 400ms ease;
+      &:hover {
+        background-color: $purple;
+        color: white;
+      }
+      & > div {
+        & > span:first-child {
+          border: 0.1rem solid $subtitle;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+//! ---------------------------------------- Hover
+.start-hover:hover .end-hover {
+  border: 0.1rem solid white !important;
+  color: white;
+}

@@ -5,7 +5,7 @@
         & > div.body {
           & > div.main {
             cursor: pointer;
-            box-shadow: 0rem 0rem 1rem 0.01rem $subtitle;
+            box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
             transition: all 400ms ease;
             &:hover {
               transform: translateY(-0.5rem);
@@ -18,6 +18,87 @@
         }
         & > .bottom > div {
           width: 90%;
+        }
+      }
+    }
+    &-explanation {
+      box-shadow: 0rem 0rem 1rem 0.01rem $subtitle;
+      &-top {
+      }
+      &-bottom {
+        & > div.main-text {
+          & > span.subject {
+          }
+          & > div.text {
+            text-align: justify;
+            line-height: 150%;
+            & > p {
+              width: 100%;
+            }
+          }
+        }
+        & > div.main-link {
+          & > span.link {
+            color: $purple;
+            transition: all 400ms ease;
+            &:hover {
+              color: white;
+              background-color: $purple;
+            }
+          }
+        }
+      }
+    }
+    &-instructor {
+      box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+      &-top {
+        & > span.top {
+          & > span:first-child {
+            width: 7rem;
+            height: 7rem;
+          }
+          & > span:nth-child(2) {
+            & > a {
+              color: $subtitle;
+              transition: all 400ms ease;
+              &:hover {
+                color: $purple;
+              }
+            }
+            & > h6 {
+            }
+          }
+        }
+        & > a.bottom {
+          color: $purple;
+          transition: all 400ms ease;
+          &:hover {
+            color: white;
+            background-color: $purple;
+          }
+        }
+      }
+      &-bottom {
+        text-align: justify;
+        line-height: 150%;
+      }
+    }
+    &-comment {
+      box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+      &-head {
+      }
+      &-note {
+      }
+      &-type {
+      }
+      &-textbox {
+        outline: none;
+        min-height: 20rem;
+      }
+      &-submit {
+        transition: all 400ms ease;
+        &:hover {
+          transform: translateY(-0.3rem);
         }
       }
     }
