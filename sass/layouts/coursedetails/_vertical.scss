@@ -104,5 +104,41 @@
     }
   }
   &__right {
+    position: sticky;
+    top: 16rem;
+    &-purchase {
+      margin-top: 1rem;
+      box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+      &-link {
+        transition: all 400ms ease;
+        &:hover {
+          transform: translateY(-0.3rem);
+        }
+      }
+    }
+    &-membersnum {
+      box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+    }
+    &-shortlink {
+      box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+    }
+    &-relcourses {
+      box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+      &-top {
+      }
+      &-bottom {
+        & > ol {
+          & > a {
+            transition: all 400ms ease;
+            &:hover {
+              color: $purple;
+            }
+            & > span:first-child {
+              max-width: 10rem;
+            }
+          }
+        }
+      }
+    }
   }
 }

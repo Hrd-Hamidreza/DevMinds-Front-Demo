@@ -13,7 +13,7 @@
         box-shadow: 0rem 0.1rem 0rem 0rem black;
       }
     }
-    & > a:last-child {
+    & > a {
       color: $subtitle;
       transition: all 400ms ease;
       &:hover {

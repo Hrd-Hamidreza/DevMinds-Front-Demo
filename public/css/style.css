@@ -15261,6 +15261,12 @@ option {
   flex-direction: row;
 }
 
+.flex-column-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
 .flex-column-center {
   display: flex;
   justify-content: center;
@@ -15621,6 +15627,39 @@ option {
 .vertical__left-comment-submit:hover {
   transform: translateY(-0.3rem);
 }
+.vertical__right {
+  position: sticky;
+  top: 16rem;
+}
+.vertical__right-purchase {
+  margin-top: 1rem;
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.vertical__right-purchase-link {
+  transition: all 400ms ease;
+}
+.vertical__right-purchase-link:hover {
+  transform: translateY(-0.3rem);
+}
+.vertical__right-membersnum {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.vertical__right-shortlink {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.vertical__right-relcourses {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.vertical__right-relcourses-bottom > ol > a {
+  transition: all 400ms ease;
+}
+.vertical__right-relcourses-bottom > ol > a:hover {
+  color: rgb(158, 18, 177);
+}
+.vertical__right-relcourses-bottom > ol > a > span:first-child {
+  max-width: 10rem;
+}
+
 .headpart__right {
   transition: all 400ms ease;
   color: white;
@@ -15748,15 +15787,15 @@ option {
   outline: unset !important;
   box-shadow: 0rem 0.1rem 0rem 0rem black;
 }
-.accordionpart > li > a:last-child {
+.accordionpart > li > a {
   color: rgb(107, 107, 107);
   transition: all 400ms ease;
 }
-.accordionpart > li > a:last-child:hover {
+.accordionpart > li > a:hover {
   background-color: rgb(158, 18, 177);
   color: white;
 }
-.accordionpart > li > a:last-child > div > span:first-child {
+.accordionpart > li > a > div > span:first-child {
   border: 0.1rem solid rgb(107, 107, 107);
   width: 3rem;
   height: 3rem;
