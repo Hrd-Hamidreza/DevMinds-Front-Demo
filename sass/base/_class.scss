@@ -14,6 +14,9 @@
 
 //? ------------------- Flex column Class
 .flex-column {
+  &-start {
+    @include centerizetag($column: column, $justify: start);
+  }
   &-center {
     @include centerizetag($column: column);
   }
