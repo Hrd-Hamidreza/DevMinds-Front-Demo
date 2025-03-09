@@ -1,0 +1,28 @@
+.explanation {
+  box-shadow: 0rem 0rem 1rem 0.01rem $subtitle;
+  &__top {
+  }
+  &__bottom {
+    & > div.main-text {
+      & > span.subject {
+      }
+      & > div.text {
+        text-align: justify;
+        line-height: 150%;
+        & > p {
+          width: 100%;
+        }
+      }
+    }
+    & > div.main-link {
+      & > a.link {
+        color: $purple;
+        transition: all 400ms ease;
+        &:hover {
+          color: white;
+          background-color: $purple;
+        }
+      }
+    }
+  }
+}

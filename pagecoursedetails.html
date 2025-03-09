@@ -144,9 +144,9 @@
             <!--? ------------------ Section Vertical Left -->
             <section class="vertical__left col-8 ps-0 flex-column-between gap-5">
                 <!--! ------------------ Section Course Info -->
-                <section class="vertical__left-courseinfo flex-column-between gap-7 w-100">
+                <section class="courseinfo flex-column-between gap-7 w-100">
                     <!--Todo ------------------ Section Top -->
-                    <div class="vertical__left-courseinfo-top row row-cols-3 m-auto g-3 w-100">
+                    <div class="courseinfo__top row row-cols-3 m-auto g-3 w-100">
                         <div class="col body ps-0">
                             <div class="main flex-row-between rounded-3 justify-content-start p-6 gap-4">
                                 <i class="fas fa-graduation-cap text-primary fs-8"></i>
@@ -205,8 +205,7 @@
                         </div>
                     </div>
                     <!--Todo ------------------ Section Bottom -->
-                    <div
-                        class="vertical__left-courseinfo-bottom bg-secondary rounded-3 p-6 w-100 flex-column-between gap-5">
+                    <div class="courseinfo__bottom bg-secondary rounded-3 p-6 w-100 flex-column-between gap-5">
                         <!--Todo ------------------ Section Top-->
                         <div class="top flex-row-between text-tertiary justify-content-start w-100 gap-3">
                             <i class="fas fa-chart-bar fs-5"></i>
@@ -220,9 +219,9 @@
                     </div>
                 </section>
                 <!--! ------------------ Section Course Explanation -->
-                <section class="vertical__left-explanation rounded-3 flex-column-between gap-6 w-100 p-6">
+                <section class="explanation rounded-3 flex-column-between gap-6 w-100 p-6">
                     <!--Todo ------------------ Section Top -->
-                    <div class="vertical__left-explanation-top flex-column-between gap-6">
+                    <div class="explanation__top flex-column-between gap-6">
                         <span class="flex-row-between justify-content-start gap-3 w-100">
                             <i class="fa-solid fa-quote-left fs-6 text-primary"></i>
                             <h2 class="fs-6">Front-end Specialist Course</h2>
@@ -231,7 +230,7 @@
                                 src="public/Images/2-Page Course Details/Head/cover.jpg" alt="FrontEnd Expert"></span>
                     </div>
                     <!--Todo ------------------ Section Bottom -->
-                    <div class="vertical__left-explanation-bottom flex-column-between gap-6 w-100">
+                    <div class="explanation__bottom flex-column-between gap-6 w-100">
                         <!--? ------------------ First -->
                         <div class="main-text flex-column-between align-items-start gap-3 w-100">
                             <span class="subject flex-row-between justify-content-start gap-3 w-100">
@@ -371,13 +370,14 @@
                         </div>
                         <!--? ------------------ Links -->
                         <div class="main-link w-100 row flex-row-between gap-2">
-                            <span
+                            <a href="#"
                                 class="link py-4 col fs-3 fw-bold border border-1 border-primary rounded-3 flex-row-center text-center">
                                 To download or watch videos, purchase the course first!
-                            </span>
-                            <span
+                            </a>
+                            <a href="#"
                                 class="link py-4 col fs-3 fw-bold border border-1 border-primary rounded-3 flex-row-center">
-                                Already purchased? Log in to your account</span>
+                                Already purchased? Log in to your account
+                            </a>
                         </div>
                         <!--? ------------------ Steps -->
                         <!--! Component accordionpart -->
@@ -546,9 +546,9 @@
                     </div>
                 </section>
                 <!--! ------------------ Section Course Instructor -->
-                <section class="vertical__left-instructor flex-column-between gap-6 rounded-3 p-6 w-100">
+                <section class="instructor flex-column-between gap-6 rounded-3 p-6 w-100">
                     <!--Todo ------------------ Section Top -->
-                    <div class="vertical__left-instructor-top flex-row-between w-100">
+                    <div class="instructor__top flex-row-between w-100">
                         <span class="top flex-row-between gap-3">
                             <span>
                                 <img class="object-fit-cover w-100 h-100 rounded-circle"
@@ -562,7 +562,7 @@
                         <a href="#" class="bottom border border-1 border-primary rounded-3 p-3 fs-4">Instructor</a>
                     </div>
                     <!--Todo ------------------ Section Bottom -->
-                    <p class="vertical__left-instructor-bottom fs-4 text-tertiary ellipsis-3 w-100">
+                    <p class="instructor__bottom fs-4 text-tertiary ellipsis-3 w-100">
                         Initially, I worked as a senior programmer, project manager, and internship manager in several
                         companies, and as my work experience progressed, I was able to gain more expertise in this
                         field. After a while, based on the experience I gained, I was hired as a full-stack programmer
@@ -578,49 +578,51 @@
                     </p>
                 </section>
                 <!--! ------------------ Section Course Comment -->
-                <section class="vertical__left-comment flex-column-between align-items-start gap-4 rounded-3 p-6 w-100">
-                    <div class="vertical__left-comment-head flex-row-center gap-3 w-100">
+                <!--! Component commentpart -->
+                <section class="commentpart flex-column-between align-items-start gap-4 rounded-3 p-6 w-100">
+                    <div class="commentpart__head flex-row-center gap-3 w-100">
                         <i class="fas fa-comment fs-5 text-primary"></i>
                         <h2 class="fs-5"><strong class="text-primary">0</strong> comments have been posted for this
                             course</h2>
                     </div>
-                    <h4 class="vertical__left-comment-type fs-4 fw-bolder">
+                    <h4 class="commentpart__type fs-4 fw-bolder">
                         Write your comment:
                     </h4>
                     <textarea
-                        class="vertical__left-comment-textbox w-100 fs-4 rounded-3 border border-1 border-tertiary p-3 text-black fw-bolder"
+                        class="commentpart__textbox w-100 fs-4 rounded-3 border border-1 border-tertiary p-3 text-black fw-bolder"
                         placeholder="You cannot write anything until you are logged in."></textarea>
-                    <strong class="vertical__left-comment-note text-danger fs-3 fw-bold">
+                    <strong class="commentpart__note text-danger fs-3 fw-bold">
                         Please <a href="#" class="text-primary fw-bolder">login</a>
                         to write your comment. Don't have an account?
                         <a href="#" class="text-primary fw-bolder">Register</a>
                     </strong>
-                    <a href="#" class="vertical__left-comment-submit bg-primary text-white rounded-3 p-3 fs-4">Submit
+                    <a href="#" class="commentpart__submit bg-primary text-white rounded-3 p-3 fs-4">Submit
                         a
                         comment</a>
                 </section>
+                <!--! End -->
             </section>
             <!--? ------------------ Section Vertical Right -->
             <section class="vertical__right col-4 pe-0 flex-column-between justify-content-start gap-5 h-100">
                 <!--! ------------------ Section Purchase -->
-                <section class="vertical__right-purchase flex-row-center rounded-3 p-6 w-100">
+                <section class="purchase flex-row-center rounded-3 p-6 w-100">
                     <a href="#"
-                        class="vertical__right-purchase-link p-6 bg-primary rounded-3 flex-row-center gap-3 text-white w-100 h-100">
+                        class="purchase__link p-6 bg-primary rounded-3 flex-row-center gap-3 text-white w-100 h-100">
                         <i class="fas fa-graduation-cap fs-5"></i>
                         <h4 class="fs-5">Add to cart</h4>
                     </a>
                 </section>
                 <!--! ------------------ Section Members Num -->
-                <section class="vertical__right-membersnum flex-column-between gap-6 rounded-3  p-6 w-100">
+                <section class="membersnum flex-column-between gap-6 rounded-3  p-6 w-100">
                     <!--Todo ------------------ Section Top -->
                     <div
-                        class="vertical__right-membersnum-top rounded-3 w-100 py-5 flex-row-center gap-3 border border-2 border-primary text-tertiary fs-4 fw-bolder">
+                        class="membersnum__top rounded-3 w-100 py-5 flex-row-center gap-3 border border-2 border-primary text-tertiary fs-4 fw-bolder">
                         <i class="fas fa-user-graduate"></i>
                         <h3 class="">Number of students:</h3>
                         <span class="text-tertiary bg-secondary rounded-3 p-2">200</span>
                     </div>
                     <!--Todo ------------------ Section Bottom -->
-                    <div class="vertical__right-membersnum-bottom flex-row-center gap-5 text-tertiary w-100">
+                    <div class="membersnum__bottom flex-row-center gap-5 text-tertiary w-100">
                         <span class="flex-row-center gap-2">
                             <i class="fas fa-comment fs-4"></i>
                             <h4 class="fs-4">0 comment</h4>
@@ -633,27 +635,26 @@
                     </div>
                 </section>
                 <!--! ------------------ Section Short Link -->
-                <section class="vertical__right-shortlink flex-column-between gap-6 rounded-3  p-6 w-100">
+                <section class="shortlink flex-column-between gap-6 rounded-3  p-6 w-100">
                     <!--Todo ------------------ Section Top -->
-                    <div
-                        class="vertical__right-shortlink-top text-tertiary w-100 flex-row-between justify-content-start gap-3">
+                    <div class="shortlink__top text-tertiary w-100 flex-row-between justify-content-start gap-3">
                         <i class="fas fa-link fs-4"></i>
                         <h4 class=" fs-4">Short link</h4>
                     </div>
                     <!--Todo ------------------ Section Bottom -->
                     <a href="https://zaya.io/whmak"
-                        class="vertical__right-shortlink-bottom border border-1 border-tertiary w-100 py-3 flex-row-center fs-3 text-primary rounded-3">
+                        class="shortlink__bottom border border-1 border-tertiary w-100 py-3 flex-row-center fs-3 text-primary rounded-3">
                         https://zaya.io/whmak
                     </a>
                 </section>
                 <!--! ------------------ Section Related Courses -->
-                <section
-                    class="vertical__right-relcourses flex-column-between align-items-start gap-6 rounded-3 p-6 w-100">
+                <!--! component relcoursespart -->
+                <section class="relcoursespart flex-column-between align-items-start gap-6 rounded-3 p-6 w-100">
                     <!--Todo ------------------ Section Top -->
-                    <h2 class="vertical__right-relcourses-top fs-5 fw-bolder w-100">Related
+                    <h2 class="relcoursespart__top fs-5 fw-bolder w-100">Related
                         courses</h2>
                     <!--Todo ------------------ Section Bottom -->
-                    <ul class="vertical__right-relcourses-bottom flex-column-between gap-4">
+                    <ul class="relcoursespart__bottom flex-column-between gap-4">
                         <ol class="w-100">
                             <a href="#" class="flex-row-start gap-4 w-100">
                                 <span class="h-auto rounded-3 overflow-hidden">
@@ -746,6 +747,7 @@
                         </ol>
                     </ul>
                 </section>
+                <!--! End -->
             </section>
         </section>
     </main>
