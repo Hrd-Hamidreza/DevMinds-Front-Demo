@@ -1,0 +1,48 @@
+.description {
+  box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+  &__head {
+    &-subject {
+    }
+    &-textinfo {
+    }
+  }
+  &__article {
+    &-image1 {
+    }
+    &-text1 {
+      text-align: justify;
+    }
+    &-image2 {
+    }
+    &-text2 {
+      text-align: justify;
+      & > .main {
+      }
+      & > .first {
+      }
+      & > .second {
+      }
+      & > .third {
+      }
+      & > .fourth {
+      }
+      & > .fifth {
+      }
+      & > .sixth {
+      }
+      & > .seventh {
+      }
+      & > .eighth {
+      }
+    }
+    &-share {
+      & .hovery {
+        color: $subtitle;
+        transition: all 400ms ease;
+        &:hover {
+          color: $purple;
+        }
+      }
+    }
+  }
+}

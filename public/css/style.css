@@ -5968,7 +5968,7 @@ progress {
 }
 
 .fs-5 {
-  font-size: calc(1.295rem + 0.54vw) !important;
+  font-size: calc(1.285rem + 0.42vw) !important;
 }
 
 .fs-6 {
@@ -15064,7 +15064,7 @@ progress {
     font-size: 1.4rem !important;
   }
   .fs-5 {
-    font-size: 1.7rem !important;
+    font-size: 1.6rem !important;
   }
   .fs-6 {
     font-size: 2.3rem !important;
@@ -15263,8 +15263,8 @@ option {
 
 .flex-column-start {
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
   flex-direction: column;
 }
 .flex-column-center {
@@ -15559,105 +15559,139 @@ option {
   box-shadow: 0rem 0rem 1rem 1rem rgb(107, 107, 107);
 }
 
-.vertical__left-courseinfo-top > div.body > div.main {
+.courseinfo__top > div.body > div.main {
   cursor: pointer;
   box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
   transition: all 400ms ease;
 }
-.vertical__left-courseinfo-top > div.body > div.main:hover {
+.courseinfo__top > div.body > div.main:hover {
   transform: translateY(-0.5rem);
 }
-.vertical__left-courseinfo-bottom > .bottom > div {
+.courseinfo__bottom > .bottom > div {
   width: 90%;
 }
-.vertical__left-explanation {
+
+.explanation {
   box-shadow: 0rem 0rem 1rem 0.01rem rgb(107, 107, 107);
 }
-.vertical__left-explanation-bottom > div.main-text > div.text {
+.explanation__bottom > div.main-text > div.text {
   text-align: justify;
   line-height: 150%;
 }
-.vertical__left-explanation-bottom > div.main-text > div.text > p {
+.explanation__bottom > div.main-text > div.text > p {
   width: 100%;
 }
-.vertical__left-explanation-bottom > div.main-link > span.link {
+.explanation__bottom > div.main-link > a.link {
   color: rgb(158, 18, 177);
   transition: all 400ms ease;
 }
-.vertical__left-explanation-bottom > div.main-link > span.link:hover {
+.explanation__bottom > div.main-link > a.link:hover {
   color: white;
   background-color: rgb(158, 18, 177);
 }
-.vertical__left-instructor {
+
+.instructor {
   box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
 }
-.vertical__left-instructor-top > span.top > span:first-child {
+.instructor__top > span.top > span:first-child {
   width: 7rem;
   height: 7rem;
 }
-.vertical__left-instructor-top > span.top > span:nth-child(2) > a {
+.instructor__top > span.top > span:nth-child(2) > a {
   color: rgb(107, 107, 107);
   transition: all 400ms ease;
 }
-.vertical__left-instructor-top > span.top > span:nth-child(2) > a:hover {
+.instructor__top > span.top > span:nth-child(2) > a:hover {
   color: rgb(158, 18, 177);
 }
-.vertical__left-instructor-top > a.bottom {
+.instructor__top > a.bottom {
   color: rgb(158, 18, 177);
   transition: all 400ms ease;
 }
-.vertical__left-instructor-top > a.bottom:hover {
+.instructor__top > a.bottom:hover {
   color: white;
   background-color: rgb(158, 18, 177);
 }
-.vertical__left-instructor-bottom {
+.instructor__bottom {
   text-align: justify;
   line-height: 150%;
 }
-.vertical__left-comment {
-  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
-}
-.vertical__left-comment-textbox {
-  outline: none;
-  min-height: 20rem;
-}
-.vertical__left-comment-submit {
-  transition: all 400ms ease;
-}
-.vertical__left-comment-submit:hover {
-  transform: translateY(-0.3rem);
-}
-.vertical__right {
-  position: sticky;
-  top: 16rem;
-}
-.vertical__right-purchase {
+
+.purchase {
   margin-top: 1rem;
   box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
 }
-.vertical__right-purchase-link {
+.purchase__link {
   transition: all 400ms ease;
 }
-.vertical__right-purchase-link:hover {
+.purchase__link:hover {
   transform: translateY(-0.3rem);
 }
-.vertical__right-membersnum {
+
+.membersnum {
   box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
 }
-.vertical__right-shortlink {
+
+.shortlink {
   box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
 }
-.vertical__right-relcourses {
+
+.description {
   box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
 }
-.vertical__right-relcourses-bottom > ol > a {
+.description__article-text1 {
+  text-align: justify;
+}
+.description__article-text2 {
+  text-align: justify;
+}
+.description__article-share .hovery {
+  color: rgb(107, 107, 107);
   transition: all 400ms ease;
 }
-.vertical__right-relcourses-bottom > ol > a:hover {
+.description__article-share .hovery:hover {
   color: rgb(158, 18, 177);
 }
-.vertical__right-relcourses-bottom > ol > a > span:first-child {
-  max-width: 10rem;
+
+.allarticles {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.allarticles__left-item {
+  transition: all 400ms ease;
+}
+.allarticles__left-item:hover {
+  color: rgb(158, 18, 177);
+}
+.allarticles__right-item {
+  transition: all 400ms ease;
+}
+.allarticles__right-item:hover {
+  color: rgb(158, 18, 177);
+}
+
+.quickaccess {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+  position: relative;
+}
+.quickaccess__top::after {
+  content: "";
+  position: absolute;
+  top: 2.1rem;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(158, 18, 177);
+  opacity: 0.6;
+  z-index: -1;
+  clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 50% 100%, 0% 100%);
+}
+.quickaccess__bottom-ol > a {
+  transition: all 400ms ease;
+}
+.quickaccess__bottom-ol > a:hover {
+  color: rgb(158, 18, 177);
+  transform: translateX(1rem);
 }
 
 .headpart__right {
@@ -15804,6 +15838,52 @@ option {
 .start-hover:hover .end-hover {
   border: 0.1rem solid white !important;
   color: white;
+}
+
+.vertical__right {
+  position: sticky;
+  top: 16rem;
+}
+
+.commentpart {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.commentpart__textbox {
+  outline: none;
+  min-height: 20rem;
+}
+.commentpart__submit {
+  transition: all 400ms ease;
+}
+.commentpart__submit:hover {
+  transform: translateY(-0.3rem);
+}
+
+.relcoursespart {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+  position: relative;
+}
+.relcoursespart__top.special::after {
+  content: "";
+  position: absolute;
+  top: 2.1rem;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(158, 18, 177);
+  opacity: 0.6;
+  z-index: -1;
+  clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 50% 100%, 0% 100%);
+}
+.relcoursespart__bottom > ol > a {
+  transition: all 400ms ease;
+}
+.relcoursespart__bottom > ol > a:hover {
+  color: rgb(158, 18, 177);
+}
+.relcoursespart__bottom > ol > a > span:first-child {
+  max-width: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

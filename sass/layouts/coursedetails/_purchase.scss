@@ -1,0 +1,10 @@
+.purchase {
+  margin-top: 1rem;
+  box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+  &__link {
+    transition: all 400ms ease;
+    &:hover {
+      transform: translateY(-0.3rem);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.allarticles {
+  box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+  &__left {
+    &-title {
+    }
+    &-item {
+      transition: all 400ms ease;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+  &__right {
+    &-title {
+    }
+    &-item {
+      transition: all 400ms ease;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}

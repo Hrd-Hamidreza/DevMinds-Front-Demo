@@ -1,0 +1,8 @@
+.vertical {
+  &__left {
+  }
+  &__right {
+    position: sticky;
+    top: 16rem;
+  }
+}

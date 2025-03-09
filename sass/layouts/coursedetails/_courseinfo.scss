@@ -1,0 +1,21 @@
+.courseinfo {
+  &__top {
+    & > div.body {
+      & > div.main {
+        cursor: pointer;
+        box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+        transition: all 400ms ease;
+        &:hover {
+          transform: translateY(-0.5rem);
+        }
+      }
+    }
+  }
+  &__bottom {
+    & > .top {
+    }
+    & > .bottom > div {
+      width: 90%;
+    }
+  }
+}

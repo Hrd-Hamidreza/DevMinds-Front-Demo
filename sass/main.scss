@@ -30,7 +30,16 @@
 @import "layouts/Store/store";
 //Todo ------------------- Course Details
 @import "layouts/coursedetails/head";
-@import "layouts/coursedetails/vertical";
+@import "layouts/coursedetails/courseinfo";
+@import "layouts/coursedetails/explanation";
+@import "layouts/coursedetails/instructor";
+@import "layouts/coursedetails/purchase";
+@import "layouts/coursedetails/membersnum";
+@import "layouts/coursedetails/shortlink";
+//Todo ------------------- Article Details
+@import "layouts/articledetails/description";
+@import "layouts/articledetails/allarticles";
+@import "layouts/articledetails/quickaccess";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -40,10 +49,14 @@
 @import "components/coursebox";
 @import "components/breadcrumb";
 @import "components/accordionpart";
+@import "components/verticalpart";
+@import "components/commentpart";
+@import "components/relcoursespart";
 //! --------------------------------------- Pages
-@import "pages/homepage";
-@import "pages/coursespage";
-@import "pages/softskillspage";
-@import "pages/articlespage";
-@import "pages/storepage";
-@import "pages/coursedetailspage";
+@import "pages/pagehome";
+@import "pages/pagecourses";
+@import "pages/pagesoftskills";
+@import "pages/pagearticles";
+@import "pages/pagestore";
+@import "pages/pagecoursedetails";
+@import "pages/pagearticledetails";

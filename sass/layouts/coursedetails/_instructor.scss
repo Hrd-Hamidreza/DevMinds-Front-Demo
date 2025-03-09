@@ -1,0 +1,34 @@
+.instructor {
+  box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+  &__top {
+    & > span.top {
+      & > span:first-child {
+        width: 7rem;
+        height: 7rem;
+      }
+      & > span:nth-child(2) {
+        & > a {
+          color: $subtitle;
+          transition: all 400ms ease;
+          &:hover {
+            color: $purple;
+          }
+        }
+        & > h6 {
+        }
+      }
+    }
+    & > a.bottom {
+      color: $purple;
+      transition: all 400ms ease;
+      &:hover {
+        color: white;
+        background-color: $purple;
+      }
+    }
+  }
+  &__bottom {
+    text-align: justify;
+    line-height: 150%;
+  }
+}
