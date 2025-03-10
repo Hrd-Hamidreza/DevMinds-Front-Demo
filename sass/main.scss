@@ -40,6 +40,9 @@
 @import "layouts/articledetails/description";
 @import "layouts/articledetails/allarticles";
 @import "layouts/articledetails/quickaccess";
+//Todo ------------------- Login
+@import "layouts/login/loginbox";
+@import "layouts/login/mainbody";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -60,3 +63,4 @@
 @import "pages/pagestore";
 @import "pages/pagecoursedetails";
 @import "pages/pagearticledetails";
+@import "pages/pagelogin";
