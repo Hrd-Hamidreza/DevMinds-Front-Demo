@@ -15254,6 +15254,12 @@ option {
   align-items: center;
   flex-direction: row;
 }
+.flex-row-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+}
 .flex-row-between {
   display: flex;
   justify-content: space-between;
@@ -15265,6 +15271,12 @@ option {
   display: flex;
   justify-content: center;
   align-items: start;
+  flex-direction: column;
+}
+.flex-column-end {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   flex-direction: column;
 }
 .flex-column-center {
@@ -15322,8 +15334,16 @@ option {
   word-wrap: break-word;
 }
 
+.container-width-15 {
+  width: 15%;
+  padding: 0 0;
+}
 .container-width-30 {
   width: 30%;
+  padding: 0 0;
+}
+.container-width-40 {
+  width: 40%;
   padding: 0 0;
 }
 .container-width-70 {
@@ -15692,6 +15712,67 @@ option {
 .quickaccess__bottom-ol > a:hover {
   color: rgb(158, 18, 177);
   transform: translateX(1rem);
+}
+
+.loginbox {
+  box-shadow: 0rem 0rem 1rem 0.001rem rgb(107, 107, 107);
+}
+.loginbox__boxbody {
+  z-index: -1;
+  bottom: -1rem;
+}
+.loginbox__signup > a {
+  color: white;
+  background-color: rgb(107, 107, 107);
+  transition: all 400ms ease;
+}
+.loginbox__signup > a:hover {
+  background-color: rgb(158, 18, 177);
+}
+.loginbox__inputs-email:focus-within .icon1 {
+  color: rgb(158, 18, 177);
+}
+.loginbox__inputs-password:focus-within .icon2 {
+  color: rgb(158, 18, 177);
+}
+.loginbox__inputs input:focus-visible {
+  outline: 0.2rem solid rgb(158, 18, 177);
+}
+.loginbox__inputs .icon {
+  right: 2.2rem;
+}
+.loginbox__button {
+  color: white;
+  transition: all 400ms ease;
+}
+.loginbox__button:hover {
+  color: rgba(0, 0, 0, 0.63);
+  transform: translateX(0.2rem);
+}
+.loginbox__button > .icon {
+  right: 1.6rem;
+}
+.loginbox__checkbox {
+  cursor: pointer;
+}
+.loginbox__checkbox-left--left > input {
+  cursor: pointer;
+}
+.loginbox__checkbox-right:hover {
+  color: rgb(158, 18, 177);
+}
+.loginbox__explanation > .marker {
+  list-style: disc !important;
+}
+.loginbox__explanation > .marker::marker {
+  color: rgb(158, 18, 177);
+}
+
+.mainbody {
+  background-color: rgb(158, 18, 177);
+  z-index: -1;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+  background: linear-gradient(185deg, rgb(158, 18, 177) 0% 70%, #c00ed8 70% 100%);
 }
 
 .headpart__right {

@@ -7,6 +7,9 @@
   &-start {
     @include centerizetag($justify: start);
   }
+  &-end {
+    @include centerizetag($justify: end);
+  }
   &-between {
     @include centerizetag($align: center, $justify: space-between);
   }
@@ -16,6 +19,9 @@
 .flex-column {
   &-start {
     @include centerizetag($column: column, $align: start);
+  }
+  &-end {
+    @include centerizetag($column: column, $align: end);
   }
   &-center {
     @include centerizetag($column: column);
@@ -48,8 +54,14 @@
 //! --------------------------------------- Custom Container
 //? ------------------- Width
 .container-width {
+  &-15 {
+    @include custom-size($width: 15%);
+  }
   &-30 {
     @include custom-size($width: 30%);
+  }
+  &-40 {
+    @include custom-size($width: 40%);
   }
   &-70 {
     @include custom-size($width: 70%);
