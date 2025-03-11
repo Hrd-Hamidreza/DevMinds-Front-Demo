@@ -34,7 +34,7 @@
         color: $purple;
       }
     }
-    &-number {
+    &-phonenumber {
       &:focus-within .icon4 {
         color: $purple;
       }
@@ -59,6 +59,8 @@
     }
   }
   &__button {
+    outline: unset;
+    border: unset;
     color: white;
     transition: all 400ms ease;
     &:hover {
