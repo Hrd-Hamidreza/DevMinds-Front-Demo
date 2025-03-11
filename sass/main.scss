@@ -41,8 +41,7 @@
 @import "layouts/articledetails/allarticles";
 @import "layouts/articledetails/quickaccess";
 //Todo ------------------- Login
-@import "layouts/login/loginbox";
-@import "layouts/login/mainbody";
+//Todo ------------------- Register
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -55,6 +54,8 @@
 @import "components/verticalpart";
 @import "components/commentpart";
 @import "components/relcoursespart";
+@import "components/signlogbg";
+@import "components/signlogcard";
 //! --------------------------------------- Pages
 @import "pages/pagehome";
 @import "pages/pagecourses";
@@ -64,3 +65,4 @@
 @import "pages/pagecoursedetails";
 @import "pages/pagearticledetails";
 @import "pages/pagelogin";
+@import "pages/pageregister";
