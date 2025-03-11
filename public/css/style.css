@@ -15937,7 +15937,7 @@ option {
 .signlogcard__inputs-email:focus-within .icon3 {
   color: rgb(158, 18, 177);
 }
-.signlogcard__inputs-number:focus-within .icon4 {
+.signlogcard__inputs-phonenumber:focus-within .icon4 {
   color: rgb(158, 18, 177);
 }
 .signlogcard__inputs-password:focus-within .icon5 {
@@ -15953,6 +15953,8 @@ option {
   right: 2.2rem;
 }
 .signlogcard__button {
+  outline: unset;
+  border: unset;
   color: white;
   transition: all 400ms ease;
 }
