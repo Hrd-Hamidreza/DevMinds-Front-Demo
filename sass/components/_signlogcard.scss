@@ -1,4 +1,4 @@
-.loginbox {
+.signlogcard {
   box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
   &__boxbody {
     z-index: -1;
@@ -19,13 +19,33 @@
     }
   }
   &__inputs {
-    &-email {
+    &-identity {
       &:focus-within .icon1 {
         color: $purple;
       }
     }
-    &-password {
+    &-username {
       &:focus-within .icon2 {
+        color: $purple;
+      }
+    }
+    &-email {
+      &:focus-within .icon3 {
+        color: $purple;
+      }
+    }
+    &-number {
+      &:focus-within .icon4 {
+        color: $purple;
+      }
+    }
+    &-password {
+      &:focus-within .icon5 {
+        color: $purple;
+      }
+    }
+    &-repassword {
+      &:focus-within .icon6 {
         color: $purple;
       }
     }
