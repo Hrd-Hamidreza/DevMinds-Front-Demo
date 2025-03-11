@@ -1,0 +1,109 @@
+.cart {
+  &__top {
+    & > .optional {
+      & .icon {
+        visibility: hidden;
+      }
+      &.active {
+        & > div {
+          background-color: $purple;
+          & .icon {
+            visibility: visible;
+          }
+        }
+      }
+      width: fit-content;
+      & > div {
+        width: 4rem;
+        height: 4rem;
+        & > span {
+          font-weight: bolder;
+          width: fit-content;
+          height: fit-content;
+          top: 5rem;
+          margin: unset;
+          white-space: nowrap;
+        }
+      }
+    }
+    & .inner {
+      & > div {
+        width: 2rem;
+        height: 0.2rem;
+        & > span {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &-first {
+    }
+    &-second {
+      & span {
+        left: -4rem;
+      }
+    }
+    &-third {
+    }
+    &-fourth {
+      & span {
+        left: -2.3rem;
+      }
+    }
+    &-fifth {
+    }
+    &-sixth {
+      & span {
+        left: -0.9rem;
+      }
+    }
+    &-seventh {
+    }
+    &-eighth {
+      & span {
+        left: -4.5rem;
+      }
+    }
+    &-ninth {
+    }
+  }
+  &__middle {
+    &-top {
+      border: 1rem solid white;
+      & > tbody {
+        border: 0.1rem solid black;
+      }
+      & th {
+        color: white;
+        background-color: $purple;
+        text-align: center;
+      }
+      & td {
+        text-align: center;
+        & > button {
+          background-color: unset;
+          border: unset;
+          outline: unset;
+        }
+      }
+    }
+    &-bottom {
+    }
+  }
+  &__bottom {
+    &-left {
+      background-color: $subtitle;
+      &:hover {
+        transform: translateX(-0.3rem);
+        background-color: $purple;
+      }
+    }
+    &-right {
+      background-color: $green;
+      &:hover {
+        transform: translateX(0.3rem);
+        background-color: $purple;
+      }
+    }
+  }
+}

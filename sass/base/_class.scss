@@ -82,3 +82,26 @@
     @include custom-size($height: 90%);
   }
 }
+
+//! --------------------------------------- Custom Shadow
+//? ------------------- Box-Shadow
+.myshadow {
+  &-black {
+    @include custom-shadow();
+  }
+  &-secondary {
+    @include custom-shadow($color: $gray);
+  }
+  &-tertiary {
+    @include custom-shadow($color: $subtitle);
+  }
+}
+
+//! --------------------------------------- Custom Transition
+//? ------------------- Transition
+.mytransition {
+  @include custom-transition();
+  &-all {
+    @include custom-transition($property: all);
+  }
+}

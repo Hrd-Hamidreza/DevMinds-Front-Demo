@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin | Login</title>
+    <title>Shop Cart</title>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="icon" href="public/Images/1-Page Home/0-Site Tab Icon/Dev2.webp">
@@ -84,80 +84,168 @@
         </section>
     </header>
     <!--? ------------------------------------ Main -->
-    <main class="main flex-row-center position-relative pt-3 gap-11 w-100">
-        <!--! ------------------ Section signlogbgpart -->
-        <!--? Component signlogbg -->
-        <section class="signlogbg position-center w-100 h-100"></section>
-        <!--? End -->
-        <!--! ------------------ Section Login Box -->
-        <!--? Component signlogcard -->
-        <section class="signlogcard bg-white p-6 position-relative flex-column-start gap-5 rounded-3">
-            <!--! ------------------ Section Box Body -->
-            <div class="signlogcard__boxbody rounded-3 bg-primary position-center w-100 h-100"></div>
-            <!--! ------------------ Section head -->
-            <div class="signlogcard__head flex-column-between gap-3 text-tertiary w-100">
-                <h3 class="fs-6 fw-bolder">Login to your account</h3>
-                <h6 class="fs-5">We are happy to see you again, dear friend</h6>
-            </div>
-            <!--! ------------------ Section signup -->
-            <div class="signlogcard__signup bg-secondary rounded-3 px-16 py-5 flex-row-center gap-3 w-100">
-                <h2 class="fs-4">Are you a new user?</h2>
-                <a href="#" class="fs-3 p-2 rounded-3">Register</a>
-            </div>
-            <!--! ------------------ Section Inputs -->
-            <div class="signlogcard__inputs w-100 flex-column-between gap-3">
-                <!--todo ------------------ Section email -->
-                <div class="signlogcard__inputs-email position-relative text-tertiary w-100">
-                    <input type="email"
-                        class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
-                        placeholder="Please enter your email address">
-                    <i class="fas fa-user icon icon3 position-absolute top-0 bottom-0 m-auto"></i>
+    <main class="main flex-column-center gap-11 pt-5 w-100">
+        <!--! ------------------ Section cart -->
+        <section class="cart container px-6 py-10 myshadow-tertiary rounded-3 flex-column-start gap-15">
+            <!--Todo ------------------ Section Top -->
+            <div class="cart__top flex-row-center w-100 row row-cols-9 m-auto">
+                <div class="col cart__top-first flex-row-center px-0">
+                    <div class="cart__top-first-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                    </div>
                 </div>
-                <!--todo ------------------ Section password -->
-                <div class="signlogcard__inputs-password position-relative text-tertiary w-100">
-                    <input type="password"
-                        class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
-                        placeholder="Please enter your password">
-                    <i class="fa-solid fa-key icon icon5 position-absolute top-0 bottom-0 m-auto"></i>
+                <div class="col cart__top-second optional ps-0 pe-0 position-relative flex-column-start active">
+                    <div class="rounded-circle border border-1 border-tertiary flex-row-center text-white">
+                        <i class="fas fa-check icon"></i>
+                        <span class="position-center text-primary flex-row-center fs-4">Order information</span>
+                    </div>
+                </div>
+                <div class="col cart__top-third ps-0 flex-row-center pe-0">
+                    <div class="cart__top-third-first inner flex-row-between row row-cols-1 g-1 w-100 m-auto">
+                        <div class="col w-100">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cart__top-fourth optional ps-0 pe-0 position-relative flex-column-start">
+                    <div class="rounded-circle border border-1 border-tertiary flex-row-center text-white">
+                        <i class="fas fa-check icon"></i>
+                        <span class="position-center text-primary flex-row-center fs-4">Order review</span>
+                    </div>
+                </div>
+                <div class="col cart__top-fifth ps-0 flex-row-center pe-0">
+                    <div class="cart__top-fifth-first inner flex-row-between row row-cols-1 g-1 w-100 m-auto">
+                        <div class="col w-100">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cart__top-sixth optional ps-0 pe-0 position-relative flex-column-start">
+                    <div class="rounded-circle border border-1 border-tertiary flex-row-center text-white">
+                        <i class="fas fa-check icon"></i>
+                        <span class="position-center text-primary flex-row-center fs-4">Payment</span>
+                    </div>
+                </div>
+                <div class="col cart__top-seventh ps-0 flex-row-center pe-0">
+                    <div class="cart__top-seventh-first inner flex-row-between row row-cols-1 g-1 w-100 m-auto">
+                        <div class="col w-100">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cart__top-eighth optional ps-0 pe-0 position-relative flex-column-start">
+                    <div class="rounded-circle border border-1 border-tertiary flex-row-center text-white">
+                        <i class="fas fa-check icon"></i>
+                        <span class="position-center text-primary flex-row-center fs-4">Payment information</span>
+                    </div>
+                </div>
+                <div class="col cart__top-ninth flex-row-center px-0">
+                    <div class="cart__top-ninth-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                        <div class="col">
+                            <span class="bg-primary d-flex"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--! ------------------ Section Button -->
-            <button type="submit"
-                class="signlogcard__button flex-row-center position-relative w-100 rounded-3 bg-primary p-4">
-                <h2 class="fs-4">Login to your account</h2>
-                <i class="fas fa-right-from-bracket icon position-absolute top-0 bottom-0 m-auto fs-4"></i>
-            </button>
-            <!--! ------------------ Section CheckBox -->
-            <div class="signlogcard__checkbox w-100 flex-row-between">
-                <!--Todo ------------------ Section Left -->
-                <span class="signlogcard__checkbox-left flex-row-between gap-3">
+            <!--Todo ------------------ Section Middle -->
+            <div class="cart__middle flex-column-end gap-8 w-100">
+                <!--Todo ------------------ Section Top -->
+                <table class="cart__middle-top w-100 table table-bordered fs-5 rounded-3">
+                    <thead class="cart__middle-top-head">
+                        <tr class="cart__middle-top-head--row">
+                            <th class="p-5">
+                                Product
+                            </th>
+                            <th class="p-5">
+                                Unit price
+                            </th>
+                            <th class="p-5">
+                                Discount
+                            </th>
+                            <th class="p-5">
+                                Number
+                            </th>
+                            <th class="p-5">
+                                Total price
+                            </th>
+                            <th class="p-5">
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="cart__middle-top-body table-group-divider">
+                        <tr class="cart__middle-top-body--row">
+                            <td class="p-5">
+                                Front-end specialist training course
+                            </td>
+                            <td class="p-5">
+                                3,600,000 Tomans
+                            </td>
+                            <td class="p-5">
+                                360,000 Tomans
+                            </td>
+                            <td class="p-5">1
+                            </td>
+                            <td class="p-5">
+                                3,240,000 Tomans
+                            </td>
+                            <td class="p-5">
+                                <button type="button" class="p-2"><i class="fas fa-close text-primary"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Todo ------------------ Section Bottom -->
+                <div class="cart__middle-bottom flex-row-between p-6 bg-pay rounded-3 fw-bolder w-50">
                     <!--Todo ------------------ Section Left -->
-                    <span
-                        class="signlogcard__checkbox-left--left position-relative p-3 rounded-3 border border-2 border-primary overflow-hidden">
-                        <input class="position-center w-100 h-100" type="checkbox">
-                    </span>
-                    <!--Todo ------------------ Section right -->
-                    <h3 class="signlogcard__checkbox-left--right fs-4">Remember me</h3>
-                </span>
-                <!--Todo ------------------ Section Right -->
-                <a href="#" class="signlogcard__checkbox-right fs-4">Forgot your password?</a>
+                    <h3 class="fs-4">Your total purchase</h3>
+                    <!--Todo ------------------ Section Right -->
+                    <h4 class="fs-4">3,240,000 Tomans</h4>
+                </div>
             </div>
-            <!--! ------------------ Section Explanation -->
-            <ul class="signlogcard__explanation w-100 flex-column-start gap-1">
-                <li class="fw-bolder text-tertiary fs-3">Hello dear user:</li>
-                <li class="fw-lighter text-tertiary mt-3 fs-3 marker">Please use secure and up-to-date browsers such
-                    as
-                    Google
-                    Chrome and Firefox.</li>
-                <li class="fw-lighter  text-tertiary fs-3 marker">We will never request your confidential
-                    information
-                    via
-                    email.</li>
-                <li class="fw-lighter  text-tertiary fs-3 marker">Please change your password at short
-                    intervals.</li>
-            </ul>
+            <!--Todo ------------------ Section Bottom -->
+            <div class="cart__bottom flex-row-between w-100">
+                <!--Todo ------------------ Section Left -->
+                <a href="#"
+                    class="cart__bottom-left mytransition-all flex-row-center gap-3 px-12 py-3 text-white rounded-3">
+                    <i class="fas fa-chevron-left fs-4"></i>
+                    <h3 class="fs-5">Return</h3>
+                </a>
+                <!--Todo ------------------ Section Right -->
+                <a href="#"
+                    class="cart__bottom-right mytransition-all flex-row-center gap-3 px-5 py-3 text-white rounded-3">
+                    <h3 class="fs-5">Continue ordering</h3>
+                    <i class="fas fa-chevron-right fs-4"></i>
+                </a>
+            </div>
         </section>
-        <!--? End -->
+        <!--! ------------------ Section -->
     </main>
     <!--? ------------------------------------ Footer -->
     <footer class="footer flex-column-between gap-11 pt-7 w-100">

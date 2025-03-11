@@ -42,6 +42,9 @@
 @import "layouts/articledetails/quickaccess";
 //Todo ------------------- Login
 //Todo ------------------- Register
+//Todo ------------------- Forgotten password
+//Todo ------------------- Cart
+@import "layouts/cart/cart";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -66,3 +69,4 @@
 @import "pages/pagearticledetails";
 @import "pages/pagelogin";
 @import "pages/pageregister";
+@import "pages/pageforgottenpassword";
