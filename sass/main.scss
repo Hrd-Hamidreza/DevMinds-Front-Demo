@@ -45,6 +45,8 @@
 //Todo ------------------- Forgotten password
 //Todo ------------------- Cart
 @import "layouts/cart/cart";
+//Todo ------------------- Check Login
+@import "layouts/checklogin/checklogin";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -70,3 +72,4 @@
 @import "pages/pagelogin";
 @import "pages/pageregister";
 @import "pages/pageforgottenpassword";
+@import "pages/pagechecklogin";

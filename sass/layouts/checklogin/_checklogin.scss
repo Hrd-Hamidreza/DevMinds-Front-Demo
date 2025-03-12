@@ -1,0 +1,17 @@
+.checklogin {
+  &__top {
+    &-up {
+    }
+    &-middle {
+    }
+    &-down {
+      color: $purple;
+      &:hover {
+        background-color: $purple;
+        color: white;
+      }
+    }
+  }
+  &__bottom {
+  }
+}
