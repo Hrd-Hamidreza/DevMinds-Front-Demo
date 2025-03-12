@@ -16226,6 +16226,13 @@ option {
   background-color: rgb(158, 18, 177);
 }
 
+.checklogin__top-down {
+  color: rgb(158, 18, 177);
+}
+.checklogin__top-down:hover {
+  background-color: rgb(158, 18, 177);
+  color: white;
+}
 .headpart__right {
   transition: all 400ms ease;
   color: white;
