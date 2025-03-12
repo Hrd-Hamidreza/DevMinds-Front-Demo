@@ -16148,55 +16148,11 @@ option {
   transform: translateX(1rem);
 }
 
-.cart__top > .optional {
-  width: fit-content;
-}
-.cart__top > .optional .icon {
-  visibility: hidden;
-}
-.cart__top > .optional.active > div {
-  background-color: rgb(158, 18, 177);
-}
-.cart__top > .optional.active > div .icon {
-  visibility: visible;
-}
-.cart__top > .optional > div {
-  width: 4rem;
-  height: 4rem;
-}
-.cart__top > .optional > div > span {
-  font-weight: bolder;
-  width: fit-content;
-  height: fit-content;
-  top: 5rem;
-  margin: unset;
-  white-space: nowrap;
-}
-.cart__top .inner > div {
-  width: 2rem;
-  height: 0.2rem;
-}
-.cart__top .inner > div > span {
-  width: 100%;
-  height: 100%;
-}
-.cart__top-second span {
-  left: -4rem;
-}
-.cart__top-fourth span {
-  left: -2.3rem;
-}
-.cart__top-sixth span {
-  left: -0.9rem;
-}
-.cart__top-eighth span {
-  left: -4.5rem;
-}
 .cart__middle-top {
   border: 1rem solid white;
 }
 .cart__middle-top > tbody {
-  border: 0.1rem solid black;
+  border: 0.1rem solid rgb(107, 107, 107);
 }
 .cart__middle-top th {
   color: white;
@@ -16233,6 +16189,122 @@ option {
   background-color: rgb(158, 18, 177);
   color: white;
 }
+.payment h6 {
+  position: relative;
+}
+.payment h6:hover::after {
+  opacity: 1;
+}
+.payment h6::after {
+  transition: all 400ms ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(158, 18, 177);
+  right: unset;
+  left: -2.5rem;
+  clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 50% 100%, 0% 100%);
+  opacity: 0.5;
+}
+.payment input {
+  outline: unset;
+  background-color: unset;
+  border: 0.1rem solid rgb(158, 18, 177);
+  color: rgb(107, 107, 107);
+}
+.payment input:focus-within {
+  outline: unset;
+  border: 0.2rem solid rgb(158, 18, 177);
+  background-color: #f0f2f7;
+}
+.payment__discount-enterance {
+  flex-basis: 5rem;
+}
+.payment__discount-enterance > button {
+  outline: unset;
+  background-color: unset;
+  border: unset;
+}
+.payment__discount-enterance > button:hover {
+  transform: translateX(0.2rem);
+}
+.payment__info-main label {
+  color: rgb(107, 107, 107);
+}
+.payment__details-list {
+  outline: 0.1rem solid white;
+}
+.payment__details-list th,
+.payment__details-list td {
+  padding: 1.5rem 1.5rem !important;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.payment__details-list th.head,
+.payment__details-list td.head {
+  background-color: rgb(158, 18, 177);
+  color: white;
+}
+.payment__details-list td {
+  outline: 0.1rem solid rgb(107, 107, 107);
+}
+.payment__details-list th {
+  outline: 0.1rem solid white;
+}
+.payment__invoice-box-row:hover * {
+  background-color: rgb(158, 18, 177);
+  color: white;
+}
+.payment__invoice-box th,
+.payment__invoice-box td {
+  transition: background-color 400ms ease;
+  padding: 1.5rem !important;
+}
+.payment__invoice-box th {
+  font-weight: bolder !important;
+  width: min-content;
+}
+.payment__invoice-box td {
+  text-align: end;
+  font-weight: bold;
+}
+.payment__paymentgateway-checkbox {
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.payment__paymentgateway-checkbox input {
+  cursor: pointer;
+}
+.payment__paymentgateway-checkbox:hover {
+  color: rgb(158, 18, 177);
+}
+.payment__regulations-checkbox {
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.payment__regulations-checkbox input {
+  cursor: pointer;
+}
+.payment__regulations-checkbox:hover {
+  color: rgb(158, 18, 177);
+}
+.payment__submit {
+  color: white;
+  background-color: rgb(158, 18, 177);
+  opacity: 0.8;
+  transition: all 400ms ease;
+}
+.payment__submit:hover {
+  opacity: 1;
+  background-color: rgb(158, 18, 177);
+}
+
 .headpart__right {
   transition: all 400ms ease;
   color: white;
@@ -16498,6 +16570,51 @@ option {
 }
 .signlogcard__explanation > .marker::marker {
   color: rgb(158, 18, 177);
+}
+
+.shopstatus > .optional {
+  width: fit-content;
+}
+.shopstatus > .optional .icon {
+  visibility: hidden;
+}
+.shopstatus > .optional.active > div {
+  background-color: rgb(158, 18, 177);
+}
+.shopstatus > .optional.active > div .icon {
+  visibility: visible;
+}
+.shopstatus > .optional > div {
+  width: 4rem;
+  height: 4rem;
+}
+.shopstatus > .optional > div > span {
+  font-weight: bolder;
+  width: fit-content;
+  height: fit-content;
+  top: 5rem;
+  margin: unset;
+  white-space: nowrap;
+}
+.shopstatus .inner > div {
+  width: 2rem;
+  height: 0.2rem;
+}
+.shopstatus .inner > div > span {
+  width: 100%;
+  height: 100%;
+}
+.shopstatus__second span {
+  left: -4rem;
+}
+.shopstatus__fourth span {
+  left: -2.3rem;
+}
+.shopstatus__sixth span {
+  left: -0.9rem;
+}
+.shopstatus__eighth span {
+  left: -4.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

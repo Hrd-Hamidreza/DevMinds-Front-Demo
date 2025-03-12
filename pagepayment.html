@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Cart</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="icon" href="public/Images/1-Page Home/0-Site Tab Icon/Dev2.webp">
@@ -83,13 +83,15 @@
             </div>
         </section>
     </header>
+
     <!--? ------------------------------------ Main -->
     <main class="main flex-column-center gap-11 pt-5 w-100">
-        <!--! ------------------ Section cart -->
-        <section class="cart container px-6 py-10 myshadow-tertiary rounded-3 flex-column-start gap-15">
-            <!--Todo ------------------ Section Top -->
+        <!--! ------------------ Section payment -->
+        <section
+            class="payment container overflow-hidden bg-white myshadow-tertiary flex-column-between rounded-3 px-6 py-10 gap-12">
+            <!--Todo ------------------ Section Component -->
             <!--! Component shopstatus -->
-            <div class="shopstatus flex-row-center w-100 row row-cols-9 m-auto">
+            <div class="shopstatus flex-row-center w-100 row row-cols-9 mb-10 m-auto">
                 <div class="col shopstatus__first flex-row-center px-0">
                     <div class="shopstatus__first-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
                         <div class="col">
@@ -122,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col shopstatus__fourth optional ps-0 pe-0 position-relative flex-column-start">
+                <div class="col shopstatus__fourth optional ps-0 pe-0 position-relative flex-column-start active">
                     <div class="rounded-circle border border-1 border-tertiary flex-row-center text-white">
                         <i class="fas fa-check icon"></i>
                         <span class="position-center text-primary flex-row-center fs-4">Order review</span>
@@ -175,79 +177,132 @@
                 </div>
             </div>
             <!--! End -->
-            <!--Todo ------------------ Section Middle -->
-            <div class="cart__middle flex-column-end gap-8 w-100">
-                <!--Todo ------------------ Section Top -->
-                <table class="cart__middle-top w-100 table table-bordered fs-5 rounded-3">
-                    <thead class="cart__middle-top-head">
-                        <tr class="cart__middle-top-head--row">
-                            <th class="p-5">
-                                Product
-                            </th>
-                            <th class="p-5">
-                                Unit price
-                            </th>
-                            <th class="p-5">
-                                Discount
-                            </th>
-                            <th class="p-5">
-                                Number
-                            </th>
-                            <th class="p-5">
-                                Total price
-                            </th>
-                            <th class="p-5">
-                                Delete
-                            </th>
+            <!--Todo ------------------ Section Discount -->
+            <div class="payment__discount w-100 p-6 rounded-3 border border-2 border-secondary
+            flex-column-start gap-10">
+                <h3 class="payment__discount-head fs-5 fw-bolder">Do you have a discount code? Enter it here</h3>
+                <div class="payment__discount-enterance flex-row-between gap-1 w-100">
+                    <input class="w-75 p-3 h-100 fs-4 rounded-start-3" type="text" name="" id="">
+                    <button type="button"
+                        class="w-25 h-100 fs-4 flex-row-center rounded-end-3 bg-primary text-white mytransition-all">
+                        Register discount code
+                    </button>
+                </div>
+            </div>
+            <!--Todo ------------------ Section Info -->
+            <div class="payment__info flex-column-start gap-4 w-100">
+                <!--Todo ------------------ Section Head -->
+                <h6 class="payment__info-head fs-5 fw-bolder w-100">Billing details</h6>
+                <!--Todo ------------------ Section main -->
+                <form action="" class="payment__info-main row row-cols-1 m-auto g-3 w-100">
+                    <div class="col-6 flex-column-start gap-1 ps-0">
+                        <label class="fs-5 w-100" for="">First and last name:</label>
+                        <input class="p-3 w-100 rounded-3 fs-4" type="text">
+                    </div>
+                    <div class="col-6 flex-column-start gap-1 pe-0">
+                        <label class="fs-5 w-100" for="">Username:</label>
+                        <input class="p-3 w-100 rounded-3 fs-4" type="text">
+                    </div>
+                    <div class="col flex-column-start gap-1 px-0">
+                        <label class="fs-5 w-100" for="">Tel:</label>
+                        <input class="p-3 w-100 rounded-3 fs-4" type="tel">
+                    </div>
+                    <div class="col flex-column-start gap-1 px-0">
+                        <label class="fs-5 w-100" for="">Email address:</label>
+                        <input class="p-3 w-100 rounded-3 fs-4" type="email">
+                    </div>
+                </form>
+                <!--Todo ------------------ Section alert -->
+                <div class="payment__info-alert flex-row-between gap-3">
+                    <i class="fa-solid fa-triangle-exclamation text-primary fs-5"></i>
+                    <h4 class="fs-5 fw-bold">Are the billing details incorrect?
+                        <a href="#" class="fs-5 fw-bolder text-primary"> Correct them here</a>
+                    </h4>
+                </div>
+            </div>
+            <!--Todo ------------------ Section Details -->
+            <div class="payment__details flex-column-start gap-4 w-100">
+                <!--Todo ------------------ Section head -->
+                <h6 class="payment__details-head fs-5 fw-bolder w-100">Product details</h6>
+                <!--Todo ------------------ Section List -->
+                <table class="payment__details-list p-0 table w-100">
+                    <thead>
+                        <tr>
+                            <th class="head">Product</th>
+                            <th class="head">Unit price</th>
+                            <th class="head">Discount</th>
+                            <th class="head">Final price</th>
                         </tr>
                     </thead>
-                    <tbody class="cart__middle-top-body table-group-divider">
-                        <tr class="cart__middle-top-body--row">
-                            <td class="p-5">
-                                Front-end specialist training course
-                            </td>
-                            <td class="p-5">
-                                3,600,000 Tomans
-                            </td>
-                            <td class="p-5">
-                                360,000 Tomans
-                            </td>
-                            <td class="p-5">1
-                            </td>
-                            <td class="p-5">
-                                3,240,000 Tomans
-                            </td>
-                            <td class="p-5">
-                                <button type="button" class="p-2"><i class="fas fa-close text-primary"></i></button>
-                            </td>
+                    <tbody class="">
+                        <tr>
+                            <td class="">Front-end specialist training course</td>
+                            <td class="">3,600,000 Tomans</td>
+                            <td class="">360,000 Tomans</td>
+                            <td class="">3,240,000 Tomans</td>
                         </tr>
                     </tbody>
                 </table>
-                <!--Todo ------------------ Section Bottom -->
-                <div class="cart__middle-bottom flex-row-between p-6 bg-pay rounded-3 fw-bolder w-50">
-                    <!--Todo ------------------ Section Left -->
-                    <h3 class="fs-4">Your total purchase</h3>
-                    <!--Todo ------------------ Section Right -->
-                    <h4 class="fs-4">3,240,000 Tomans</h4>
+            </div>
+            <!--Todo ------------------ Section Invoice -->
+            <div class="payment__invoice flex-column-start gap-4 w-100">
+                <!--Todo ------------------ Section Head -->
+                <h6 class="payment__invoice-head fs-5 fw-bolder w-100">Final invoice</h6>
+                <!--Todo ------------------ Section box -->
+                <table class="payment__invoice-box  table table-striped w-100 fs-5">
+                    <tr class="payment__invoice-box-row">
+                        <th>Your total purchase:</th>
+                        <td>3,600,000 Tomans</td>
+                    </tr>
+                    <tr class="payment__invoice-box-row">
+                        <th>Order shipping cost:</th>
+                        <td>0 Toman</td>
+                    </tr>
+                    <tr class="payment__invoice-box-row">
+                        <th>Total discount:</th>
+                        <td>360,000 Tomans</td>
+                    </tr>
+                    <tr class="payment__invoice-box-row">
+                        <th>Discount code amount: (0 percent)</th>
+                        <td>0 Toman</td>
+                    </tr>
+                    <tr class="payment__invoice-box-row">
+                        <th>Amount deducted from your wallet:</th>
+                        <td>37,900 Tomans</td>
+                    </tr>
+                    <tr class="payment__invoice-box-row">
+                        <th>Amount payable:</th>
+                        <td>3,202,100 Tomans</td>
+                    </tr>
+                </table>
+            </div>
+            <!--Todo ------------------ Section Payment Gateway -->
+            <div class="payment__paymentgateway flex-column-start gap-4 w-100">
+                <h6 class="payment__invoice-head fs-5 fw-bolder w-100">Select payment type</h6>
+                <div class="payment__paymentgateway-checkbox flex-row-between gap-3">
+                    <h4 class="fs-4 fw-bold">Golden Gate</h4>
+                    <span class="position-relative p-3 rounded-3 overflow-hidden">
+                        <input checked class="position-absolute position-center" type="checkbox" name="" id="">
+                    </span>
                 </div>
             </div>
-            <!--Todo ------------------ Section Bottom -->
-            <div class="cart__bottom flex-row-between w-100">
-                <!--Todo ------------------ Section Left -->
-                <a href="#"
-                    class="cart__bottom-left mytransition-all flex-row-center gap-3 px-12 py-3 text-white rounded-3">
-                    <i class="fas fa-chevron-left fs-4"></i>
-                    <h3 class="fs-5">Return</h3>
-                </a>
-                <!--Todo ------------------ Section Right -->
-                <a href="#"
-                    class="cart__bottom-right mytransition-all flex-row-center gap-3 px-5 py-3 text-white rounded-3">
-                    <h3 class="fs-5">Continue ordering</h3>
-                    <i class="fas fa-chevron-right fs-4"></i>
-                </a>
+            <!--Todo ------------------ Section Regulations -->
+            <div class="payment__regulations flex-column-start gap-4 w-100">
+                <!--Todo ------------------ Section Head -->
+                <h6 class="payment__invoice-head fs-5 fw-bolder w-100">Select payment type</h6>
+                <!--Todo ------------------ Section Accept -->
+                <div class="payment__regulations-checkbox flex-row-between gap-3">
+                    <h3 class="fs-4 fw-bold">I have read and accept the terms and conditions of the site.</h3>
+                    <span class="position-relative p-3 rounded-3 overflow-hidden">
+                        <input class="position-absolute position-center" type="checkbox" name="" id="">
+                    </span>
+                </div>
             </div>
+            <!--Todo ------------------ Section Submit -->
+            <a href="#" class="payment__submit flex-row-center w-100 rounded-3 py-3 fs-5">
+                Order and payment
+            </a>
         </section>
-        <!--! ------------------ Section -->
     </main>
     <!--? ------------------------------------ Footer -->
     <footer class="footer flex-column-between gap-11 pt-7 w-100">
@@ -309,6 +364,7 @@
             <h1 class="fs-5 fw-bolder">All rights reserved to Mind Developers Programming Training Academy.</h1>
         </section>
     </footer>
+
     <!--? ------------------------------------ JavaScript -->
     <!--! ------------------ Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
