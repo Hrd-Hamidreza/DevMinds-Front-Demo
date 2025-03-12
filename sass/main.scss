@@ -47,6 +47,8 @@
 @import "layouts/cart/cart";
 //Todo ------------------- Check Login
 @import "layouts/checklogin/checklogin";
+//Todo ------------------- Payment
+@import "layouts/payment/payment";
 //! --------------------------------------- Componenets
 @import "components/headpart";
 @import "components/couersecard";
@@ -61,6 +63,7 @@
 @import "components/relcoursespart";
 @import "components/signlogbg";
 @import "components/signlogcard";
+@import "components/shopstatus";
 //! --------------------------------------- Pages
 @import "pages/pagehome";
 @import "pages/pagecourses";
@@ -73,3 +76,4 @@
 @import "pages/pageregister";
 @import "pages/pageforgottenpassword";
 @import "pages/pagechecklogin";
+@import "pages/pagepayment";

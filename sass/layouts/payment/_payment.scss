@@ -1,0 +1,141 @@
+.payment {
+  & h6 {
+    position: relative;
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+    &::after {
+      transition: all 400ms ease;
+      content: "";
+      @include centerizebox();
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: $purple;
+      right: unset;
+      left: -2.5rem;
+      clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 50% 100%, 0% 100%);
+      opacity: 0.5;
+    }
+  }
+  & input {
+    outline: unset;
+    background-color: unset;
+    border: 0.1rem solid $purple;
+    color: $subtitle;
+    &:focus-within {
+      outline: unset;
+      border: 0.2rem solid $purple;
+      background-color: $gray;
+    }
+  }
+  &__discount {
+    &-head {
+    }
+    &-enterance {
+      flex-basis: 5rem;
+      & > button {
+        outline: unset;
+        background-color: unset;
+        border: unset;
+        &:hover {
+          transform: translateX(0.2rem);
+        }
+      }
+    }
+  }
+  &__info {
+    &-head {
+    }
+    &-main {
+      & label {
+        color: $subtitle;
+      }
+    }
+    &-alert {
+    }
+  }
+  &__details {
+    &-head {
+    }
+    &-list {
+      outline: 0.1rem solid white;
+      & th,
+      td {
+        padding: 1.5rem 1.5rem !important;
+        font-size: 1.6rem;
+        text-align: center;
+        &.head {
+          background-color: $purple;
+          color: white;
+        }
+      }
+      & td {
+        outline: 0.1rem solid $subtitle;
+      }
+      & th {
+        outline: 0.1rem solid white;
+      }
+    }
+  }
+  &__invoice {
+    &-head {
+    }
+    &-box {
+      &-row {
+        &:hover * {
+          background-color: $purple;
+          color: white;
+        }
+      }
+      & th,
+      td {
+        transition: background-color 400ms ease;
+        padding: 1.5rem !important;
+      }
+      & th {
+        font-weight: bolder !important;
+        width: min-content;
+      }
+      & td {
+        text-align: end;
+        font-weight: bold;
+      }
+    }
+  }
+  &__paymentgateway {
+    &-checkbox {
+      & input {
+        cursor: pointer;
+      }
+      cursor: pointer;
+      transition: all 400ms ease;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+  &__regulations {
+    &-checkbox {
+      & input {
+        cursor: pointer;
+      }
+      cursor: pointer;
+      transition: all 400ms ease;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+  &__submit {
+    color: white;
+    background-color: $purple;
+    opacity: 0.8;
+    transition: all 400ms ease;
+    &:hover {
+      opacity: 1;
+      background-color: $purple;
+    }
+  }
+}
