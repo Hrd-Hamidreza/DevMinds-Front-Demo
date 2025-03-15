@@ -1,6 +1,14 @@
 .footer {
   &__content {
+    @include responsive(desktop) {
+      width: unset;
+      max-width: unset;
+      width: 90% !important;
+    }
     &-item {
+      &.first {
+        text-align: justify;
+      }
       &.ticket {
         width: 30%;
         height: 5rem;
@@ -16,8 +24,8 @@
           & > h1 {
           }
           & > span {
-            width: 40px;
-            height: 40px;
+            width: 4rem;
+            height: 4rem;
             top: 0;
             left: 0.4rem;
             right: 0;
@@ -27,7 +35,6 @@
           }
         }
         & > .bottom {
-          text-align: justify;
           & > a {
             color: black;
             transition: all 400ms ease;

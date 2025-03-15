@@ -48,14 +48,13 @@
 //! --------------------------------------- Responsive Design
 @mixin responsive($breakpoint) {
   //? ------------------------------------- 0 px-288 px = found (0 em)
-
   @if $breakpoint==found {
     @media only screen and (min-width: 0) {
       @content;
     }
   }
-  //? ------------------------------------- 288 px-384 px = Phone sm (18 em)
 
+  //? ------------------------------------- 288 px-384 px = Phone sm (18 em)
   @if $breakpoint==phonesm {
     @media only screen and (min-width: 18em) {
       @content;
@@ -63,7 +62,6 @@
   }
 
   //? ------------------------------------- 384 px-480 px = Phone md (24 em)
-
   @if $breakpoint==phonemd {
     @media only screen and (min-width: 24em) {
       @content;
@@ -71,56 +69,57 @@
   }
 
   //? ------------------------------------- 480 px-576 px = Phone lg (30 em)
-
   @if $breakpoint==phonelg {
     @media only screen and (min-width: 30em) {
       @content;
     }
   }
 
-  //? ------------------------------------- 576 px-768 px = Phone Landscape (36 em) sm
-
+  //? ------------------------------------- 576 px-768 px = Phone Landscape (36 em)
   @if $breakpoint==phonexl {
     @media only screen and (min-width: 36em) {
       @content;
     }
   }
 
-  //? ------------------------------------- 768 px-992 px = Tablet Portrate (48 em) md
-
+  //? ------------------------------------- 768 px-992 px = Tablet Portrate (48 em)
   @if $breakpoint==tablet {
     @media only screen and (min-width: 48em) {
       @content;
     }
   }
 
-  //? ------------------------------------- 992 px-1200 px = Tablet Landscape (62 em) lg
-
+  //? ------------------------------------- 992 px-1200 px = Tablet Landscape (62 em)
   @if $breakpoint==tabletlg {
     @media only screen and (min-width: 62em) {
       @content;
     }
   }
 
-  //? ------------------------------------- 1200 px-1800 px = Laptop (75 em) xl
-
+  //? ------------------------------------- 1200 px-1400 px = Laptop (75 em)
   @if $breakpoint==laptop {
     @media only screen and (min-width: 75em) {
       @content;
     }
   }
 
-  //? ------------------------------------- 1400 px - 1800 px = Desktop (87.5 em) xxl
-
+  //? ------------------------------------- 1400 px - 1800 px = Desktop (87.5 em)
   @if $breakpoint==desktop {
     @media only screen and (min-width: 87.5em) {
       @content;
     }
   }
-  //? ------------------------------------- 1800 px > = Big Desktop (112.5 em) xxxl
 
-  @if $breakpoint==desktopbg {
+  //? ------------------------------------- 1800 px < 3840 px (112.5 em)
+  @if $breakpoint==desktoplg {
     @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  //? ------------------------------------- 3840 px < ... (240 em)
+  @if $breakpoint==desktopbg {
+    @media only screen and (min-width: 240em) {
       @content;
     }
   }

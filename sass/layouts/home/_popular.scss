@@ -1,4 +1,9 @@
 .popular {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
   &__bottom {
     width: 100%;
     height: 100%;
@@ -11,7 +16,8 @@
         justify-content: center;
         align-items: center;
         & > div.card {
-          width: max-content;
+          width: 100%;
+          height: 100%;
         }
       }
     }

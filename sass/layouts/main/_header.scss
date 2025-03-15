@@ -1,6 +1,6 @@
 .header {
   z-index: 10;
-  height: 15rem;
+  min-height: 16rem;
   box-shadow: 0rem 0rem 1rem 0.5rem $subtitle;
   &__top {
     &-left {
@@ -24,6 +24,12 @@
   }
   &__bottom {
     &-left {
+      @include responsive(found) {
+        width: 100%;
+      }
+      @include responsive(tabletlg) {
+        width: auto;
+      }
       &-ul {
         & > li > a {
           transition: all 400ms ease;
