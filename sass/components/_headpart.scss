@@ -1,15 +1,33 @@
 .headpart {
+  @include responsive(found) {
+    flex-direction: column;
+  }
+  @include responsive(phonemd) {
+    flex-direction: row;
+  }
   &__left {
     &-icon {
+      @include responsive(found) {
+        display: none;
+      }
+      @include responsive(phonemd) {
+        display: flex;
+      }
     }
     &-text {
+      @include responsive(found) {
+        align-items: center;
+      }
+      @include responsive(phonemd) {
+        align-items: start;
+      }
     }
   }
   &__right {
     transition: all 400ms ease;
     color: white;
     &:hover {
-      transform: translateY(-0.3rem);
+      transform: translateX(0.3rem);
       color: rgba(0, 0, 0, 0.63);
     }
   }

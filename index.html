@@ -10,13 +10,15 @@
     <link rel="icon" href="public/Images/1-Page Home/0-Site Tab Icon/Dev2.webp">
 </head>
 
-<body class="body flex-column-center gap-5 pt-17 pb-15">
+<body class="body flex-column-center gap-5 pb-15">
     <!--? ------------------------------------ Header -->
-    <header class="header flex-column-center gap-3 w-100 position-fixed top-0 bg-white">
+    <header
+        class="header text-nowrap container-fluid flex-column-between gap-3 pb-3 position-fixed start-0 top-0 bg-white">
         <!--! ------------------ Section Top -->
-        <section class="header__top bg-secondary flex-row-between p-5 fs-4 w-100">
+        <section
+            class="header__top bg-secondary d-none d-md-flex flex-row-center justify-content-xl-between p-5 fs-4 w-100">
             <!--Todo ------------------ Section Top Left -->
-            <ul class="header__top-left flex-row-between gap-5 ">
+            <ul class="header__top-left flex-row-between gap-5">
                 <li class="header__top-left-item">
                     <a href="#">Dedicated panel for in-person courses | Online</a>
                 </li>
@@ -34,7 +36,7 @@
                 </li>
             </ul>
             <!--Todo ------------------ Section Top Right -->
-            <div class="header__top-right flex-row-center gap-5">
+            <div class="header__top-right flex-row-center gap-5 d-none d-xl-flex">
                 <a href="#" class="header__top-right-link flex-row-between gap-2 p-1">
                     <i class="fa-brands fa-instagram text-primary"></i>
                     <span>DevMinds.co</span>
@@ -46,13 +48,13 @@
             </div>
         </section>
         <!--! ------------------ Section Bottom -->
-        <section class="header__bottom flex-row-between container-width-90">
+        <section class="header__bottom flex-row-between flex-column-reverse flex-lg-row container-width-90 gap-5">
             <!--Todo ------------------ Section Bottom Left -->
             <div class="header__bottom-left flex-row-between gap-5">
                 <span style="cursor: pointer;" class="header__bottom-right-image">
                     <img title="DevMinds" src="public/Images/1-Page Home/1-Header/Brand/devminds1.png" alt="Logo">
                 </span>
-                <ul class="header__bottom-left-ul fs-5 flex-row-between gap-5">
+                <ul class="header__bottom-left-ul fs-5 flex-row-between d-none d-lg-flex gap-5">
                     <li>
                         <a href="#">Main page</a>
                     </li>
@@ -69,9 +71,10 @@
                         <a href="#">Soft skills</a>
                     </li>
                 </ul>
+                <i class="fas fa-bars d-flex d-lg-none"></i>
             </div>
             <!--Todo ------------------ Section Bottom Right -->
-            <div class="header__bottom-right flex-row-between gap-5">
+            <div class="header__bottom-right pt-3 flex-row-between gap-5">
                 <a href="#"
                     class="header__bottom-right-log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">Login
                     |
@@ -87,10 +90,10 @@
     <main class="main flex-column-center gap-11 w-100">
         <!--! ------------------ Section Landing -->
         <section class="landing container-fluid p-0">
-            <div class="landing__body flex-row-center gap-1 w-100 h-100 pt-5">
+            <div class="landing__body flex-row-center gap-1 gap-xxl-15 w-100 h-100 p-10 p-xl-0 pt-xl-5">
                 <!--! ------------------ Landing Left -->
-                <div class="landing__body-left w-50 h-100">
-                    <div class="landing__body-left-background  rounded-circle">
+                <div class="landing__body-left d-none d-xl-flex w-auto h-100">
+                    <div class="landing__body-left-background rounded-circle">
                         <div class="w-100 h-100 flex-row-center">
                             <div>
                                 <span style="--i:1"><i class="fa-brands fa-java icon"></i></span>
@@ -113,83 +116,86 @@
                     </div>
                 </div>
                 <!--! ------------------ Landing Right -->
-                <div class="landing__body-right w-50 flex-column-center gap-8">
+                <div class="landing__body-right w-auto flex-column-center gap-12 gap-xl-8">
                     <h1 class="text-white fs-8 fw-bold">The Best or Never</h1>
                     <h2 class="text-white fs-6 fw-bold">Let us to ease Zero-one to you!</h2>
                     <a href="#"
                         class="landing__body-right-link bg-primary flex-row-center gap-3 rounded-3 fs-5 px-14 py-4">
-                        <span>Start learning programming</span>
-                        <i class="fas fa-arrow-right"></i>
+                        <span class="flex-row-center text-nowrap">Start learning programming</span>
+                        <i class="fas fa-arrow-right d-none d-sm-flex"></i>
                     </a>
-                    <ul class="landing__body-right-options row row-cols-2">
-                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                    <ul
+                        class="landing__body-right-options row row-cols-1 row-cols-xl-2 row-cols-xxxl-1 d-none d-md-flex">
+                        <ol class="text-white col flex-row-start flex-xxxl-column gap-3  fs-5 py-2">
                             <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
                                 <i class="fas fa-headphones"></i>
                             </span>
-                            <span>Support 24-Hour</span>
+                            <span c>Support 24-Hour</span>
                         </ol>
-                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                        <ol class="text-white col flex-row-start flex-xxxl-column gap-3 fs-5 py-2">
                             <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
                                 <i class="fas fa-gift"></i>
                             </span>
                             <span>Supporting Free Courses</span>
                         </ol>
-                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                        <ol class="text-white col flex-row-start flex-xxxl-column gap-3 fs-5 py-2">
                             <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
                                 <i class="fas fa-bank"></i>
                             </span>
                             <span>Guaranteed Refund</span>
                         </ol>
-                        <ol class="text-white col flex-row-start gap-3 fs-5 py-2">
+                        <ol class="text-white col flex-row-start flex-xxxl-column gap-3 fs-5 py-2">
                             <span class="bg-primary flex-row-center rounded-circle border border-2 border-white">
-                                <i class="fas fa-file fs-6"></i>
+                                <i class="fas fa-file"></i>
                             </span>
-                            <span class="text-center">Learning With Practicing And Exam</span>
+                            <span class="text-start">Learning With Practicing And Exam</span>
                         </ol>
                     </ul>
                 </div>
             </div>
         </section>
         <!--! ------------------ Section Courses -->
-        <section class="courses container flex-column-center gap-11">
+        <section class="courses container flex-column-center gap-5 gap-md-11">
             <!--Todo ------------------ Section Top -->
             <!--! Component headpart -->
-            <div class="headpart d-flex flex-row-between w-100">
+            <div class="headpart flex-row-between gap-3 w-100">
                 <!--Todo ------------------ Section Left -->
                 <div class="headpart__left flex-row-between gap-3">
                     <div class="headpart__left-icon bg-primary flex-row-center text-white p-4 rounded-3">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="headpart__left-text flex-column-center align-items-start">
+                    <div class="headpart__left-text flex-column-center">
                         <h1 class="fs-5">The latest courses</h1>
                         <h2 class="fs-4 text-tertiary">We strive for your progress every day</h2>
                     </div>
                 </div>
                 <!--Todo ------------------ Section Right -->
-                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3">
+                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3 text-nowrap">
                     <h1 class="fs-4">View courses</h1>
                     <i class="fas fa-chevron-right fs-4"></i>
                 </a>
             </div>
             <!--! End -->
             <!--Todo ------------------ Section bottom -->
-            <div class="courses__bottom w-100">
-                <ul class="courses__bottom-body w-100 flex-row-between row-gap-5 flex-wrap overflow-auto py-5">
-                    <!--! Component Card -->
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+            <div
+                class="courses__bottom row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxxl-4 g-3 w-100 row-gap-5 justify-content-center flex-wrap overflow-auto">
+                <!--! Component Card -->
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/1-course_360.webp" alt="FrontEnd">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Front-end specialist training
-                            course" href="#" class="fs-5 ellipsis-1 container-width-80">
+                            course" href="#" class="fs-5 ellipsis-1 container-width-80 text-start">
                                 Front-end specialist training course
                             </a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -210,26 +216,29 @@
                                 <strong class="text-primary">Toman</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <!--! Component End -->
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <!--! Component End -->
+                <div class="col">
+                    <div class="card  flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/2-course_360.webp" alt="Git & Github">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Git and GitHub training course" href="#"
-                                class="fs-5 ellipsis-1 container-width-80">Git and GitHub training course</a>
+                                class="fs-5 ellipsis-1 container-width-80 text-start">Git and GitHub training course</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -250,26 +259,31 @@
                                 <strong class="text-primary">Toman</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/3-course_360.webp" alt="Php">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="PHP MVC Advanced Course: From Zero to" href="#"
-                                class="fs-5 ellipsis-1 container-width-80">PHP MVC Advanced Course: From Zero to
+                                class="fs-5 ellipsis-1 container-width-80 text-start">PHP MVC Advanced Course: From Zero
+                                to
                                 the Job Market</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -290,25 +304,30 @@
                                 <strong class="text-primary">Toman</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/4-course_360.webp" alt="Sass">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
-                            <a title="SASS training course" href="#" class="fs-5 ellipsis-1 container-width-80">SASS
+                            <a title="SASS training course" href="#"
+                                class="fs-5 ellipsis-1 container-width-80 text-start">SASS
                                 training course</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -329,14 +348,17 @@
                                 <strong class="text-primary">Toman</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/5-course_360.webp" alt="Responsive Design">
@@ -344,13 +366,14 @@
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Responsive Design Training Course
                             (flexBox+CssGrid+Sass+BootStrap)" href="#"
-                                class="fs-5 ellipsis-1 container-width-80">Responsive Design Training Course
+                                class="fs-5 ellipsis-1 container-width-80 text-start">Responsive Design Training Course
                                 (flexBox+CssGrid+Sass+BootStrap)
                             </a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -371,25 +394,30 @@
                                 <strong class="text-primary">Toman</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/6-course_360.webp" alt="JavaScript">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="JavaScript expert training course" href="#"
-                                class="fs-5 ellipsis-1 container-width-80">JavaScript expert training course</a>
+                                class="fs-5 ellipsis-1 container-width-80 text-start">JavaScript expert training
+                                course</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -410,25 +438,29 @@
                                 <strong class="text-primary">Toman</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/7-course_360.webp" alt="Flexbox">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="FlexBox training course" href="#"
-                                class="fs-5 ellipsis-1 container-width-80">FlexBox training course</a>
+                                class="fs-5 ellipsis-1 container-width-80 text-start">FlexBox training course</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -449,25 +481,30 @@
                                 <strong class="text-primary">Free</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/8-course_360.webp" alt="Emmet">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
-                            <a title="Emmet training course" href="#" class="fs-5 ellipsis-1 container-width-80">Emmet
+                            <a title="Emmet training course" href="#"
+                                class="fs-5 ellipsis-1 container-width-80 text-start">Emmet
                                 training course</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -488,25 +525,29 @@
                                 <strong class="text-primary">Free</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                    <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                         <a href="#" class="top flex-row-center w-100 h-auto">
                             <img class="object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/3-Courses/9-course_360.webp" alt="Html & Css">
                         </a>
                         <div class="middle container flex-column-between gap-3 align-items-start">
                             <a title="Html+Css training course" href="#"
-                                class="fs-5 ellipsis-1 container-width-80">Html+Css training course</a>
+                                class="fs-5 ellipsis-1 container-width-80 text-start">Html+Css training course</a>
                             <div class="flex-row-between w-100">
                                 <a href="#" class="flex-row-between gap-3">
                                     <i class="fas fa-chalkboard-user fs-4"></i>
-                                    <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
                                 </a>
                                 <span class="flex-row-between">
                                     <i class="fa fa-star text-golden fs-5"></i>
@@ -527,40 +568,42 @@
                                 <strong class="text-primary">Free</strong>
                             </h2>
                         </div>
-                        <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                             <a href="#" class="flex-row-center gap-3">
-                                <h1 class="fs-5">View purchase information</h1>
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                 <i class="fa fa-chevron-right fs-5"></i>
                             </a>
                         </div>
-                    </ol>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!--! ------------------ Section FullStack-->
-        <section class="fullstack container flex-column-between gap-11">
+        <section class="fullstack container flex-column-between gap-5 gap-md-11">
             <!--Todo ------------------ Section Top -->
-            <div class="headpart d-flex flex-row-between w-100">
+            <div class="headpart flex-row-between gap-3 w-100">
                 <!--Todo ------------------ Section Left -->
                 <div class="headpart__left flex-row-between gap-3">
                     <div class="headpart__left-icon bg-primary flex-row-center text-white p-4 rounded-3">
                         <i class="fa-solid fa-code"></i>
                     </div>
-                    <div class="headpart__left-text flex-column-center align-items-start">
+                    <div class="headpart__left-text flex-column-center">
                         <h1 class="fs-5">Zero to full stack course</h1>
                         <h2 class="fs-4 text-tertiary">Become an expert without prerequisites</h2>
                     </div>
                 </div>
                 <!--Todo ------------------ Section Right -->
-                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3">
+                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3 text-nowrap">
                     <h1 class="fs-4">Course details</h1>
                     <i class="fas fa-chevron-right fs-4"></i>
                 </a>
             </div>
             <!--Todo ------------------ Section Bottom -->
-            <div class="fullstack__bottom flex-row-between gap-5 border border-1 border-tertiary rounded-3 p-11 w-100">
+            <div
+                class="fullstack__bottom flex-row-between gap-5 gap-xxxl-10 border border-2 border-secondary rounded-3 p-11 w-100">
                 <!--! ------------------ Section Bottom Left -->
-                <a href="#" class="fullstack__bottom-left flex-row-center position-relative w-50 h-auto">
+                <a href="#" class="fullstack__bottom-left d-none d-lg-flex flex-row-center position-relative h-auto">
                     <span class="w-100 h-100 overflow-hidden rounded-3">
                         <img class="object-fit-cover w-100 h-100"
                             src="public/Images/1-Page Home/4-FullStack/FullStack Banner/1-course.webp" alt="FullStack">
@@ -570,52 +613,59 @@
                     </span>
                 </a>
                 <!--! ------------------ Section Bottom Right -->
-                <div class="fullstack__bottom-right flex-column-between gap-3 align-items-start w-50 h-100">
+                <div class="fullstack__bottom-right flex-column-between gap-3 align-items-start h-auto">
                     <a href="#" class="fullstack__bottom-right-link fs-5 w-100">
                         Programming training from zero to one hundred
                     </a>
-                    <div class="fullstack__bottom-right-items w-100 m-auto row row-cols-2 g-1">
-                        <div class="col ps-0">
+                    <div class="fullstack__bottom-right-items w-100 m-auto row row-cols-1 row-cols-xsm-2 g-1">
+                        <div class="col">
                             <div class="flex-row-between rounded-3 p-3 justify-content-start gap-3 bg-fullstackbg">
-                                <div class="text-tertiary flex-row-center p-3">
+                                <div class="text-tertiary d-none d-sm-flex flex-row-center p-3">
                                     <i class="fas fa-graduation-cap fs-5"></i>
                                 </div>
                                 <div class="flex-column-between align-items-start gap-3">
-                                    <h1 class="fs-3 text-tertiary">Education instructor</h1>
-                                    <h2 class="fs-4 text-white">Farhad Kazemzadeh</h2>
+                                    <h1 title="Education instructor" class="fs-3 text-tertiary ellipsis-1">Education
+                                        instructor</h1>
+                                    <h2 title="Farhad Kazemzadeh" class="fs-4 text-white ellipsis-1">Farhad Kazemzadeh
+                                    </h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="col pe-0">
+                        <div class="col">
                             <div class="rounded-3 p-3 flex-row-between justify-content-start gap-3 bg-fullstackbg">
-                                <div class="text-tertiary flex-row-center p-3">
+                                <div class="text-tertiary d-none d-sm-flex flex-row-center p-3">
                                     <i class="fas fa-graduation-cap fs-5"></i>
                                 </div>
                                 <div class="flex-column-between align-items-start gap-3">
-                                    <h1 class="fs-3 text-tertiary">Duration of training</h1>
-                                    <h2 class="fs-4 text-white">30,000 minutes</h2>
+                                    <h1 title="Duration of training" class="fs-3 text-tertiary ellipsis-1">Duration of
+                                        training</h1>
+                                    <h2 title="30,000 minutes" class="fs-4 text-white ellipsis-1">30,000 minutes</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="col ps-0">
+                        <div class="col">
                             <div class="rounded-3 p-3 flex-row-between justify-content-start gap-3 bg-fullstackbg">
-                                <div class="text-tertiary flex-row-center p-3">
+                                <div class="text-tertiary d-none d-sm-flex flex-row-center p-3">
                                     <i class="fas fa-graduation-cap fs-5"></i>
                                 </div>
                                 <div class="flex-column-between align-items-start gap-3">
-                                    <h1 class="fs-3 text-tertiary">The status of the courses</h1>
-                                    <h2 class="fs-4 text-white">Currently taking place</h2>
+                                    <h1 title="The status of the
+                                    courses" class="fs-3 text-tertiary ellipsis-1">The status of the
+                                        courses</h1>
+                                    <h2 title="Currently taking place" class="fs-4 text-white ellipsis-1">Currently
+                                        taking place</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="col pe-0">
+                        <div class="col">
                             <div class="rounded-3 p-3 flex-row-between justify-content-start gap-3 bg-fullstackbg">
-                                <div class="text-tertiary flex-row-center p-3">
+                                <div class="text-tertiary d-none d-sm-flex flex-row-center p-3">
                                     <i class="fas fa-graduation-cap fs-5"></i>
                                 </div>
                                 <div class="flex-column-between align-items-start gap-3">
-                                    <h1 class="fs-3 text-tertiary">Support ways</h1>
-                                    <h2 class="fs-4 text-white">Online / Site / Telegram</h2>
+                                    <h1 title="Support ways" class="fs-3 text-tertiary ellipsis-1">Support ways</h1>
+                                    <h2 title="Online / Site / Telegram" class="fs-4 text-white ellipsis-1">Online /
+                                        Site / Telegram</h2>
                                 </div>
                             </div>
                         </div>
@@ -623,7 +673,7 @@
                     <div
                         class="fullstack__bottom-right-languages flex-column-between align-items-start gap-3 rounded-3 border border-1 border-tertiary p-3 bg-fullstackbg w-100">
                         <h1 class="fs-4 text-tertiary w-100">Things you will learn:</h1>
-                        <div class="row row-cols-5 flex-row-center m-auto w-100 g-5">
+                        <div class="row row-cols-2 row-cols-xxsm-3 row-cols-sm-5 flex-row-center m-auto w-100 g-5">
                             <span class="col flex-row-center">
                                 <img class="" src="public/Images/1-Page Home/4-FullStack/Languages/1-course.webp"
                                     alt="Html">
@@ -683,38 +733,38 @@
             </div>
         </section>
         <!--! ------------------ Section Popular -->
-        <section class="popular container flex-column-between gap-11">
+        <section class="popular container flex-column-between gap-5 gap-md-9">
             <!--Todo ------------------ Section Top -->
-            <div class="headpart d-flex flex-row-between w-100">
+            <div class="headpart flex-row-between gap-3 w-100">
                 <!--Todo ------------------ Section Left -->
                 <div class="headpart__left flex-row-between gap-3">
                     <div class="headpart__left-icon bg-primary flex-row-center text-white p-4 rounded-3">
                         <i class="fa-solid fa-crown"></i>
                     </div>
-                    <div class="headpart__left-text flex-column-center align-items-start">
+                    <div class="headpart__left-text flex-column-center">
                         <h1 class="fs-5">Most popular courses</h1>
                         <h2 class="fs-4 text-tertiary">Most visited courses</h2>
                     </div>
                 </div>
             </div>
             <!--Todo ------------------ Section Bottom (Swiper) -->
-            <div class="popular__bottom swiper mySwiper popular__bottom w-100 overflow-hidden">
-                <div class="popular__bottom-main swiper-wrapper w-100 flex-row-between flex-nowrap">
-                    <div class="swiper-slide p-3 ps-0">
-                        <div class="card h-100 flex-column-between gap-5 rounded-3 overflow-hidden">
+            <div class="popular__bottom swiper mySwiper popular__bottom w-100 overflow-hidden py-3">
+                <div class="popular__bottom-main swiper-wrapper w-100 flex-nowrap row">
+                    <div class="swiper-slide">
+                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/1-course_360.webp" alt="FrontEnd">
                             </a>
                             <div class="middle container flex-column-between gap-3 align-items-start">
                                 <a title="Front-end specialist training
-                                course" href="#" class="fs-5 ellipsis-1 container-width-80">
+                                course" href="#" class="fs-5 ellipsis-1 container-width-80 text-start">
                                     Front-end specialist training course
                                 </a>
                                 <div class="flex-row-between w-100">
                                     <a href="#" class="flex-row-between gap-3">
                                         <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                        <h1 class="fs-4 text-start ellipsis-1">Farhad Kazemzadeh</h1>
                                     </a>
                                     <span class="flex-row-between">
                                         <i class="fa fa-star text-golden fs-5"></i>
@@ -735,15 +785,16 @@
                                     <strong class="text-primary">Toman</strong>
                                 </h2>
                             </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                            <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                                 <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
+                                    <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                     <i class="fa fa-chevron-right fs-5"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide p-3">
+                    <div class="swiper-slide">
                         <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
@@ -751,12 +802,12 @@
                             </a>
                             <div class="middle container flex-column-between gap-3 align-items-start">
                                 <a title="Git and GitHub training course" href="#"
-                                    class="fs-5 ellipsis-1 container-width-80">Git and GitHub
+                                    class="fs-5 ellipsis-1 container-width-80 text-start">Git and GitHub
                                     training course</a>
                                 <div class="flex-row-between w-100">
                                     <a href="#" class="flex-row-between gap-3">
                                         <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                        <h1 class="fs-4 text-start ellipsis-1">Farhad Kazemzadeh</h1>
                                     </a>
                                     <span class="flex-row-between">
                                         <i class="fa fa-star text-golden fs-5"></i>
@@ -777,15 +828,16 @@
                                     <strong class="text-primary">Toman</strong>
                                 </h2>
                             </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                            <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                                 <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
+                                    <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                     <i class="fa fa-chevron-right fs-5"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide p-3 pe-0">
+                    <div class="swiper-slide">
                         <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
@@ -793,13 +845,13 @@
                             </a>
                             <div class="middle container flex-column-between gap-3 align-items-start">
                                 <a title="PHP MVC Advanced Course: From Zero to" href="#"
-                                    class="fs-5 ellipsis-1 container-width-80">PHP MVC
+                                    class="fs-5 ellipsis-1 container-width-80 text-start">PHP MVC
                                     Advanced Course: From Zero to
                                     the Job Market</a>
                                 <div class="flex-row-between w-100">
                                     <a href="#" class="flex-row-between gap-3">
                                         <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                        <h1 class="fs-4 text-start ellipsis-1">Farhad Kazemzadeh</h1>
                                     </a>
                                     <span class="flex-row-between">
                                         <i class="fa fa-star text-golden fs-5"></i>
@@ -820,27 +872,29 @@
                                     <strong class="text-primary">Toman</strong>
                                 </h2>
                             </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                            <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                                 <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
+                                    <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                     <i class="fa fa-chevron-right fs-5"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide p-3">
+                    <div class="swiper-slide">
                         <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/4-course_360.webp" alt="FrontEnd">
                             </a>
                             <div class="middle container flex-column-between gap-3 align-items-start">
-                                <a title="SASS training course" href="#" class="fs-5 ellipsis-1 container-width-80">SASS
+                                <a title="SASS training course" href="#"
+                                    class="fs-5 ellipsis-1 container-width-80 text-start">SASS
                                     training course</a>
                                 <div class="flex-row-between w-100">
                                     <a href="#" class="flex-row-between gap-3">
                                         <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                        <h1 class="fs-4 text-start ellipsis-1">Farhad Kazemzadeh</h1>
                                     </a>
                                     <span class="flex-row-between">
                                         <i class="fa fa-star text-golden fs-5"></i>
@@ -861,15 +915,16 @@
                                     <strong class="text-primary">Toman</strong>
                                 </h2>
                             </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                            <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                                 <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
+                                    <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                     <i class="fa fa-chevron-right fs-5"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide p-3">
+                    <div class="swiper-slide">
                         <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
@@ -878,14 +933,14 @@
                             <div class="middle container flex-column-between gap-3 align-items-start">
                                 <a title="Responsive Design Training Course
                                 (flexBox+CssGrid+Sass+BootStrap)" href="#"
-                                    class="fs-5 ellipsis-1 container-width-80">Responsive Design
+                                    class="fs-5 ellipsis-1 container-width-80 text-start">Responsive Design
                                     Training Course
                                     (flexBox+CssGrid+Sass+BootStrap)
                                 </a>
                                 <div class="flex-row-between w-100">
                                     <a href="#" class="flex-row-between gap-3">
                                         <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                        <h1 class="fs-4 text-start ellipsis-1">Farhad Kazemzadeh</h1>
                                     </a>
                                     <span class="flex-row-between">
                                         <i class="fa fa-star text-golden fs-5"></i>
@@ -906,15 +961,16 @@
                                     <strong class="text-primary">Toman</strong>
                                 </h2>
                             </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                            <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                                 <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
+                                    <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                     <i class="fa fa-chevron-right fs-5"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide p-3">
+                    <div class="swiper-slide">
                         <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
@@ -922,12 +978,12 @@
                             </a>
                             <div class="middle container flex-column-between gap-3 align-items-start">
                                 <a title="JavaScript expert training course" href="#"
-                                    class="fs-5 ellipsis-1 container-width-80">JavaScript
+                                    class="fs-5 ellipsis-1 container-width-80 text-start">JavaScript
                                     expert training course</a>
                                 <div class="flex-row-between w-100">
                                     <a href="#" class="flex-row-between gap-3">
                                         <i class="fas fa-chalkboard-user fs-4"></i>
-                                        <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                                        <h1 class="fs-4 text-start ellipsis-1">Farhad Kazemzadeh</h1>
                                     </a>
                                     <span class="flex-row-between">
                                         <i class="fa fa-star text-golden fs-5"></i>
@@ -948,9 +1004,10 @@
                                     <strong class="text-primary">Toman</strong>
                                 </h2>
                             </div>
-                            <div class="bottom w-100 border-top border-1 border-tertiary p-5">
+                            <div class="bottom w-100 border-top border-1 border-tertiary py-5">
                                 <a href="#" class="flex-row-center gap-3">
-                                    <h1 class="fs-5">View purchase information</h1>
+                                    <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
                                     <i class="fa fa-chevron-right fs-5"></i>
                                 </a>
                             </div>
@@ -960,148 +1017,156 @@
             </div>
         </section>
         <!--! ------------------ Section Online Course -->
-        <section class="onlinecourse container flex-column-between gap-11">
+        <section class="onlinecourse container flex-column-between gap-5 gap-md-9">
             <!--Todo ------------------ Section Top -->
-            <div class="headpart d-flex flex-row-between w-100">
+            <div class="headpart flex-row-between gap-3 w-100">
                 <!--Todo ------------------ Section Left -->
                 <div class="headpart__left flex-row-between gap-3">
                     <div class="headpart__left-icon bg-primary flex-row-center text-white p-4 rounded-3">
                         <i class="fa-solid fa-globe"></i>
                     </div>
-                    <div class="headpart__left-text flex-column-center align-items-start">
+                    <div class="headpart__left-text flex-column-center">
                         <h1 class="fs-5">In-person/online courses</h1>
                         <h2 class="fs-4 text-tertiary">Experienced teachers by your side</h2>
                     </div>
                 </div>
                 <!--Todo ------------------ Section Right -->
-                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3">
+                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3 text-nowrap">
                     <h1 class="fs-4">View more</h1>
                     <i class="fas fa-chevron-right fs-4"></i>
                 </a>
             </div>
             <!--Todo ------------------ Section bottom -->
-            <ul class="onlinecourse__bottom flex-row-between justify-content-start gap-5 w-100">
-                <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
-                    <a href="#" class="top flex-row-center w-100 h-auto">
-                        <img class="object-fit-cover w-100 h-100"
-                            src="public/Images/1-Page Home/5-OnlineCourses/1-course_360.webp" alt="OnlineCourses">
-                    </a>
-                    <div class="middle container flex-column-between gap-3 align-items-start">
-                        <a title="Front-end specialist training
-                            course" href="#" class="fs-5 ellipsis-1 container-width-80">
-                            Front-end project-oriented course (zero to one hundred digital product templates)
+            <ul class="onlinecourse__bottom row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxxl-4 g-5 w-100">
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                        <a href="#" class="top flex-row-center w-100 h-auto">
+                            <img class="object-fit-cover w-100 h-100"
+                                src="public/Images/1-Page Home/5-OnlineCourses/1-course_360.webp" alt="FrontEnd">
                         </a>
-                        <div class="flex-row-between w-100">
-                            <a href="#" class="flex-row-between gap-3">
-                                <i class="fas fa-chalkboard-user fs-4"></i>
-                                <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                        <div class="middle container flex-column-between gap-3 align-items-start">
+                            <a title="Front-end specialist training
+                            course" href="#" class="fs-5 ellipsis-1 container-width-80 text-start">
+                                Front-end project-oriented course (zero to one hundred digital product templates)
                             </a>
-                            <span class="flex-row-between">
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                            </span>
+                            <div class="flex-row-between w-100">
+                                <a href="#" class="flex-row-between gap-3">
+                                    <i class="fas fa-chalkboard-user fs-4"></i>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+                                </a>
+                                <span class="flex-row-between">
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                </span>
+                            </div>
+                            <div class="text-tertiary flex-row-between gap-3">
+                                <i class="fas fa-user fs-4"></i>
+                                <span class="fs-4">15</span>
+                            </div>
+                            <h1 class="fs-4 fw-bold">Discount: 30%
+                                <strong class="text-primary">Off</strong>
+                            </h1>
+                            <h2 class="fs-4 fw-bold">course price: 840,000
+                                <strong class="text-primary">Toman</strong>
+                            </h2>
                         </div>
-                        <div class="text-tertiary flex-row-between gap-3">
-                            <i class="fas fa-user fs-4"></i>
-                            <span class="fs-4">15</span>
-                        </div>
-                        <h1 class="fs-4 fw-bold">Discount: 30%
-                            <strong class="text-primary">Off</strong>
-                        </h1>
-                        <h2 class="fs-4 fw-bold">course price: 840,000
-                            <strong class="text-primary">Toman</strong>
-                        </h2>
-                    </div>
-                    <div class="bottom w-100 border-top border-1 border-tertiary p-5">
-                        <a href="#" class="flex-row-center gap-3">
-                            <h1 class="fs-5">View purchase information</h1>
-                            <i class="fa fa-chevron-right fs-5"></i>
-                        </a>
-                    </div>
-                </ol>
-                <ol class="card flex-column-between gap-5 rounded-3 overflow-hidden">
-                    <a href="#" class="top flex-row-center w-100 h-auto">
-                        <img class="object-fit-cover w-100 h-100"
-                            src="public/Images/1-Page Home/5-OnlineCourses/2-course_360.webp" alt="OnlineCourses">
-                    </a>
-                    <div class="middle container flex-column-between gap-3 align-items-start">
-                        <a title="Front-end specialist training
-                            course" href="#" class="fs-5 ellipsis-1 container-width-80">
-                            Html +Css Programmer Teen Course (12-18 years old)
-                        </a>
-                        <div class="flex-row-between w-100">
-                            <a href="#" class="flex-row-between gap-3">
-                                <i class="fas fa-chalkboard-user fs-4"></i>
-                                <h1 class="fs-4">Farhad Kazemzadeh</h1>
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
+                            <a href="#" class="flex-row-center gap-3">
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
+                                <i class="fa fa-chevron-right fs-5"></i>
                             </a>
-                            <span class="flex-row-between">
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                                <i class="fa fa-star text-golden fs-5"></i>
-                            </span>
                         </div>
-                        <div class="text-tertiary flex-row-between gap-3">
-                            <i class="fas fa-user fs-4"></i>
-                            <span class="fs-4">20</span>
-                        </div>
-                        <h1 class="fs-4 fw-bold">Discount: 25%
-                            <strong class="text-primary">Off</strong>
-                        </h1>
-                        <h2 class="fs-4 fw-bold">course price: 900,000
-                            <strong class="text-primary">Toman</strong>
-                        </h2>
                     </div>
-                    <div class="bottom w-100 border-top border-1 border-tertiary p-5">
-                        <a href="#" class="flex-row-center gap-3">
-                            <h1 class="fs-5">View purchase information</h1>
-                            <i class="fa fa-chevron-right fs-5"></i>
+                </div>
+                <div class="col">
+                    <div class="card flex-column-between gap-5 rounded-3 overflow-hidden">
+                        <a href="#" class="top flex-row-center w-100 h-auto">
+                            <img class="object-fit-cover w-100 h-100"
+                                src="public/Images/1-Page Home/3-Courses/2-course_360.webp" alt="FrontEnd">
                         </a>
+                        <div class="middle container flex-column-between gap-3 align-items-start">
+                            <a title="Front-end specialist training
+                            course" href="#" class="fs-5 ellipsis-1 container-width-80 text-start">
+                                Html +Css Programmer Teen Course (12-18 years old)
+                            </a>
+                            <div class="flex-row-between w-100">
+                                <a href="#" class="flex-row-between gap-3">
+                                    <i class="fas fa-chalkboard-user fs-4"></i>
+                                    <h1 class="fs-4 ellipsis-1">Farhad Kazemzadeh</h1>
+
+                                </a>
+                                <span class="flex-row-between">
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                    <i class="fa fa-star text-golden fs-5"></i>
+                                </span>
+                            </div>
+                            <div class="text-tertiary flex-row-between gap-3">
+                                <i class="fas fa-user fs-4"></i>
+                                <span class="fs-4">20</span>
+                            </div>
+                            <h1 class="fs-4 fw-bold">Discount: 25%
+                                <strong class="text-primary">Off</strong>
+                            </h1>
+                            <h2 class="fs-4 fw-bold">course price: 900,000
+                                <strong class="text-primary">Toman</strong>
+                            </h2>
+                        </div>
+                        <div class="bottom w-100 border-top border-1 border-tertiary py-5">
+                            <a href="#" class="flex-row-center gap-3">
+                                <h1 class="fs-4 ellipsis-1">View purchase information</h1>
+
+                                <i class="fa fa-chevron-right fs-5"></i>
+                            </a>
+                        </div>
                     </div>
-                </ol>
+                </div>
             </ul>
         </section>
         <!--! ------------------ Section Article -->
-        <section class="article container flex-column-between gap-11">
+        <section class="article container flex-column-between gap-5 gap-md-9">
             <!--Todo ------------------ Section Top -->
-            <div class="headpart d-flex flex-row-between w-100">
+            <div class="headpart flex-row-between gap-3 w-100">
                 <!--Todo ------------------ Section Left -->
                 <div class="headpart__left flex-row-between gap-3">
                     <div class="headpart__left-icon bg-primary flex-row-center text-white p-4 rounded-3">
                         <i class="fas fa-book"></i>
                     </div>
-                    <div class="headpart__left-text flex-column-center align-items-start">
+                    <div class="headpart__left-text flex-column-center">
                         <h1 class="fs-5">Latest articles</h1>
                         <h2 class="fs-4 text-tertiary">Increase your information</h2>
                     </div>
                 </div>
                 <!--Todo ------------------ Section Right -->
-                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3">
+                <a href="#" class="headpart__right flex-row-between gap-3 bg-primary rounded-3 px-6 py-3 text-nowrap">
                     <h1 class="fs-4">All articles</h1>
                     <i class="fas fa-chevron-right fs-4"></i>
                 </a>
             </div>
             <!--Todo ------------------ Section Bottom -->
-            <ul class="article__bottom row row-cols-3 m-auto w-100">
+            <div
+                class="article__bottom row row-cols-1 row-cols-md-2 row-cols-lg-3  justify-content-center g-5 m-auto w-100">
                 <!--! Components articlecard -->
-                <ol class="articlecard col px-3 ps-0">
-                    <div class="articlecard__main rounded-3 flex-column-between gap-5 p-5">
+                <div class="col">
+                    <div class="articlecard rounded-3 w-100 h-100 flex-column-between gap-5 p-5">
                         <!--Todo ------------------ Section Top -->
-                        <a href="#" class="articlecard__main-top rounded-3 overflow-hidden">
-                            <img class="object-fit-cover w-100 h-100"
+                        <a href="#" class="articlecard__top rounded-3 overflow-hidden">
+                            <img class="first object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/6-Article/1-360.webp"
                                 alt="Best Learning Programming Site">
                         </a>
                         <!--Todo ------------------ Section Bottom -->
-                        <div class="articlecard__main-bottom flex-column-between gap-5 align-items-start">
-                            <h1 class="articlecard__main-bottom-subject fs-5 fw-bold">The best programming training
+                        <div class="articlecard__bottom flex-column-between gap-5 align-items-start">
+                            <h1 class="articlecard__bottom-subject fs-5 fw-bold">The best programming training
                                 sites
                             </h1>
-                            <p class="articlecard__main-bottom-passage fs-4 text-tertiary ellipsis-2">With the
+                            <p class="articlecard__bottom-passage fs-4 text-tertiary ellipsis-2">With the
                                 advancement of
                                 technology and the increasing
                                 need for
@@ -1111,24 +1176,24 @@
                                 the
                                 Internet has become much easier.</p>
                             <a href="#"
-                                class="articlecard__main-bottom-link rounded-3 border border-1 border-primary p-2 fs-3">Read
+                                class="articlecard__bottom-link rounded-3 border border-1 border-primary p-2 fs-3">Read
                                 more</a>
                         </div>
                     </div>
-                </ol>
+                </div>
                 <!--! End -->
-                <ol class="articlecard col px-3">
-                    <div class="articlecard__main rounded-3 flex-column-between gap-5 p-5">
+                <div class="col">
+                    <div class="articlecard w-100 h-100 rounded-3 flex-column-between gap-5 p-5">
                         <!--Todo ------------------ Section Top -->
-                        <a href="#" class="articlecard__main-top rounded-3 overflow-hidden">
-                            <img class="object-fit-cover w-100 h-100"
+                        <a href="#" class="articlecard__top rounded-3 overflow-hidden">
+                            <img class="second object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/6-Article/2-360.webp"
                                 alt="Best Learning Programming Site">
                         </a>
                         <!--Todo ------------------ Section Bottom -->
-                        <div class="articlecard__main-bottom flex-column-between gap-5 align-items-start">
-                            <h1 class="articlecard__main-bottom-subject fs-5 fw-bold">Where do I start programming?</h1>
-                            <p class="articlecard__main-bottom-passage fs-4 text-tertiary ellipsis-1">
+                        <div class="articlecard__bottom flex-column-between gap-5 align-items-start">
+                            <h1 class="articlecard__bottom-subject fs-5 fw-bold">Where do I start programming?</h1>
+                            <p class="articlecard__bottom-passage fs-4 text-tertiary ellipsis-1">
                                 <strong class="fw-bold d-flex">
                                     Where do we really start?
                                 </strong>
@@ -1137,24 +1202,24 @@
                                 will be crooked until Soraya arrives.
                             </p>
                             <a href="#"
-                                class="articlecard__main-bottom-link rounded-3 border border-1 border-primary p-2 fs-3">Read
+                                class="articlecard__bottom-link rounded-3 border border-1 border-primary p-2 fs-3">Read
                                 more</a>
                         </div>
                     </div>
-                </ol>
-                <ol class="articlecard col px-3 pe-0">
-                    <div class="articlecard__main rounded-3 flex-column-between gap-5 p-5">
+                </div>
+                <div class="col">
+                    <div class="articlecard w-100 h-100 rounded-3 flex-column-between gap-5 p-5">
                         <!--Todo ------------------ Section Top -->
-                        <a href="#" class="articlecard__main-top rounded-3 overflow-hidden">
-                            <img class="object-fit-cover w-100 h-100"
+                        <a href="#" class="articlecard__top rounded-3 overflow-hidden">
+                            <img class="third object-fit-cover w-100 h-100"
                                 src="public/Images/1-Page Home/6-Article/3-360.webp"
                                 alt="Best Learning Programming Site">
                         </a>
                         <!--Todo ------------------ Section Bottom -->
-                        <div class="articlecard__main-bottom flex-column-between gap-5 align-items-start">
-                            <h1 class="articlecard__main-bottom-subject fs-5 fw-bold">How to plan to learn programming?
+                        <div class="articlecard__bottom flex-column-between gap-5 align-items-start">
+                            <h1 class="articlecard__bottom-subject fs-5 fw-bold">How to plan to learn programming?
                             </h1>
-                            <p class="articlecard__main-bottom-passage fs-4 text-tertiary ellipsis-2">
+                            <p class="articlecard__bottom-passage fs-4 text-tertiary ellipsis-2">
                                 Planning to learn programming is the most important step in the path of learning this
                                 profession. With proper planning, you can get the best results from your time and energy
                                 in
@@ -1168,21 +1233,22 @@
                                 and specific times should be considered for learning, studying, and doing exercises.
                             </p>
                             <a href="#"
-                                class="articlecard__main-bottom-link rounded-3 border border-1 border-primary p-2 fs-3">
+                                class="articlecard__bottom-link rounded-3 border border-1 border-primary p-2 fs-3">
                                 Read more
                             </a>
                         </div>
                     </div>
-                </ol>
-            </ul>
+                </div>
+            </div>
         </section>
     </main>
     <!--? ------------------------------------ Footer -->
-    <footer class="footer flex-column-between gap-11 pt-7 w-100">
+    <footer class="footer flex-column-between pt-7 w-100">
         <!--! ------------------ Section Footer Content -->
-        <section class="footer__content container bg-secondary rounded-3 p-6 row row-cols-3 position-relative">
-            <div class="footer__content-item col">
-                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+        <section
+            class="footer__content container bg-secondary m-auto rounded-3 p-6 row row-cols-1 row-cols-md-3 g-10 g-md-auto position-relative">
+            <div class="footer__content-item col first">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-7">
                     <span class="top position-relative">
                         <h1 class="fs-5 fw-bolder position-relative z-1">About Us</h1>
                         <span class="bg-footertransformation position-absolute z-0"></span>
@@ -1200,7 +1266,7 @@
                 </div>
             </div>
             <div class="footer__content-item col">
-                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-7">
                     <span class="top position-relative">
                         <h1 class="fs-5 fw-bolder position-relative z-1">Latest content</h1>
                         <span class="bg-footertransformation position-absolute z-0"></span>
@@ -1213,7 +1279,7 @@
                 </div>
             </div>
             <div class="footer__content-item col">
-                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-7">
                     <span class="top position-relative">
                         <h1 class="fs-5 fw-bolder position-relative z-1">Quick access to courses</h1>
                         <span class="bg-footertransformation position-absolute z-0"></span>
@@ -1233,7 +1299,8 @@
             <span class="footer__content-item ticket position-absolute rounded-3"></span>
         </section>
         <!--! ------------------ Section Footer End -->
-        <section class="footer__end container-fluid position-fixed bottom-0 flex-row-center p-0 bg-body-secondary">
+        <section
+            class="footer__end container-fluid position-fixed bottom-0 start-0 flex-row-center py-0 text-center bg-body-secondary">
             <h1 class="fs-5 fw-bolder">All rights reserved to Mind Developers Programming Training Academy.</h1>
         </section>
     </footer>

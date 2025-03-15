@@ -1,7 +1,36 @@
 .courses {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
   &__bottom {
-    &-body {
+    @include responsive(found) {
+      max-height: 47rem;
+    }
+    @include responsive(phonemd) {
+      max-height: 53rem;
+    }
+    @include responsive(phonelg) {
+      max-height: 58rem;
+    }
+    @include responsive(phonexl) {
+      max-height: 54rem;
+    }
+    @include responsive(tablet) {
       max-height: 45rem;
+    }
+    @include responsive(tabletlg) {
+      max-height: 42rem;
+    }
+    @include responsive(laptop) {
+      max-height: 43rem;
+    }
+    @include responsive(desktop) {
+      max-height: 48rem;
+    }
+    @include responsive(desktoplg) {
+      max-height: 80rem;
     }
   }
 }

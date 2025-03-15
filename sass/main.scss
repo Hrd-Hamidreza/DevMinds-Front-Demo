@@ -12,6 +12,7 @@
 //! --------------------------------------- Themes
 //! --------------------------------------- Layouts
 //Todo ------------------- Main
+@import "layouts/main/body";
 @import "layouts/main/header";
 @import "layouts/main/footer";
 //Todo ------------------- Home
@@ -20,6 +21,7 @@
 @import "layouts/home/fullstack";
 @import "layouts/home/popular";
 @import "layouts/home/onlinecourse";
+@import "layouts/home/article";
 //Todo ------------------- Courses
 @import "layouts/courses/courses";
 //Todo ------------------- Soft Skills

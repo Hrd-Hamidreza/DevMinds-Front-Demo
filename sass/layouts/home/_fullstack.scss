@@ -1,6 +1,17 @@
 .fullstack {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
   &__bottom {
     &-right {
+      @include responsive(found) {
+        width: auto;
+      }
+      @include responsive(tabletlg) {
+        width: 50%;
+      }
       &-link {
         color: black;
         transition: all 400ms ease;
@@ -13,6 +24,32 @@
       &-languages {
       }
       &-worth {
+        & > div:first-child {
+          @include responsive(found) {
+            flex-direction: row;
+            width: 100%;
+          }
+          @include responsive(phonemd) {
+            width: unset;
+            flex-direction: column;
+          }
+        }
+        & > div:last-child {
+          @include responsive(found) {
+            display: none;
+          }
+          @include responsive(phonemd) {
+            display: flex;
+          }
+        }
+      }
+    }
+    &-left {
+      @include responsive(found) {
+        width: auto;
+      }
+      @include responsive(tabletlg) {
+        width: 50%;
       }
     }
   }

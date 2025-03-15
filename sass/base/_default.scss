@@ -12,32 +12,49 @@
 //! --------------------------------------- Html
 html {
   font-size: $default-font;
+  //? ------------------------------------- 0 px-288 px (xs)
   @include responsive(found) {
     font-size: 40%;
   }
+  //? ------------------------------------- 288 px-384 px (xxxsm)
   @include responsive(phonesm) {
     font-size: 50%;
   }
+  //? ------------------------------------- 384 px-480 px (xxsm)
   @include responsive(phonemd) {
-    font-size: 50%;
+    font-size: 51%;
   }
+  //? ------------------------------------- 480 px-576 px (xsm)
   @include responsive(phonelg) {
-    font-size: 50%;
+    font-size: 52%;
   }
+  //? ------------------------------------- 576 px-768 px (SM)
   @include responsive(phonexl) {
     font-size: 56%;
   }
+  //? ------------------------------------- 768 px-992 px (MD)
   @include responsive(tablet) {
-    font-size: 56%;
+    font-size: 57%;
   }
+  //? ------------------------------------- 992 px-1200 px (LG)
   @include responsive(tabletlg) {
-    font-size: 55%;
+    font-size: 58%;
   }
+  //? ------------------------------------- 1200 px-1400 px (XL)
   @include responsive(laptop) {
     font-size: 62.5%;
   }
+  //? ------------------------------------- 1400 px-1800 px (XXL)
   @include responsive(desktop) {
     font-size: 70%;
+  }
+  //? ------------------------------------- 1800 px-3840 px (XXXL)
+  @include responsive(desktoplg) {
+    font-size: 87%;
+  }
+  //? ------------------------------------- 3840 px < ... (XXXXL)
+  @include responsive(desktopbg) {
+    font-size: 150%;
   }
 }
 //! --------------------------------------- Body
