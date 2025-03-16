@@ -10,13 +10,14 @@
     <link rel="icon" href="public/Images/1-Page Home/0-Site Tab Icon/Dev2.webp">
 </head>
 
-<body class="body flex-column-center gap-5 pt-17 pb-15">
+<body class="body flex-column-center gap-5 pb-15">
     <!--? ------------------------------------ Header -->
-    <header class="header flex-column-center gap-3 w-100 position-fixed top-0 bg-white">
+    <header class="header text-nowrap  flex-column-between gap-3 pb-3 position-fixed start-0 top-0 bg-white">
         <!--! ------------------ Section Top -->
-        <section class="header__top bg-secondary flex-row-between p-5 fs-4 w-100">
+        <section
+            class="header__top bg-secondary d-none d-md-flex flex-row-center justify-content-xl-between p-5 fs-4 w-100">
             <!--Todo ------------------ Section Top Left -->
-            <ul class="header__top-left flex-row-between gap-5 ">
+            <ul class="header__top-left flex-row-between gap-5">
                 <li class="header__top-left-item">
                     <a href="#">Dedicated panel for in-person courses | Online</a>
                 </li>
@@ -34,7 +35,7 @@
                 </li>
             </ul>
             <!--Todo ------------------ Section Top Right -->
-            <div class="header__top-right flex-row-center gap-5">
+            <div class="header__top-right flex-row-center gap-5 d-none d-xl-flex">
                 <a href="#" class="header__top-right-link flex-row-between gap-2 p-1">
                     <i class="fa-brands fa-instagram text-primary"></i>
                     <span>DevMinds.co</span>
@@ -46,13 +47,13 @@
             </div>
         </section>
         <!--! ------------------ Section Bottom -->
-        <section class="header__bottom flex-row-between container-width-90">
+        <section class="header__bottom flex-row-between flex-column-reverse flex-lg-row container-width-90 gap-5">
             <!--Todo ------------------ Section Bottom Left -->
             <div class="header__bottom-left flex-row-between gap-5">
                 <span style="cursor: pointer;" class="header__bottom-right-image">
                     <img title="DevMinds" src="public/Images/1-Page Home/1-Header/Brand/devminds1.png" alt="Logo">
                 </span>
-                <ul class="header__bottom-left-ul fs-5 flex-row-between gap-5">
+                <ul class="header__bottom-left-ul fs-5 flex-row-between d-none d-lg-flex gap-5">
                     <li>
                         <a href="#">Main page</a>
                     </li>
@@ -69,9 +70,10 @@
                         <a href="#">Soft skills</a>
                     </li>
                 </ul>
+                <i class="fas fa-bars d-flex d-lg-none"></i>
             </div>
             <!--Todo ------------------ Section Bottom Right -->
-            <div class="header__bottom-right flex-row-between gap-5">
+            <div class="header__bottom-right pt-3 flex-row-between gap-5">
                 <a href="#"
                     class="header__bottom-right-log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">Login
                     |
@@ -84,28 +86,31 @@
         </section>
     </header>
     <!--? ------------------------------------ Main -->
-    <main class="main flex-column-center gap-11 pt-12 w-100">
+    <main class="main flex-column-center gap-5 pt-12 w-100">
         <!--! ------------------ Section Head -->
-        <section class="head container flex-column-between gap-11">
-            <!--! Component breadcrumb -->
-            <div class="breadcrumb bg-secondary w-100 rounded-3 p-6 flex-row-between">
+        <!--! Component breadcrumb -->
+        <section class="breadcrumb container flex-column-between gap-11">
+            <div
+                class="breadcrumb__main bg-secondary w-100 rounded-3 p-6 justify-content-center justify-content-sm-start flex-row-start">
                 <!--Todo ------------------ Section Left -->
-                <div class="breadcrumb__left flex-row-between gap-4">
+                <div class="breadcrumb__main-left flex-column flex-sm-row flex-row-between gap-4">
                     <a href="#" class="rounded-3 p-3"><i class="fas fa-home fs-4"></i></a>
                     <a href="#" class="fs-4 fw-bolder">Home</a>
-                    <i class="fas fa-chevron-right fs-3"></i>
+                    <i class="fas fa-chevron-right d-none d-sm-flex fs-4"></i>
+                    <i class="fas fa-chevron-down fs-4 d-flex d-sm-none"></i>
                     <a href="#" class="fs-4 fw-bolder">Articles</a>
-                    <i class="fas fa-chevron-right fs-3"></i>
+                    <i class="fas fa-chevron-right d-none d-sm-flex fs-4"></i>
+                    <i class="fas fa-chevron-down d-flex d-sm-none fs-4"></i>
                     <a href="#" class="fs-4 fw-bolder">How to plan to learn programming?</a>
                 </div>
             </div>
-            <!--! End -->
         </section>
+        <!--! End -->
         <!--! ------------------ Section vertical -->
         <!--Todo Componenet vertical -->
         <section class="vertical container row row-cols-2 m-auto g-4">
             <!--? ------------------ Section Vertical Left -->
-            <section class="vertical__left col-8 ps-0 flex-column-between gap-5">
+            <section class="vertical__left col-12 col-md-9 col-lg-8 ps-0 flex-column-between gap-5">
                 <!--! ------------------ Section Description -->
                 <section class="description flex-column-between align-items-start gap-5 rounded-3 p-6 w-100">
                     <!--Todo ------------------ Section Head -->
@@ -114,20 +119,20 @@
                         </h1>
                         <span class="description__head-textinfo flex-row-between text-tertiary  gap-3">
                             <i class="fas fa-folder fs-4"></i>
-                            <h2 class="fs-4">Other</h2>
+                            <h2 title="Other" class="fs-4 ellipsis-1">Other</h2>
                             <i class="fas fa-user fs-4"></i>
-                            <h3 class="fs-4">Farhad Kazemzadeh</h3>
+                            <h3 title="Farhad Kazemzadeh" class="fs-4 ellipsis-1">Farhad Kazemzadeh</h3>
                             <i class="fas fa-clock fs-4"></i>
-                            <h4 class="fs-4">2023-08-08</h4>
+                            <h4 title="2023-08-08" class="fs-4 ellipsis-1">2023-08-08</h4>
                             <i class="fas fa-eye fs-4"></i>
-                            <h5 class="fs-4">1527 views</h5>
+                            <h5 title="1527 views" class="fs-4 ellipsis-1">1527 views</h5>
                         </span>
                     </span>
                     <!--Todo ------------------ Section article -->
                     <div class="description__article flex-column-start gap-5 p-4 w-100">
                         <!--Todo ------------------ Section Image1 -->
-                        <span class="description__article-image1 h-auto rounded-3 overflow-hidden mx-5">
-                            <img class="object-fit-cover w-100 h-100"
+                        <span class="description__article-image1 h-auto  overflow-hidden m-auto px-4 w-100">
+                            <img class="object-fit-cover rounded-3 w-100 h-100"
                                 src="public/Images/3-Page Article Details/1-600.webp" alt="">
                         </span>
                         <!--Todo ------------------ Section Text1 -->
@@ -142,8 +147,8 @@
 
                         </p>
                         <!--Todo ------------------ Section Image2 -->
-                        <span class="description__article-image2 h-auto mx-5">
-                            <img class="object-fit-cover w-100 h-100"
+                        <span class="description__article-image2 h-auto m-auto w-100">
+                            <img class="object-fit-cover px-4 w-100 h-100"
                                 src="public/Images/3-Page Article Details/2-39-Image.webp" alt="">
                         </span>
                         <!--Todo ------------------ Section Text2 -->
@@ -211,17 +216,17 @@
                     </div>
                 </section>
                 <!--! ------------------ Section All Articles -->
-                <section class="allarticles flex-row-between rounded-3 p-6 w-100">
+                <section class="allarticles flex-column flex-sm-row flex-row-between rounded-3 p-6 w-100 gap-3">
                     <!--! ------------------ Section Left -->
-                    <div class="allarticles__left flex-column-start justify-content-start h-100 gap-3 w-50">
+                    <div class="allarticles__left flex-column-start justify-content-start h-100 gap-3 w-100">
                         <span class="allarticles__left-title text-tertiary fs-5">Newer content</span>
                         <a href="#" class="allarticles__left-item flex-row-start gap-3">
                             <i class="fas fa-arrow-right fs-4"></i>
-                            <h2 class="fs-4">Where do I start programming?</h2>
+                            <h2 class="fs-4 ellipsis-1">Where do I start programming?</h2>
                         </a>
                     </div>
                     <!--! ------------------ Section Right -->
-                    <div class="allarticles__right flex-column-start justify-content-start h-100 gap-3 w-50">
+                    <div class="allarticles__right flex-column-start justify-content-start h-100 gap-3 w-100">
                         <span class="allarticles__left-title text-tertiary fs-5">Older content</span>
                         <a href="#" class="allarticles__left-item flex-row-start gap-3">
                             <i class="fs-4"></i>
@@ -255,12 +260,17 @@
                 <!--! End -->
             </section>
             <!--? ------------------ Section Vertical Right -->
-            <section class="vertical__right col-4 pe-0 flex-column-between justify-content-start gap-5 h-100">
+            <section
+                class="vertical__right d-none d-md-flex col-md-3 col-lg-4 pe-0 flex-column-between justify-content-start gap-5">
                 <!--! ------------------ Section Most visited courses -->
                 <!--! component relcoursespart -->
-                <section class="relcoursespart flex-column-between align-items-start gap-6 rounded-3 p-6 w-100">
+                <section
+                    class="relcoursespart align-items-center align-items-xl-start flex-column-start gap-5 rounded-3 p-6 w-100">
                     <!--Todo ------------------ Section Top -->
-                    <h2 class="relcoursespart__top special fs-5 fw-bolder w-100">Most visited courses</h2>
+                    <h2 class="relcoursespart__top text-center text-xl-start special fs-5 fw-bolder w-100">
+                        Most
+                        visited
+                        courses</h2>
                     <!--Todo ------------------ Section Bottom -->
                     <ul class="relcoursespart__bottom flex-column-between gap-4">
                         <ol class="w-100">
@@ -270,7 +280,8 @@
                                         src="public/Images/1-Page Home/3-Courses/1-course_360.webp" alt="">
                                 </span>
                                 <h4 title="Zero to full stack programming course Zero to full stack
-                            programming course" class="fs-3 fw-bold ellipsis-2">Zero to full stack programming course
+                            programming course" class="fs-3 fw-bold ellipsis-2">Zero to full stack
+                                    programming course
                                     Zero to full stack
                                     programming course
                                 </h4>
@@ -334,124 +345,127 @@
                 </section>
                 <!--! End -->
                 <!--! ------------------ Section Quick Access -->
-                <section class="quickaccess flex-column-start gap-3 w-100 p-6 rounded-3">
+                <!--! Component linkaccess  -->
+                <section class="linkaccess flex-column-start gap-3 w-100 p-6 rounded-3">
                     <!--todo ------------------ Section Top -->
-                    <h2 class="quickaccess__top fs-5 fw-bolder">Quick access</h2>
+                    <h2 class="linkaccess__top fs-5 text-center text-xl-start fw-bolder w-100">Quick access</h2>
                     <!--todo ------------------ Section Bottom -->
-                    <ul class="quickaccess__bottom px-3 w-100">
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                    <ul class="linkaccess__bottom px-3 w-100">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
                                 <h3 class="fs-4 ellipsis-1">Home Page</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Front end</h3>
+                                <h3 class="ellipsis-1 fs-4">Front end</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Soft skills</h3>
+                                <h3 class="ellipsis-1 fs-4">Soft skills</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol w-100 py-3">
+                        <ol class="linkaccess__bottom-ol w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Backend</h3>
+                                <h3 class="ellipsis-1 fs-4">Backend</h3>
                             </a>
                         </ol>
                     </ul>
                 </section>
-                <!--! ------------------ Section  -->
-                <section class="quickaccess flex-column-start gap-3 w-100 p-6 rounded-3">
+                <!--! End -->
+                <!--! ------------------ Section New Articles  -->
+                <section class="linkaccess flex-column-start gap-3 w-100 p-6 rounded-3">
                     <!--todo ------------------ Section Top -->
-                    <h2 class="quickaccess__top fs-5 fw-bolder">New articles</h2>
+                    <h2 class="linkaccess__top fs-5 fw-bolder text-center text-xl-start w-100">New articles</h2>
                     <!--todo ------------------ Section Bottom -->
-                    <ul class="quickaccess__bottom px-3 w-100">
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                    <ul class="linkaccess__bottom px-3 w-100">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
                                 <h3 class="fs-4 ellipsis-1">How to plan to learn programming?</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Where do I start programming?</h3>
+                                <h3 class="ellipsis-1 fs-4">Where do I start programming?</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">The best programming training sites</h3>
+                                <h3 class="ellipsis-1 fs-4">The best programming training sites</h3>
                             </a>
                         </ol>
                     </ul>
                 </section>
-                <!--! ------------------ Section  -->
-                <section class="quickaccess flex-column-start gap-3 w-100 p-6 rounded-3">
+                <!--! ------------------ Section Article Categories   -->
+                <section class="linkaccess flex-column-start gap-3 w-100 p-6 rounded-3">
                     <!--todo ------------------ Section Top -->
-                    <h2 class="quickaccess__top fs-5 fw-bolder">Article categories</h2>
+                    <h2 class="linkaccess__top fs-5 fw-bolder text-center text-xl-start w-100">Article categories</h2>
                     <!--todo ------------------ Section Bottom -->
-                    <ul class="quickaccess__bottom px-3 w-100">
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                    <ul class="linkaccess__bottom px-3 w-100">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
                                 <h3 class="fs-4 ellipsis-1">Other</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Front end</h3>
+                                <h3 class="ellipsis-1 fs-4">Front end</h3>
                             </a>
                         </ol>
                     </ul>
                 </section>
-                <!--! ------------------ Section  -->
-                <section class="quickaccess flex-column-start gap-3 w-100 p-6 rounded-3">
+                <!--! ------------------ Section New Courses  -->
+                <section class="linkaccess flex-column-start gap-3 w-100 p-6 rounded-3">
                     <!--todo ------------------ Section Top -->
-                    <h2 class="quickaccess__top fs-5 fw-bolder">New courses</h2>
+                    <h2 class="linkaccess__top fs-5 fw-bolder text-center text-xl-start w-100">New courses</h2>
                     <!--todo ------------------ Section Bottom -->
-                    <ul class="quickaccess__bottom px-3 w-100">
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                    <ul class="linkaccess__bottom px-3 w-100">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
                                 <h3 class="fs-4 ellipsis-1">PHP MVC Advanced Course: From Zero to the Job Market</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Git and GitHub training course</h3>
+                                <h3 class="ellipsis-1 fs-4">Git and GitHub training course</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Front-end specialist training course</h3>
+                                <h3 class="ellipsis-1 fs-4">Front-end specialist training course</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">JavaScript expert training course</h3>
+                                <h3 class="ellipsis-1 fs-4">JavaScript expert training course</h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
+                        <ol class="linkaccess__bottom-ol border-bottom border-1 border-tertiary w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">Responsive Design Training Course (flexBox+CssGrid+Sass+BootStrap)
+                                <h3 class="fs-4 ellipsis-1">Responsive Design Training Course
+                                    (flexBox+CssGrid+Sass+BootStrap)
                                 </h3>
                             </a>
                         </ol>
-                        <ol class="quickaccess__bottom-ol w-100 py-3">
+                        <ol class="linkaccess__bottom-ol w-100 py-3">
                             <a href="#" class="flex-row-start gap-3">
                                 <i class="fas fa-chevron-right fs-3"></i>
-                                <h3 class=" fs-4">SASS training course</h3>
+                                <h3 class="fs-4 ellipsis-1">SASS training course</h3>
                             </a>
                         </ol>
                     </ul>
@@ -461,11 +475,12 @@
         <!--Todo End -->
     </main>
     <!--? ------------------------------------ Footer -->
-    <footer class="footer flex-column-between gap-11 pt-7 w-100">
+    <footer class="footer flex-column-between pt-7 w-100">
         <!--! ------------------ Section Footer Content -->
-        <section class="footer__content container bg-secondary rounded-3 p-6 row row-cols-3 position-relative">
-            <div class="footer__content-item col">
-                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+        <section
+            class="footer__content container bg-secondary m-auto rounded-3 p-6 row row-cols-1 row-cols-md-3 g-10 g-md-auto position-relative">
+            <div class="footer__content-item col first">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-7">
                     <span class="top position-relative">
                         <h1 class="fs-5 fw-bolder position-relative z-1">About Us</h1>
                         <span class="bg-footertransformation position-absolute z-0"></span>
@@ -483,7 +498,7 @@
                 </div>
             </div>
             <div class="footer__content-item col">
-                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-7">
                     <span class="top position-relative">
                         <h1 class="fs-5 fw-bolder position-relative z-1">Latest content</h1>
                         <span class="bg-footertransformation position-absolute z-0"></span>
@@ -496,7 +511,7 @@
                 </div>
             </div>
             <div class="footer__content-item col">
-                <div class="footer__content-item-body flex-column-between align-items-start gap-5">
+                <div class="footer__content-item-body flex-column-between align-items-start gap-7">
                     <span class="top position-relative">
                         <h1 class="fs-5 fw-bolder position-relative z-1">Quick access to courses</h1>
                         <span class="bg-footertransformation position-absolute z-0"></span>
@@ -516,7 +531,8 @@
             <span class="footer__content-item ticket position-absolute rounded-3"></span>
         </section>
         <!--! ------------------ Section Footer End -->
-        <section class="footer__end container-fluid position-fixed bottom-0 flex-row-center p-0 bg-body-secondary">
+        <section
+            class="footer__end container-fluid position-fixed bottom-0 start-0 flex-row-center py-0 text-center bg-body-secondary">
             <h1 class="fs-5 fw-bolder">All rights reserved to Mind Developers Programming Training Academy.</h1>
         </section>
     </footer>
