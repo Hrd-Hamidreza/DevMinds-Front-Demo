@@ -26285,6 +26285,14 @@ option {
     width: 90% !important;
   }
 }
+@media only screen and (min-width: 87.5em) {
+  .article {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
+}
+
 .head__bottom-left > a:first-child {
   color: rgb(158, 18, 177);
   background-color: #f5e6f7;
@@ -26648,32 +26656,32 @@ option {
   color: rgb(158, 18, 177);
 }
 
-.articlecard {
+.articlecard__main {
   box-shadow: 0rem 0rem 1rem 1rem rgba(70, 71, 73, 0.1);
 }
-.articlecard__top {
+.articlecard__main-top {
   width: 100%;
 }
 @media only screen and (min-width: 112.5em) {
-  .articlecard__top > img.first {
+  .articlecard__main-top > img.first {
     content: url("../../public/Images/3-Page Article Details/4-600.webp") !important;
   }
 }
 @media only screen and (min-width: 112.5em) {
-  .articlecard__top > img.second {
+  .articlecard__main-top > img.second {
     content: url("../../public/Images/3-Page Article Details/3-600.webp") !important;
   }
 }
 @media only screen and (min-width: 112.5em) {
-  .articlecard__top > img.third {
+  .articlecard__main-top > img.third {
     content: url("../../public/Images/3-Page Article Details/1-600.webp") !important;
   }
 }
-.articlecard__bottom-link {
+.articlecard__main-bottom-link {
   color: rgb(158, 18, 177);
   transition: all 400ms ease;
 }
-.articlecard__bottom-link:hover {
+.articlecard__main-bottom-link:hover {
   color: white;
   background-color: rgb(158, 18, 177);
 }
