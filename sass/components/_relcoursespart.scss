@@ -5,16 +5,27 @@
     &.special {
       &::after {
         content: "";
-        position: absolute;
-        top: 2.1rem;
-        left: 0;
-        bottom: 0;
         width: 2.5rem;
         height: 2.5rem;
-        background-color: $purple;
         opacity: 0.6;
         z-index: -1;
-        clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 50% 100%, 0% 100%);
+        position: absolute;
+        background-color: $purple;
+        left: 0;
+        clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 60% 100%, 0% 100%);
+        @include responsive(found) {
+          top: 0 !important;
+          right: 0;
+          margin: 0 auto;
+          transform: rotate(90deg);
+        }
+        @include responsive(laptop) {
+          top: unset;
+          right: unset;
+          margin: unset;
+          transform: unset;
+          top: 2.1rem !important;
+        }
       }
     }
   }
@@ -27,6 +38,14 @@
         }
         & > span:first-child {
           max-width: 10rem;
+        }
+        & > h4:last-child {
+          @include responsive(found) {
+            display: none;
+          }
+          @include responsive(laptop) {
+            display: -webkit-box;
+          }
         }
       }
     }

@@ -1,12 +1,19 @@
 .breadcrumb {
-  &__left {
-    & > a {
-      &:first-child {
-        background-color: white;
-      }
-      transition: all 400ms ease;
-      &:hover {
-        color: $purple;
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
+  &__main {
+    &-left {
+      & > a {
+        &:first-child {
+          background-color: white;
+        }
+        transition: all 400ms ease;
+        &:hover {
+          color: $purple;
+        }
       }
     }
   }

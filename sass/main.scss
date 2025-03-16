@@ -41,7 +41,6 @@
 //Todo ------------------- Article Details
 @import "layouts/articledetails/description";
 @import "layouts/articledetails/allarticles";
-@import "layouts/articledetails/quickaccess";
 //Todo ------------------- Login
 //Todo ------------------- Register
 //Todo ------------------- Forgotten password
@@ -66,6 +65,7 @@
 @import "components/signlogbg";
 @import "components/signlogcard";
 @import "components/shopstatus";
+@import "components/linkaccess";
 //! --------------------------------------- Pages
 @import "pages/pagehome";
 @import "pages/pagecourses";

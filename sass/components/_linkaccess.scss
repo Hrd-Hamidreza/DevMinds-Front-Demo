@@ -1,0 +1,41 @@
+.linkaccess {
+  box-shadow: 0rem 0rem 1rem 0.001rem $subtitle;
+  position: relative;
+  &__top {
+    &::after {
+      content: "";
+      width: 2.5rem;
+      height: 2.5rem;
+      opacity: 0.6;
+      z-index: -1;
+      position: absolute;
+      background-color: $purple;
+      left: 0;
+      clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 60% 100%, 0% 100%);
+      @include responsive(found) {
+        top: 0 !important;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(90deg);
+      }
+      @include responsive(laptop) {
+        top: unset;
+        right: unset;
+        margin: unset;
+        transform: unset;
+        top: 2.1rem !important;
+      }
+    }
+  }
+  &__bottom {
+    &-ol {
+      & > a {
+        transition: all 400ms ease;
+        &:hover {
+          color: $purple;
+          transform: translateX(1rem);
+        }
+      }
+    }
+  }
+}

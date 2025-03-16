@@ -1,8 +1,28 @@
 .vertical {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
   &__left {
   }
   &__right {
     position: sticky;
-    top: 16rem;
+    height: min-content;
+    @include responsive(found) {
+      top: 20.6rem;
+    }
+    @include responsive(phonesm) {
+      top: 18.2rem;
+    }
+    @include responsive(phonexl) {
+      top: 17.6rem;
+    }
+    @include responsive(tablet) {
+      top: 24.7rem;
+    }
+    @include responsive(tabletlg) {
+      top: 17rem;
+    }
   }
 }
