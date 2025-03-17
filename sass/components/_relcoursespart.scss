@@ -39,7 +39,7 @@
         & > span:first-child {
           max-width: 10rem;
         }
-        & > h4:last-child {
+        & > h4.special:last-child {
           @include responsive(found) {
             display: none;
           }
