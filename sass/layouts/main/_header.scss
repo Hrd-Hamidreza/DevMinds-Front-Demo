@@ -1,6 +1,7 @@
 .header {
   width: 100vw;
-  &__main {
+  &__main,
+  &__fake {
     z-index: 10;
     box-shadow: 0rem 0rem 1rem 0.25rem $subtitle;
     &-top {
@@ -31,7 +32,7 @@
         @include responsive(tabletlg) {
           width: auto;
         }
-        &-ul {
+        &--ul {
           & > li > a {
             transition: all 400ms ease;
             &:hover {
@@ -64,7 +65,5 @@
         }
       }
     }
-  }
-  &__fake {
   }
 }

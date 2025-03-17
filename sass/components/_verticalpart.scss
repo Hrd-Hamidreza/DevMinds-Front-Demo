@@ -4,25 +4,43 @@
     max-width: unset;
     width: 90% !important;
   }
+  &.special {
+    @include responsive(found) {
+      flex-direction: column-reverse;
+    }
+    @include responsive(laptop) {
+      flex-direction: unset;
+    }
+  }
   &__left {
   }
   &__right {
     position: sticky;
     height: min-content;
     @include responsive(found) {
-      top: 20.6rem;
+      top: 19.6rem;
     }
     @include responsive(phonesm) {
-      top: 18.2rem;
+      top: 17.2rem;
     }
     @include responsive(phonexl) {
-      top: 17.6rem;
+      top: 16.6rem;
     }
     @include responsive(tablet) {
-      top: 24.7rem;
+      top: 23.7rem;
     }
     @include responsive(tabletlg) {
-      top: 17rem;
+      top: 16rem;
+    }
+    &.special {
+      @include responsive(found) {
+        position: unset;
+        height: unset;
+      }
+      @include responsive(laptop) {
+        position: sticky;
+        height: min-content;
+      }
     }
   }
 }
