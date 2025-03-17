@@ -7,86 +7,168 @@
     <title>Page Courses</title>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="icon" href="public/Images/Site Tab Icon/Dev2.webp">
+    <link rel="icon" href="public/Images/1-Page Home/0-Site Tab Icon/Dev2.webp">
 </head>
 
 <body class="body flex-column-center pb-15">
     <!--? ------------------------------------ Header -->
-    <header class="header flex-column-center gap-3 w-100 position-fixed top-0 bg-white">
-        <!--! ------------------ Section Top -->
-        <section class="header__top bg-secondary flex-row-between p-5 fs-4 w-100">
-            <!--Todo ------------------ Section Top Left -->
-            <ul class="header__top-left flex-row-between gap-5 ">
-                <li class="header__top-left-item">
-                    <a href="#">Dedicated panel for in-person courses | Online</a>
-                </li>
-                <li class="header__top-left-item">
-                    <a href="#">Site regulations</a>
-                </li>
-                <li class="header__top-left-item">
-                    <a href="#">About us</a>
-                </li>
-                <li class="header__top-left-item">
-                    <a href="#">Collaborating with us</a>
-                </li>
-                <li class="header__top-left-item">
-                    <a href="#">Store</a>
-                </li>
-            </ul>
-            <!--Todo ------------------ Section Top Right -->
-            <div class="header__top-right flex-row-center gap-5">
-                <a href="#" class="header__top-right-link flex-row-between gap-2 p-1">
-                    <i class="fa-brands fa-instagram text-primary"></i>
-                    <span>DevMinds.co</span>
-                </a>
-                <a href="#" class="header__top-right-link flex-row-between gap-2 p-1">
-                    <i class="fa-solid fa-envelope text-primary"></i>
-                    <span class="flex-row-center">devmindco@gmail.com</span>
-                </a>
-            </div>
-        </section>
-        <!--! ------------------ Section Bottom -->
-        <section class="header__bottom flex-row-between container-width-90">
-            <!--Todo ------------------ Section Bottom Left -->
-            <div class="header__bottom-left flex-row-between gap-5">
-                <span style="cursor: pointer;" class="header__bottom-right-image">
-                    <img title="DevMinds" src="public/Images/Header/Brand/devminds1.png" alt="Logo">
-                </span>
-                <ul class="header__bottom-left-ul fs-5 flex-row-between gap-5">
-                    <li>
-                        <a href="#">Main page</a>
+    <header class="header w-100">
+        <!--! ------------------ Section Main -->
+        <section
+            class="header__main text-nowrap flex-column-between gap-3 pb-3 position-fixed start-0 top-0 bg-white w-100">
+            <!--! ------------------ Section Top -->
+            <section
+                class="header__main-top bg-secondary d-none d-md-flex flex-row-center justify-content-xl-between p-5 fs-4 w-100">
+                <!--Todo ------------------ Section Top Left -->
+                <ul class="header__main-top-left flex-row-between gap-5">
+                    <li class="header__main-top-left--item">
+                        <a href="#">Dedicated panel for in-person courses | Online</a>
                     </li>
-                    <li>
-                        <a href="#">Courses</a>
+                    <li class="header__main-top-left--item">
+                        <a href="#">Site regulations</a>
                     </li>
-                    <li>
-                        <a href="#">Full Stack From Scratch To peak</a>
+                    <li class="header__main-top-left--item">
+                        <a href="#">About us</a>
                     </li>
-                    <li>
-                        <a href="#">Articles</a>
+                    <li class="header__main-top-left--item">
+                        <a href="#">Collaborating with us</a>
                     </li>
-                    <li>
-                        <a href="#">Soft skills</a>
+                    <li class="header__main-top-left--item">
+                        <a href="#">Store</a>
                     </li>
                 </ul>
-            </div>
-            <!--Todo ------------------ Section Bottom Right -->
-            <div class="header__bottom-right flex-row-between gap-5">
-                <a href="#"
-                    class="header__bottom-right-log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">Login
-                    |
-                    Sing Up</a>
-                <a href="#" class="header__bottom-right-shop rounded-3 bg-secondary p-3 position-relative">
-                    <i class="fas fa-cart-shopping"></i>
-                    <span class="bg-primary flex-row-center position-absolute text-white">0</span>
-                </a>
-            </div>
+                <!--Todo ------------------ Section Top Right -->
+                <div class="header__main-top-right flex-row-center gap-5 d-none d-xl-flex">
+                    <a href="#" class="header__main-top-right--link flex-row-between gap-2 p-1">
+                        <i class="fa-brands fa-instagram text-primary"></i>
+                        <span>DevMinds.co</span>
+                    </a>
+                    <a href="#" class="header__main-top-right--link flex-row-between gap-2 p-1">
+                        <i class="fa-solid fa-envelope text-primary"></i>
+                        <span class="flex-row-center">devmindco@gmail.com</span>
+                    </a>
+                </div>
+            </section>
+            <!--! ------------------ Section Bottom -->
+            <section
+                class="header__main-bottom flex-row-between flex-column-reverse flex-lg-row container-width-90 gap-5">
+                <!--Todo ------------------ Section Bottom Left -->
+                <div class="header__main-bottom-left flex-row-between gap-5">
+                    <span style="cursor: pointer;" class="header__main-bottom-right--image">
+                        <img title="DevMinds" src="public/Images/1-Page Home/1-Header/Brand/devminds1.png" alt="Logo">
+                    </span>
+                    <ul class="header__main-bottom-left--ul fs-5 flex-row-between d-none d-lg-flex gap-5">
+                        <li>
+                            <a href="#">Main page</a>
+                        </li>
+                        <li>
+                            <a href="#">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Full Stack From Scratch To peak</a>
+                        </li>
+                        <li>
+                            <a href="#">Articles</a>
+                        </li>
+                        <li>
+                            <a href="#">Soft skills</a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-bars d-flex d-lg-none"></i>
+                </div>
+                <!--Todo ------------------ Section Bottom Right -->
+                <div class="header__main-bottom-right pt-3 flex-row-between gap-5">
+                    <a href="#"
+                        class="header__main-bottom-right--log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">Login
+                        |
+                        Sing Up</a>
+                    <a href="#" class="header__main-bottom-right--shop rounded-3 bg-secondary p-3 position-relative">
+                        <i class="fas fa-cart-shopping"></i>
+                        <span class="bg-primary flex-row-center position-absolute text-white">0</span>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <!--! ------------------ Section Fake -->
+        <section class="header__fake text-nowrap flex-column-between gap-3 pb-3 bg-white w-100">
+            <!--! ------------------ Section Top -->
+            <section
+                class="header__main-top bg-secondary d-none d-md-flex flex-row-center justify-content-xl-between p-5 fs-4 w-100">
+                <!--Todo ------------------ Section Top Left -->
+                <ul class="header__main-top-left flex-row-between gap-5">
+                    <li class="header__main-top-left--item">
+                        <a href="#">Dedicated panel for in-person courses | Online</a>
+                    </li>
+                    <li class="header__main-top-left--item">
+                        <a href="#">Site regulations</a>
+                    </li>
+                    <li class="header__main-top-left--item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="header__main-top-left--item">
+                        <a href="#">Collaborating with us</a>
+                    </li>
+                    <li class="header__main-top-left--item">
+                        <a href="#">Store</a>
+                    </li>
+                </ul>
+                <!--Todo ------------------ Section Top Right -->
+                <div class="header__main-top-right flex-row-center gap-5 d-none d-xl-flex">
+                    <a href="#" class="header__main-top-right--link flex-row-between gap-2 p-1">
+                        <i class="fa-brands fa-instagram text-primary"></i>
+                        <span>DevMinds.co</span>
+                    </a>
+                    <a href="#" class="header__main-top-right--link flex-row-between gap-2 p-1">
+                        <i class="fa-solid fa-envelope text-primary"></i>
+                        <span class="flex-row-center">devmindco@gmail.com</span>
+                    </a>
+                </div>
+            </section>
+            <!--! ------------------ Section Bottom -->
+            <section
+                class="header__main-bottom flex-row-between flex-column-reverse flex-lg-row container-width-90 gap-5">
+                <!--Todo ------------------ Section Bottom Left -->
+                <div class="header__main-bottom-left flex-row-between gap-5">
+                    <span style="cursor: pointer;" class="header__main-bottom-right--image">
+                        <img title="DevMinds" src="public/Images/1-Page Home/1-Header/Brand/devminds1.png" alt="Logo">
+                    </span>
+                    <ul class="header__main-bottom-left--ul fs-5 flex-row-between d-none d-lg-flex gap-5">
+                        <li>
+                            <a href="#">Main page</a>
+                        </li>
+                        <li>
+                            <a href="#">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Full Stack From Scratch To peak</a>
+                        </li>
+                        <li>
+                            <a href="#">Articles</a>
+                        </li>
+                        <li>
+                            <a href="#">Soft skills</a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-bars d-flex d-lg-none"></i>
+                </div>
+                <!--Todo ------------------ Section Bottom Right -->
+                <div class="header__main-bottom-right pt-3 flex-row-between gap-5">
+                    <a href="#"
+                        class="header__main-bottom-right--log rounded-3 fs-5 border border-1 px-6 py-3 border-primary">Login
+                        |
+                        Sing Up</a>
+                    <a href="#" class="header__main-bottom-right--shop rounded-3 bg-secondary p-3 position-relative">
+                        <i class="fas fa-cart-shopping"></i>
+                        <span class="bg-primary flex-row-center position-absolute text-white">0</span>
+                    </a>
+                </div>
+            </section>
         </section>
     </header>
     <!--? ------------------------------------ Main -->
-    <main class="main flex-column-center gap-11 pt-12 w-100">
+    <main class="main flex-column-center gap-11 pt-5 w-100">
         <!--! ------------------ Section Courses -->
-        <section class="courses container flex-column-between gap-11">
+        <section class="courses container flex-column-between gap-3">
             <!--Todo ------------------ Section Top -->
             <!--! Component sortpart -->
             <div class="sortpart rounded-3 flex-row-between p-6 w-100">
@@ -108,12 +190,13 @@
             </div>
             <!--! End -->
             <!--Todo ------------------ Section Bottom -->
-            <!--!  Component coursebox -->
+            <!--! Component coursebox -->
             <div class="coursebox flex-column-between gap-11 w-100">
                 <!--Todo --------- Section Top -->
-                <div class="coursebox__bottom-top row row-cols-3 m-auto justify-content-center g-5 w-100">
-                    <div class="col coursebox__bottom-top-item ps-0">
-                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden w-100">
+                <div
+                    class="coursebox__bottom-top row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxxl-4 m-auto justify-content-center g-5 w-100">
+                    <div class="col coursebox__bottom-top-item">
+                        <div class="card w-100 h-100 flex-column-between gap-5 rounded-3 overflow-hidden w-100">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/1-course_360.webp" alt="FrontEnd">
@@ -156,7 +239,7 @@
                         </div>
                     </div>
                     <div class="col coursebox__bottom-top-item">
-                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden w-100">
+                        <div class="card w-100 h-100 flex-column-between gap-5 rounded-3 overflow-hidden w-100">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/2-course_360.webp" alt="Git & Github">
@@ -196,8 +279,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col coursebox__bottom-top-item pe-0">
-                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden w-100">
+                    <div class="col coursebox__bottom-top-item">
+                        <div class="card w-100 h-100 flex-column-between gap-5 rounded-3 overflow-hidden w-100">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/3-course_360.webp" alt="Php">
@@ -239,7 +322,8 @@
                         </div>
                     </div>
                     <div class="col coursebox__bottom-top-item">
-                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden w-100">
+                        <div
+                            class="card w-100 h-100 w-100 h-100 flex-column-between gap-5 rounded-3 overflow-hidden w-100">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/4-course_360.webp" alt="Sass">
@@ -280,7 +364,7 @@
                         </div>
                     </div>
                     <div class="col coursebox__bottom-top-item">
-                        <div class="card flex-column-between gap-5 rounded-3 overflow-hidden w-100">
+                        <div class="card w-100 h-100 flex-column-between gap-5 rounded-3 overflow-hidden w-100">
                             <a href="#" class="top flex-row-center w-100 h-auto">
                                 <img class="object-fit-cover w-100 h-100"
                                     src="public/Images/1-Page Home/3-Courses/5-course_360.webp" alt="Responsive Design">

@@ -1,2 +1,7 @@
 .courses {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
 }

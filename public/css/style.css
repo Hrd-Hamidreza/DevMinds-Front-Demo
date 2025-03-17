@@ -26261,6 +26261,14 @@ option {
   }
 }
 @media only screen and (min-width: 87.5em) {
+  .courses {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (min-width: 87.5em) {
   .article {
     width: unset;
     max-width: unset;
