@@ -26429,16 +26429,56 @@ option {
   }
 }
 
-.cart__middle-top {
-  border: 1rem solid white;
+@media only screen and (min-width: 87.5em) {
+  .cart {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
 }
-.cart__middle-top > tbody {
-  border: 0.1rem solid rgb(107, 107, 107);
+.cart__middle-top {
+  outline: 0.1rem solid white;
+}
+@media only screen and (min-width: 0) {
+  .cart__middle-top--1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .cart__middle-top--1 {
+    display: table;
+  }
+}
+.cart__middle-top--1 td {
+  outline: 0.1rem solid rgb(107, 107, 107);
+}
+@media only screen and (min-width: 0) {
+  .cart__middle-top--2 {
+    display: table;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .cart__middle-top--2 {
+    display: none;
+  }
+}
+.cart__middle-top--2 th,
+.cart__middle-top--2 td {
+  width: fit-content;
+}
+.cart__middle-top th,
+.cart__middle-top td {
+  padding: 1.5rem 1.5rem !important;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.cart__middle-top th.head,
+.cart__middle-top td.head {
+  background-color: rgb(158, 18, 177);
+  color: white;
 }
 .cart__middle-top th {
-  color: white;
-  background-color: rgb(158, 18, 177);
-  text-align: center;
+  outline: 0.1rem solid white;
 }
 .cart__middle-top td {
   text-align: center;
@@ -26579,7 +26619,7 @@ option {
 }
 @media only screen and (min-width: 0) {
   .payment__details-list--2 {
-    display: flex;
+    display: table;
   }
 }
 @media only screen and (min-width: 48em) {

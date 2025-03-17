@@ -1,14 +1,47 @@
 .cart {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
   &__middle {
     &-top {
-      border: 1rem solid white;
-      & > tbody {
-        border: 0.1rem solid $subtitle;
+      outline: 0.1rem solid white;
+      &--1 {
+        @include responsive(found) {
+          display: none;
+        }
+        @include responsive(tablet) {
+          display: table;
+        }
+        & td {
+          outline: 0.1rem solid $subtitle;
+        }
+      }
+      &--2 {
+        @include responsive(found) {
+          display: table;
+        }
+        @include responsive(tablet) {
+          display: none;
+        }
+        & th,
+        td {
+          width: fit-content;
+        }
+      }
+      & th,
+      td {
+        padding: 1.5rem 1.5rem !important;
+        font-size: 1.6rem;
+        text-align: center;
+        &.head {
+          background-color: $purple;
+          color: white;
+        }
       }
       & th {
-        color: white;
-        background-color: $purple;
-        text-align: center;
+        outline: 0.1rem solid white;
       }
       & td {
         text-align: center;

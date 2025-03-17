@@ -168,12 +168,13 @@
     <!--? ------------------------------------ Main -->
     <main class="main flex-column-center gap-11 pt-5 w-100">
         <!--! ------------------ Section cart -->
-        <section class="cart container px-6 py-10 myshadow-tertiary rounded-3 flex-column-start gap-15">
+        <section class="cart container px-6 py-10 myshadow-tertiary rounded-3 flex-column-start gap-5">
             <!--Todo ------------------ Section Top -->
             <!--! Component shopstatus -->
-            <div class="shopstatus flex-row-center w-100 row row-cols-9 m-auto">
-                <div class="col shopstatus__first flex-row-center px-0">
-                    <div class="shopstatus__first-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
+            <div class="shopstatus flex-column flex-md-row flex-row-center w-100 row row-cols-9 mb-10 m-auto">
+                <div class="col shopstatus__first pe-md-0">
+                    <div
+                        class="shopstatus__first-first flex-column flex-md-row inner row row-cols-1 row-cols-md-5 g-1 flex-nowrap w-100 m-auto">
                         <div class="col">
                             <span class="bg-primary d-flex"></span>
                         </div>
@@ -236,8 +237,9 @@
                         <span class="position-center text-primary flex-row-center fs-4">Payment information</span>
                     </div>
                 </div>
-                <div class="col shopstatus__ninth flex-row-center px-0">
-                    <div class="shopstatus__ninth-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
+                <div class="col shopstatus__ninth flex-row-center ps-md-0">
+                    <div
+                        class="shopstatus__ninth-first inner flex-column flex-md-row row row-cols-1 row-cols-md-5 g-1 flex-nowrap w-100 m-auto">
                         <div class="col">
                             <span class="bg-primary d-flex"></span>
                         </div>
@@ -260,72 +262,85 @@
             <!--Todo ------------------ Section Middle -->
             <div class="cart__middle flex-column-end gap-8 w-100">
                 <!--Todo ------------------ Section Top -->
-                <table class="cart__middle-top w-100 table table-bordered fs-5 rounded-3">
-                    <thead class="cart__middle-top-head">
-                        <tr class="cart__middle-top-head--row">
-                            <th class="p-5">
-                                Product
-                            </th>
-                            <th class="p-5">
-                                Unit price
-                            </th>
-                            <th class="p-5">
-                                Discount
-                            </th>
-                            <th class="p-5">
-                                Number
-                            </th>
-                            <th class="p-5">
-                                Total price
-                            </th>
-                            <th class="p-5">
-                                Delete
-                            </th>
+                <table class="cart__middle-top cart__middle-top--1 p-0 table w-100">
+                    <tbody class="w-100">
+                        <tr class="w-100">
+                            <th class="head text-center">Product</th>
+                            <th class="head text-center">Unit price</th>
+                            <th class="head text-center">Discount</th>
+                            <th class="head text-center">Final price</th>
+                            <th class="head text-center">Number</th>
+                            <th class="head text-center">Total price</th>
+                            <th class="head text-center">Delete</th>
                         </tr>
-                    </thead>
-                    <tbody class="cart__middle-top-body table-group-divider">
-                        <tr class="cart__middle-top-body--row">
-                            <td class="p-5">
-                                Front-end specialist training course
+                        <tr class="w-100">
+                            <td class="text-center">Front-end specialist training course</td>
+                            <td class="text-center">3,600,000 Tomans</td>
+                            <td class="text-center">360,000 Tomans</td>
+                            <td class="text-center">3,240,000 Tomans</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">3,240,000 Tomans</td>
+                            <td class="text-center">
+                                <button type="button" class="p-2"><i class="fas fa-close text-primary"></i></button>
                             </td>
-                            <td class="p-5">
-                                3,600,000 Tomans
-                            </td>
-                            <td class="p-5">
-                                360,000 Tomans
-                            </td>
-                            <td class="p-5">1
-                            </td>
-                            <td class="p-5">
-                                3,240,000 Tomans
-                            </td>
-                            <td class="p-5">
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="cart__middle-top cart__middle-top--2 p-0 table w-100">
+                    <tbody class="w-100">
+                        <tr class="w-100">
+                            <th class="head text-center">Product</th>
+                            <td class="">Front-end specialist training course</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Unit price</th>
+                            <td class="">3,600,000 Tomans</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Discount</th>
+                            <td class="">360,000 Tomans</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Final price</th>
+                            <td class="">3,240,000 Tomans</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Number</th>
+                            <td class="">1</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Total price</th>
+                            <td class="">3,240,000 Tomans</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Delete</th>
+                            <td class="">
                                 <button type="button" class="p-2"><i class="fas fa-close text-primary"></i></button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <!--Todo ------------------ Section Bottom -->
-                <div class="cart__middle-bottom flex-row-between p-6 bg-pay rounded-3 fw-bolder w-50">
+                <div class="cart__middle-bottom flex-row-between p-6 bg-pay rounded-3 fw-bolder col-12 col-md-6">
                     <!--Todo ------------------ Section Left -->
-                    <h3 class="fs-4">Your total purchase</h3>
+                    <h3 class="fs-4 fs-bolder">Your total purchase</h3>
                     <!--Todo ------------------ Section Right -->
-                    <h4 class="fs-4">3,240,000 Tomans</h4>
+                    <h4 class="fs-4 fs-bolder">3,240,000 Tomans</h4>
                 </div>
             </div>
             <!--Todo ------------------ Section Bottom -->
-            <div class="cart__bottom flex-row-between w-100">
+            <div class="cart__bottom flex-column flex-xxsm-row gap-2 flex-row-between w-100">
                 <!--Todo ------------------ Section Left -->
                 <a href="#"
-                    class="cart__bottom-left mytransition-all flex-row-center gap-3 px-12 py-3 text-white rounded-3">
-                    <i class="fas fa-chevron-left fs-4"></i>
-                    <h3 class="fs-5">Return</h3>
+                    class="col-12 col-xxsm-5 cart__bottom-left mytransition-all flex-row-center gap-3 px-12 py-3 text-white rounded-3">
+                    <i class="fas fa-chevron-left fs-3"></i>
+                    <h3 class="fs-4">Return</h3>
                 </a>
                 <!--Todo ------------------ Section Right -->
                 <a href="#"
-                    class="cart__bottom-right mytransition-all flex-row-center gap-3 px-5 py-3 text-white rounded-3">
-                    <h3 class="fs-5">Continue ordering</h3>
-                    <i class="fas fa-chevron-right fs-4"></i>
+                    class="col-12 col-xxsm-5 cart__bottom-right mytransition-all flex-row-center gap-3 px-5 py-3 text-white rounded-3">
+                    <h3 class="fs-4">Continue ordering</h3>
+                    <i class="fas fa-chevron-right fs-3"></i>
                 </a>
             </div>
         </section>

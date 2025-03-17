@@ -102,7 +102,7 @@
       }
       &--2 {
         @include responsive(found) {
-          display: flex;
+          display: table;
         }
         @include responsive(tablet) {
           display: none;
