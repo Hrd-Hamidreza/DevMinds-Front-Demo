@@ -25925,88 +25925,62 @@ option {
   transition-property: all;
 }
 
-@media only screen and (min-width: 0) {
-  .body {
-    padding-top: 19.6rem;
-  }
-}
-@media only screen and (min-width: 18em) {
-  .body {
-    padding-top: 17.2rem;
-  }
-}
-@media only screen and (min-width: 36em) {
-  .body {
-    padding-top: 16.6rem;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .body {
-    padding-top: 23.7rem;
-  }
-}
-@media only screen and (min-width: 62em) {
-  .body {
-    padding-top: 16rem;
-  }
-}
-
 .header {
   width: 100vw;
-  z-index: 10;
-  min-height: 16rem;
-  box-shadow: 0rem 0rem 1rem 0.5rem rgb(107, 107, 107);
 }
-.header__top-left-item > a {
+.header__main {
+  z-index: 10;
+  box-shadow: 0rem 0rem 1rem 0.25rem rgb(107, 107, 107);
+}
+.header__main-top-left--item > a {
   transition: all 400ms ease;
 }
-.header__top-left-item > a:hover {
+.header__main-top-left--item > a:hover {
   color: rgb(158, 18, 177);
 }
-.header__top-right-link {
+.header__main-top-right--link {
   transition: all 400ms ease;
 }
-.header__top-right-link:hover {
+.header__main-top-right--link:hover {
   color: rgb(158, 18, 177);
 }
 @media only screen and (min-width: 0) {
-  .header__bottom-left {
+  .header__main-bottom-left {
     width: 100%;
   }
 }
 @media only screen and (min-width: 62em) {
-  .header__bottom-left {
+  .header__main-bottom-left {
     width: auto;
   }
 }
-.header__bottom-left-ul > li > a {
+.header__main-bottom-left-ul > li > a {
   transition: all 400ms ease;
 }
-.header__bottom-left-ul > li > a:hover {
+.header__main-bottom-left-ul > li > a:hover {
   color: rgb(158, 18, 177);
 }
-.header__bottom-right-shop {
+.header__main-bottom-right--shop {
   transition: all 400ms ease;
 }
-.header__bottom-right-shop > span {
+.header__main-bottom-right--shop > span {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 100%;
   top: -25%;
   right: -25%;
 }
-.header__bottom-right-shop:hover {
+.header__main-bottom-right--shop:hover {
   color: rgb(158, 18, 177);
 }
-.header__bottom-right-log {
+.header__main-bottom-right--log {
   transition: all 400ms ease;
   color: rgb(158, 18, 177);
 }
-.header__bottom-right-log:hover {
+.header__main-bottom-right--log:hover {
   background-color: rgb(158, 18, 177);
   color: white;
 }
-
 @media only screen and (min-width: 87.5em) {
   .footer__content {
     width: unset;
@@ -26050,7 +26024,7 @@ option {
 .footer__end {
   z-index: 10;
   height: 6rem;
-  box-shadow: 0rem 0rem 1rem 0.5rem rgb(107, 107, 107);
+  box-shadow: 0rem 0rem 1rem 0.25rem rgb(107, 107, 107);
 }
 
 .landing {
@@ -26465,6 +26439,13 @@ option {
   background-color: rgb(158, 18, 177);
 }
 
+@media only screen and (min-width: 87.5em) {
+  .checklogin {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
+}
 .checklogin__top-down {
   color: rgb(158, 18, 177);
 }

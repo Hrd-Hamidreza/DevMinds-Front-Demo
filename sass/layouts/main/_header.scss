@@ -1,12 +1,21 @@
 .header {
   width: 100vw;
-  z-index: 10;
-  min-height: 16rem;
-  box-shadow: 0rem 0rem 1rem 0.5rem $subtitle;
-  &__top {
-    &-left {
-      &-item {
-        & > a {
+  &__main {
+    z-index: 10;
+    box-shadow: 0rem 0rem 1rem 0.25rem $subtitle;
+    &-top {
+      &-left {
+        &--item {
+          & > a {
+            transition: all 400ms ease;
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+      &-right {
+        &--link {
           transition: all 400ms ease;
           &:hover {
             color: $purple;
@@ -14,54 +23,48 @@
         }
       }
     }
-    &-right {
-      &-link {
-        transition: all 400ms ease;
-        &:hover {
+    &-bottom {
+      &-left {
+        @include responsive(found) {
+          width: 100%;
+        }
+        @include responsive(tabletlg) {
+          width: auto;
+        }
+        &-ul {
+          & > li > a {
+            transition: all 400ms ease;
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+      &-right {
+        &--shop {
+          transition: all 400ms ease;
+          & > span {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 100%;
+            top: -25%;
+            right: -25%;
+          }
+          &:hover {
+            color: $purple;
+          }
+        }
+        &--log {
+          transition: all 400ms ease;
           color: $purple;
+          &:hover {
+            background-color: $purple;
+            color: white;
+          }
         }
       }
     }
   }
-  &__bottom {
-    &-left {
-      @include responsive(found) {
-        width: 100%;
-      }
-      @include responsive(tabletlg) {
-        width: auto;
-      }
-      &-ul {
-        & > li > a {
-          transition: all 400ms ease;
-          &:hover {
-            color: $purple;
-          }
-        }
-      }
-    }
-    &-right {
-      &-shop {
-        transition: all 400ms ease;
-        & > span {
-          width: 2.4rem;
-          height: 2.4rem;
-          border-radius: 100%;
-          top: -25%;
-          right: -25%;
-        }
-        &:hover {
-          color: $purple;
-        }
-      }
-      &-log {
-        transition: all 400ms ease;
-        color: $purple;
-        &:hover {
-          background-color: $purple;
-          color: white;
-        }
-      }
-    }
+  &__fake {
   }
 }
