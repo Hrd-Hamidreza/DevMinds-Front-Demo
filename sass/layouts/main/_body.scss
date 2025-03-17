@@ -1,17 +1,2 @@
 .body {
-  @include responsive(found) {
-    padding-top: 19.6rem;
-  }
-  @include responsive(phonesm) {
-    padding-top: 17.2rem;
-  }
-  @include responsive(phonexl) {
-    padding-top: 16.6rem;
-  }
-  @include responsive(tablet) {
-    padding-top: 23.7rem;
-  }
-  @include responsive(tabletlg) {
-    padding-top: 16rem;
-  }
 }
