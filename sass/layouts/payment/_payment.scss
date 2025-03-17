@@ -1,4 +1,9 @@
 .payment {
+  @include responsive(desktop) {
+    width: unset;
+    max-width: unset;
+    width: 90% !important;
+  }
   & h6 {
     position: relative;
     &:hover {
@@ -34,14 +39,37 @@
     &-head {
     }
     &-enterance {
-      flex-basis: 5rem;
+      @include responsive(tablet) {
+        flex-basis: 5rem;
+      }
+      & > input {
+        @include responsive(found) {
+          width: 100%;
+          border-radius: 0.5rem 0.5rem 0rem 0rem;
+        }
+        @include responsive(tablet) {
+          border-radius: 0.5rem 0rem 0rem 0.5rem;
+          width: 75%;
+        }
+      }
       & > button {
+        @include responsive(found) {
+          width: 100%;
+          border-radius: 0rem 0rem 0.5rem 0.5rem;
+          &:hover {
+            transform: translateY(0.2rem);
+          }
+        }
+        @include responsive(tablet) {
+          width: 25%;
+          border-radius: 0rem 0.5rem 0.5rem 0rem;
+          &:hover {
+            transform: translateX(0.2rem);
+          }
+        }
         outline: unset;
         background-color: unset;
         border: unset;
-        &:hover {
-          transform: translateX(0.2rem);
-        }
       }
     }
   }
@@ -61,6 +89,29 @@
     }
     &-list {
       outline: 0.1rem solid white;
+      &--1 {
+        @include responsive(found) {
+          display: none;
+        }
+        @include responsive(tablet) {
+          display: table;
+        }
+        & td {
+          outline: 0.1rem solid $subtitle;
+        }
+      }
+      &--2 {
+        @include responsive(found) {
+          display: flex;
+        }
+        @include responsive(tablet) {
+          display: none;
+        }
+        & th,
+        td {
+          width: fit-content;
+        }
+      }
       & th,
       td {
         padding: 1.5rem 1.5rem !important;
@@ -70,9 +121,6 @@
           background-color: $purple;
           color: white;
         }
-      }
-      & td {
-        outline: 0.1rem solid $subtitle;
       }
       & th {
         outline: 0.1rem solid white;
@@ -96,7 +144,7 @@
       }
       & th {
         font-weight: bolder !important;
-        width: min-content;
+        width: fit-content;
       }
       & td {
         text-align: end;
