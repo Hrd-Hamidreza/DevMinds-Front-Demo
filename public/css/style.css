@@ -26890,8 +26890,8 @@ option {
 }
 .accordionpart > li > a > div > span:first-child {
   border: 0.1rem solid rgb(107, 107, 107);
-  width: 3rem;
-  height: 3rem;
+  min-width: 3rem !important;
+  min-height: 3rem !important;
 }
 
 .start-hover:hover .end-hover {

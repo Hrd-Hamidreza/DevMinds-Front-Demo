@@ -23,8 +23,8 @@
       & > div {
         & > span:first-child {
           border: 0.1rem solid $subtitle;
-          width: 3rem;
-          height: 3rem;
+          min-width: 3rem !important;
+          min-height: 3rem !important;
         }
       }
     }
