@@ -170,12 +170,13 @@
     <main class="main flex-column-center gap-11 pt-5 w-100">
         <!--! ------------------ Section payment -->
         <section
-            class="payment container overflow-hidden bg-white myshadow-tertiary flex-column-between rounded-3 px-6 py-10 gap-12">
+            class="payment container overflow-hidden bg-white myshadow-tertiary flex-column-between rounded-3 px-6 py-10 gap-5">
             <!--Todo ------------------ Section Component -->
             <!--! Component shopstatus -->
-            <div class="shopstatus flex-row-center w-100 row row-cols-9 mb-10 m-auto">
-                <div class="col shopstatus__first flex-row-center px-0">
-                    <div class="shopstatus__first-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
+            <div class="shopstatus flex-column flex-md-row flex-row-center w-100 row row-cols-9 mb-10 m-auto">
+                <div class="col shopstatus__first pe-md-0">
+                    <div
+                        class="shopstatus__first-first flex-column flex-md-row inner row row-cols-1 row-cols-md-5 g-1 flex-nowrap w-100 m-auto">
                         <div class="col">
                             <span class="bg-primary d-flex"></span>
                         </div>
@@ -238,8 +239,9 @@
                         <span class="position-center text-primary flex-row-center fs-4">Payment information</span>
                     </div>
                 </div>
-                <div class="col shopstatus__ninth flex-row-center px-0">
-                    <div class="shopstatus__ninth-first inner flex-row-between row row-cols-5 g-1 w-100 m-auto">
+                <div class="col shopstatus__ninth flex-row-center ps-md-0">
+                    <div
+                        class="shopstatus__ninth-first inner flex-column flex-md-row row row-cols-1 row-cols-md-5 g-1 flex-nowrap w-100 m-auto">
                         <div class="col">
                             <span class="bg-primary d-flex"></span>
                         </div>
@@ -261,12 +263,12 @@
             <!--! End -->
             <!--Todo ------------------ Section Discount -->
             <div class="payment__discount w-100 p-6 rounded-3 border border-2 border-secondary
-            flex-column-start gap-10">
+            flex-column-start gap-5">
                 <h3 class="payment__discount-head fs-5 fw-bolder">Do you have a discount code? Enter it here</h3>
-                <div class="payment__discount-enterance flex-row-between gap-1 w-100">
-                    <input class="w-75 p-3 h-100 fs-4 rounded-start-3" type="text" name="" id="">
+                <div class="payment__discount-enterance flex-column flex-md-row flex-row-between gap-1 w-100">
+                    <input class="p-3 h-100 fs-4" type="text" name="" id="">
                     <button type="button"
-                        class="w-25 h-100 fs-4 flex-row-center rounded-end-3 bg-primary text-white mytransition-all">
+                        class="h-100 fs-4 fw-bold flex-row-center bg-primary text-white mytransition-all p-3">
                         Register discount code
                     </button>
                 </div>
@@ -307,20 +309,38 @@
                 <!--Todo ------------------ Section head -->
                 <h6 class="payment__details-head fs-5 fw-bolder w-100">Product details</h6>
                 <!--Todo ------------------ Section List -->
-                <table class="payment__details-list p-0 table w-100">
-                    <thead>
-                        <tr>
-                            <th class="head">Product</th>
-                            <th class="head">Unit price</th>
-                            <th class="head">Discount</th>
-                            <th class="head">Final price</th>
+                <table class="payment__details-list payment__details-list--1 p-0 table w-100">
+                    <tbody class="w-100">
+                        <tr class="w-100">
+                            <th class="head text-center">Product</th>
+                            <th class="head text-center">Unit price</th>
+                            <th class="head text-center">Discount</th>
+                            <th class="head text-center">Final price</th>
                         </tr>
-                    </thead>
-                    <tbody class="">
-                        <tr>
+                        <tr class="w-100">
+                            <td class="text-center">Front-end specialist training course</td>
+                            <td class="text-center">3,600,000 Tomans</td>
+                            <td class="text-center">360,000 Tomans</td>
+                            <td class="text-center">3,240,000 Tomans</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="payment__details-list payment__details-list--2 p-0 table w-100">
+                    <tbody class="w-100">
+                        <tr class="w-100">
+                            <th class="head text-center">Product</th>
                             <td class="">Front-end specialist training course</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Unit price</th>
                             <td class="">3,600,000 Tomans</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Discount</th>
                             <td class="">360,000 Tomans</td>
+                        </tr>
+                        <tr class="w-100">
+                            <th class="head text-center">Final price</th>
                             <td class="">3,240,000 Tomans</td>
                         </tr>
                     </tbody>
