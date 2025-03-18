@@ -4,18 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss public/css/style.css",
-    "watch:sass": "sass sass/main.scss public/css/style.css -w"
+    "watch:sass": "sass sass/main.scss public/css/style.css --watch",
+    "compile:sass": "sass sass/main.scss public/css/style.compile.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 version' public/css/style.compile.css -o public/css/style.prefix.css",
+    "compress:css": "sass public/css/style.prefix.css public/css/style.css --style=compressed",
+    "final:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "autoprefixer": "^10.4.21",
     "bootstrap": "^5.3.3"
   },
   "devDependencies": {
     "devserver": "^0.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1",
     "sass": "^1.77.0",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1"
