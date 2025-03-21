@@ -1,0 +1,30 @@
+//! --------------------------------------- Regular Size
+@font-face {
+  font-family: "DevMinds";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../Fonts/PersianFonts/eot/IRANSansX-Bold.eot) format("eot"),
+    url(../../Fonts/PersianFonts/ttf/IRANSansX-Regular.ttf) format("ttf"),
+    url(../../Fonts/PersianFonts/woff/IRANSansX-Regular.woff) format("woff");
+}
+
+//! --------------------------------------- Medium Size
+@font-face {
+  font-family: "Devminds";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../Fonts/PersianFonts/eot/IRANSansX-Medium.eot) format("eot"),
+    url(../../Fonts/PersianFonts/ttf/IRANSansX-Medium.ttf) format("ttf"),
+    url(../../Fonts/PersianFonts/woff/IRANSansX-Medium.woff) format("woff");
+}
+
+//! --------------------------------------- Bold Size
+
+@font-face {
+  font-family: "DevMinds";
+  font-style: normal;
+  font-weight: Bold;
+  src: url(../../Fonts/PersianFonts/eot/IRANSansX-Bold.eot) format("eot"),
+    url(../../Fonts/PersianFonts/ttf/IRANSansX-Bold.ttf) format("ttf"),
+    url(../../Fonts/PersianFonts/woff/IRANSansX-Bold.woff) format("woff");
+}
