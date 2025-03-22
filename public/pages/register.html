@@ -22,46 +22,74 @@
         <div class="signlogcard__inputs w-100 flex-column-between gap-3">
             <!--todo ------------------ Section Name&Family -->
             <div class="signlogcard__inputs-identity position-relative text-tertiary w-100">
-                <input type="text" class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
+                <input name="identification" type="text"
+                    class="signlogcard__inputs-email-input text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
                     placeholder="First and last name">
                 <i class="fa fa-id-card icon icon1 position-absolute"></i>
             </div>
+            <!--! Error -->
+            <ul id="identification"
+                class="signlogcard__inputs-error fs-4 flex-column-start gap-0 w-100 text-danger ps-6">
+            </ul>
+            <!--! End Error -->
             <!--todo ------------------ Section Username -->
             <div class="signlogcard__inputs-username position-relative text-tertiary w-100">
-                <input type="text" class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
+                <input name="username" type="text"
+                    class="signlogcard__inputs-email-input text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
                     placeholder="Username">
                 <i class="fas fa-user icon icon2 position-absolute"></i>
             </div>
+            <!--! Error -->
+            <ul id="username" class="signlogcard__inputs-error fs-4 flex-column-start gap-0 w-100 text-danger ps-6">
+            </ul>
+            <!--! End Error -->
             <!--todo ------------------ Section Email -->
             <div class="signlogcard__inputs-email position-relative text-tertiary w-100">
-                <input type="email"
-                    class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
+                <input name="email" type="email"
+                    class="signlogcard__inputs-email-input text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
                     placeholder="Email address">
                 <i class="fa fa-envelope icon icon3 position-absolute"></i>
             </div>
+            <!--! Error -->
+            <ul id="email" class="signlogcard__inputs-error fs-4 flex-column-start gap-0 w-100 text-danger ps-6">
+            </ul>
+            <!--! End Error -->
             <!--todo ------------------ Section Phone number -->
             <div class="signlogcard__inputs-phonenumber position-relative text-tertiary w-100">
-                <input type="tel" class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
+                <input name="phonenumber" type="tel"
+                    class="signlogcard__inputs-email-input text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
                     placeholder="Phone number">
                 <i class="fa fa-phone icon icon4 position-absolute"></i>
             </div>
+            <!--! Error -->
+            <ul id="phonenumber" class="signlogcard__inputs-error fs-4 flex-column-start gap-0 w-100 text-danger ps-6">
+            </ul>
+            <!--! End Error -->
             <!--todo ------------------ Section password -->
             <div class="signlogcard__inputs-password position-relative text-tertiary w-100">
-                <input type="password"
-                    class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
+                <input name="password" type="password"
+                    class="signlogcard__inputs-email-input text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
                     placeholder="Please enter your password">
                 <i class="fa-solid fa-key icon icon5 position-absolute"></i>
             </div>
+            <!--! Error -->
+            <ul id="password" class="signlogcard__inputs-error fs-4 flex-column-start gap-0 w-100 text-danger ps-6">
+            </ul>
+            <!--! End Error -->
             <!--todo ------------------ Section Repassword -->
             <div class="signlogcard__inputs-repassword position-relative text-tertiary w-100">
-                <input type="password"
-                    class="text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
+                <input name="repassword" type="password"
+                    class="signlogcard__inputs-email-input text-tertiary fs-4 w-100 border border-1 border-secondary rounded-3 h-100 p-5"
                     placeholder="Enter your password again">
                 <i class="fas fa-user-shield icon icon6 position-absolute"></i>
             </div>
+            <!--! Error -->
+            <ul id="repassword" class="signlogcard__inputs-error fs-4 flex-column-start gap-0 w-100 text-danger ps-6">
+            </ul>
+            <!--! End Error -->
         </div>
         <!--! ------------------ Section Button -->
-        <button type="submit"
+        <button id="enter__button" type="submit"
             class="signlogcard__button flex-row-center position-relative w-100 rounded-3 bg-primary p-4">
             <h2 class="fs-4">Register</h2>
             <i class="fas fa-right-from-bracket icon position-absolute fs-4"></i>

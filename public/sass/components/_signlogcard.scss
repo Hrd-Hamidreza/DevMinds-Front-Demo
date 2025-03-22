@@ -20,6 +20,11 @@
     }
   }
   &__inputs {
+    &-error {
+      & > li {
+        list-style: disc !important;
+      }
+    }
     &-identity {
       &:focus-within .icon1 {
         color: $purple;
@@ -45,6 +50,7 @@
         color: $purple;
       }
     }
+
     &-repassword {
       &:focus-within .icon6 {
         color: $purple;

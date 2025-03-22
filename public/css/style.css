@@ -16788,6 +16788,9 @@ option {
 .signlogcard__signup > a:hover {
   background-color: rgb(158, 18, 177);
 }
+.signlogcard__inputs-error > li {
+  list-style: disc !important;
+}
 .signlogcard__inputs-identity:focus-within .icon1 {
   color: rgb(158, 18, 177);
 }
